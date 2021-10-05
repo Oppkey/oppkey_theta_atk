@@ -16,3 +16,8 @@ NVIDIA Jetson
 displaying live preview on RICOH THETA cameras
 * oppkey_theta_atk_flutter - demonstration of using the theta
 and thetaf packages on mobile or desktop applications
+
+## Summary of Findings
+
+* SC2 API to get thumbnails is broken when using `camera.listFiles` and
+`maxThumbSize` of 640. [more information](docs/sc2/thumbnail_problem.md)  TODO: add summary of test to this repo.
