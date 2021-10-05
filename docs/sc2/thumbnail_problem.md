@@ -15,3 +15,7 @@ TODO: add short summary of workaround
 ## Test Procedure
 
 TODO: add replicable test procedure using `opptheta`.
+
+## More Information
+
+* TODO: link to more detailed article and dicussion on community.theta360.guide

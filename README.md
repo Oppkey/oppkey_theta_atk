@@ -20,4 +20,13 @@ and thetaf packages on mobile or desktop applications
 ## Summary of Findings
 
 * SC2 API to get thumbnails is broken when using `camera.listFiles` and
-`maxThumbSize` of 640. [more information](docs/sc2/thumbnail_problem.md)  TODO: add summary of test to this repo.
+`maxThumbSize` of 640. [more information](docs/sc2/thumbnail_problem.md)  TODO: add summary of test to this repo and workaround
+* SC2 live preview stops when other API commands are given. TODO: test
+* cannot set preview parameters of SC2 live preview. TODO: test and document
+* SC2 camera._getMetadata API not working properly: TODO: update test with newest firmware
+* SC2 takes longer to be ready for next command, likely due to slower CPU. TODO: test camera status
+*  SC2 `/osc/commands/status` not working as expected with bracket shooting "ready for next command"
+
+## Tips and HowTo
+
+* using the API with my settings
