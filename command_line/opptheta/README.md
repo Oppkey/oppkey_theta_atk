@@ -17,7 +17,8 @@ Global options:
 -h, --help    Print this usage information.
 
 Available commands:
-  checkForIdle       wait for camera to be idle after startCapture or self timer for next command  imageMode          Switch camera to image mode
+  checkForIdle       wait for camera to be idle after startCapture or self timer for next command  
+  imageMode          Switch camera to image mode
   info               camera information, including model, serial number
   intervalShoot      test interval shooting with 2 sets of 2 shots
   listFiles          list video and image files on camera
@@ -28,7 +29,7 @@ Available commands:
   setOption          Set single camera option
   state              camera status, battery level, API version, last file URL
   takePicture        take single still image.  Camera must be in still image mode
-  takePictureReady   take single still image and show when camera is ready for next command      
+  takePictureReady   take single still image and show when camera is ready for next    command      
   videoMode          Switch camera to video mode
 
 Run "opptheta help <command>" for more information about a command.
