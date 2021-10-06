@@ -25,8 +25,18 @@ and thetaf packages on mobile or desktop applications
 * cannot set preview parameters of SC2 live preview. TODO: test and document
 * SC2 camera._getMetadata API not working properly: TODO: update test with newest firmware
 * SC2 takes longer to be ready for next command, likely due to slower CPU. TODO: test camera status
-*  SC2 `/osc/commands/status` not working as expected with bracket shooting "ready for next command"
+* SC2 `/osc/commands/status` not working as expected with bracket shooting "ready for next command"
 
 ## Tips and HowTo
 
 * using the API with my settings
+
+---
+
+## Project Contribution
+
+| Goal | Explanation | Example |
+| ---- | ------- | ------- |
+| awareness | API problem or difference.  API feature. | SC2 API thumbnails not appearing in `camera.listFiles` when `thumbSize` set to 640 [video example](https://youtu.be/ZAiZy53YtkU) |
+| workaround | Psuedo code. Explanation. Code snippet | Loop through list of file URLs and append `?type=thumb`  [example article](https://drive.google.com/file/d/1KvPfBI_90XfA9Y77Jz2eyDFN2Ot99sef/view) |
+| demonstration | Show expected behavior. | [example GitHub demo](https://github.com/codetricity/theta_list_files) |
