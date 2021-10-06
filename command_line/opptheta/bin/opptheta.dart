@@ -12,10 +12,9 @@ import 'package:opptheta/set_option_cli.dart';
 import 'package:opptheta/state.dart';
 import 'package:opptheta/take_picture.dart';
 import 'package:opptheta/take_picture_ready.dart';
-import 'package:opptheta/thumb_get_bytes_cli.dart';
+import 'package:opptheta/thumb_cli.dart';
 import 'package:opptheta/video_mode_cli.dart';
 import 'package:opptheta/check_for_idle_cli.dart';
-import 'package:theta/theta.dart';
 
 void main(List<String> arguments) async {
   final runner = CommandRunner('opptheta', 'RICOH THETA Live Preview tester')
@@ -34,7 +33,7 @@ void main(List<String> arguments) async {
     ..addCommand(IntervalShoot())
     ..addCommand(PrintFrames())
     ..addCommand(Sc2SaveFrames())
-    ..addCommand(ThumbGetBytes());
+    ..addCommand(Thumb());
 
   await runner.run(arguments).catchError((error) {
     if (error is! UsageException) throw error;
