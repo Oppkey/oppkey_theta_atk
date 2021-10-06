@@ -34,3 +34,20 @@ Available commands:
 
 Run "opptheta help <command>" for more information about a command.
 ```
+
+## Decoding Thumbnails
+
+On Linux or WSL, follow these steps:
+
+1. copy and paste the thumbnail data into a file named image.txt
+2. run the command below
+3. open file in file browser
+
+```
+base64 -d image.txt > image.jpg
+```
+
+There are many online tools.
+
+https://www.base64decode.org/
+
