@@ -51,3 +51,33 @@ There are many online tools.
 
 https://www.base64decode.org/
 
+
+## Development Contribution
+
+### Build binaries for release
+
+Desired binaries in order of priority.
+
+* Windows
+* Mac
+
+If there is time
+
+* Linux x86
+
+Optional
+
+* Linux ARM (for Raspberry Pi and Jetson Nano)
+
+#### Linux
+
+```
+pwd
+oppkey_theta_atk/command_line/opptheta
+ls
+analysis_options.yaml  bin  build  CHANGELOG.md  lib  packages  pubspec.lock  pubspec.yaml  README.md
+
+$ dart compile exe bin/opptheta.dart -o build/opptheta_linux_0.0.1 
+Info: Compiling with sound null safety
+Generated: /home/craig/Development/ricoh/oppkey_theta_atk/command_line/opptheta/build/opptheta_linux_0.0.1
+```
