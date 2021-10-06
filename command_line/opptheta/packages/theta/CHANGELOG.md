@@ -1,4 +1,4 @@
-# opptheta changes
+# theta changes
 
 ## 0.0.1
 
