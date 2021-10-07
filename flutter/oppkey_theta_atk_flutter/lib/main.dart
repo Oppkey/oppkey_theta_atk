@@ -1,12 +1,8 @@
-import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:oppkey_theta_atk_flutter/models/response_notifier.dart';
 import 'package:oppkey_theta_atk_flutter/models/video_notifier.dart';
 import 'package:oppkey_theta_atk_flutter/view/main_buttons.dart';
 import 'package:oppkey_theta_atk_flutter/view/main_window.dart';
-import 'package:theta/theta.dart';
-import 'package:thetaf/thetaf.dart';
 import 'package:provider/provider.dart';
 
 void main() {
