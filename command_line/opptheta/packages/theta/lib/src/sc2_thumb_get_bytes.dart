@@ -26,6 +26,7 @@ Future<List<String>> sc2ThumbGetBytes({int number = 5}) async {
       fileUrlList.add(entry['fileUrl']);
     }
     for (String fileUrl in fileUrlList) {
+      // print('getting thumb from URL $fileUrl?type=thumb');
       var url = Uri.parse('$fileUrl?type=thumb');
       var response = await client.get(url, headers: headers);
       var thumb64 = base64.encode(response.bodyBytes);
