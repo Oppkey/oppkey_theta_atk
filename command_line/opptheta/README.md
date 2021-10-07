@@ -66,7 +66,9 @@ https://www.base64decode.org/
 
 ## sc2 thumbnails
 
-Due to a bug in the SC2 API to get thumbnails from camera.listFiles, a workaround is required to get
+Last tested October 7, 2021.
+
+As of firmware 1.64, there seems to be a bug in the SC2 API to get thumbnails from `camera.listFiles`. A workaround is required to get
 thumbs from the SC2.
 
 The workaround is in the theta package `lib/src/sc2_thumb_get_bytes`.  You can test the
