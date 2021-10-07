@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 import 'dart:typed_data';
 
+import 'package:args/args.dart';
 import 'package:args/command_runner.dart';
 import 'package:theta/theta.dart';
 
@@ -19,24 +20,44 @@ class Thumb extends Command {
   Thumb() {
     argParser
       ..addOption('print', help: 'number of thumbs to print')
-      ..addOption('save', help: 'number of thumbs to save to files');
+      ..addOption('save', help: 'number of thumbs to save to files')
+      ..addOption('sc2', help: '--sc2=true if SC2 model');
   }
 
   @override
   void run() async {
     int number = 5;
-    // thumbGetBytes is in the theta package and shows
-    // how to get the thumbs for V/Z1 models
+
+    // there is a bug in the SC2 API as of firmware 1.64
+    // implement workaround if sc2 is true
+    bool sc2 = false;
     var thumbList = [];
 
     if (argResults != null) {
       if (argResults!.wasParsed('print')) {
         number = int.parse(argResults!['print']);
       }
+      if (argResults!.wasParsed('sc2')) {
+        var sc2String = argResults!['sc2'];
+        if (sc2String == 'true') {
+          sc2 = true;
+        } else if (sc2String == 'false') {
+          sc2 = false;
+        } else {
+          print('sc2 not set.  To set --sc2=true');
+        }
+      }
 
       if (argResults!.wasParsed('save')) {
         number = int.parse(argResults!['save']);
-        thumbList = await thumbGetBytes(number: number);
+        // thumbGetBytes is in the theta package and shows
+        // how to get the thumbs for V/Z1 models
+        if (sc2) {
+          print('get sc2 thumbs to save');
+          thumbList = await sc2ThumbGetBytes(number: number);
+        } else {
+          thumbList = await thumbGetBytes(number: number);
+        }
 
         List<File> localFileList = [];
         localFileList = await createLocalFiles(number, localFileList);
@@ -48,7 +69,11 @@ class Thumb extends Command {
 
         await saveThumbs(localFileList, byteList);
       } else {
-        thumbList = await thumbGetBytes(number: number);
+        if (sc2) {
+          thumbList = await sc2ThumbGetBytes(number: number);
+        } else {
+          thumbList = await thumbGetBytes(number: number);
+        }
 
         if (thumbList.length == 1) {
           print(thumbList[0]);

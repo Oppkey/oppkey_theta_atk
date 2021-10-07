@@ -2,6 +2,19 @@
 
 Command line tester for RICOH THETA API.
 
+## installation
+
+1. Clone repository from GitHub
+2. cd into command_line/opptheta
+3. run pub get
+
+```
+ricoh\oppkey_theta_atk\command_line\opptheta> pub get
+Resolving dependencies...
+< theta 0.0.1 from path packages\theta (was 1.0.0 from path packages\theta)
+Changed 1 dependency!
+```
+
 ## usage
 
 Connect RICOH THETA to computer with Wi-Fi in access point (AP) mode.
@@ -50,6 +63,38 @@ base64 -d image.txt > image.jpg
 There are many online tools.
 
 https://www.base64decode.org/
+
+## sc2 thumbnails
+
+Due to a bug in the SC2 API to get thumbnails from camera.listFiles, a workaround is required to get
+thumbs from the SC2.
+
+The workaround is in the theta package `lib/src/sc2_thumb_get_bytes`.  You can test the
+functionality with the following command.
+
+```
+ dart .\opptheta.dart thumb --sc2=true --save=5
+```
+
+Here is the process to add the SC2 thumbs to your own application.
+
+1. use camera.listFiles to get a listing of the files on the camera.  Pass the number of thumbs you want to get.
+2. parse results -> entries
+3. loop through the entries and extract `fileUrl`.  Add it to a list.
+4. go through the fileUrlList and use and HTTP GET request with this URL fileUrl?type=thumb
+5. the thumb will be in bytes.  You may want to convert it to base64 if you want to use the same code you have for the Z1 and V thumbnail processing
+
+Alternately, you can use the algorithm above for the Z1 and V models.
+
+Note that since you are making multiple HTTP requests, the SC2 may lock up if you open and close many HTTP GET requests in sequence.
+
+The solution is to follow this process:
+
+1. open HTTP client session
+2. send all GET requests through the same client session
+3. close HTTP client session after you have all your thumbnails
+
+Refer to the theta package for a working example.
 
 
 ## Development Contribution
