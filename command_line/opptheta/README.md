@@ -2,6 +2,19 @@
 
 Command line tester for RICOH THETA API.
 
+## installation
+
+1. Clone repository from GitHub
+2. cd into command_line/opptheta
+3. run pub get
+
+```
+ricoh\oppkey_theta_atk\command_line\opptheta> pub get
+Resolving dependencies...
+< theta 0.0.1 from path packages\theta (was 1.0.0 from path packages\theta)
+Changed 1 dependency!
+```
+
 ## usage
 
 Connect RICOH THETA to computer with Wi-Fi in access point (AP) mode.
