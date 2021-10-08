@@ -16,7 +16,10 @@ class HomeResponse extends StatelessWidget {
     return Expanded(
         flex: flex,
         child: context.watch<VideoNotifier>().videoRunning
-            ? LivePreview(context.watch<VideoNotifier>().controller)
+            ? Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                child: LivePreview(context.watch<VideoNotifier>().controller),
+              )
             : Text(context.watch<ResponseNotifier>().responseText));
   }
 }

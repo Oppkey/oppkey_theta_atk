@@ -7,50 +7,58 @@ import 'package:theta/theta.dart';
 
 class HomeButtons extends StatelessWidget {
   final int flex;
-  const HomeButtons({
+  bool row;
+  HomeButtons({
     required this.flex,
+    this.row = true,
     Key? key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    var buttons = [
+      OutlinedButton(
+        onPressed: () async {
+          var response = await ThetaBase.get('info');
+          context.read<ResponseNotifier>().setResponseText(response);
+        },
+        child: const Text('info'),
+      ),
+      OutlinedButton(
+        onPressed: () {
+          context.read<VideoNotifier>().setVideoRunning(true);
+          try {
+            context.read<VideoNotifier>().controller.close;
+          } catch (error) {
+            print('controller already closed');
+            print(error);
+          }
+          context.read<VideoNotifier>().setController(StreamController());
+          Preview.getLivePreview(
+              frames: -1,
+              controller: Provider.of<VideoNotifier>(context, listen: false)
+                  .controller);
+        },
+        child: const Text('stream'),
+      ),
+      OutlinedButton(
+          onPressed: () {
+            context.read<VideoNotifier>().setVideoRunning(false);
+            Preview.stopPreview();
+          },
+          child: const Text('stop video'))
+    ];
     return Expanded(
-        flex: flex,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            OutlinedButton(
-              onPressed: () async {
-                var response = await ThetaBase.get('info');
-                context.read<ResponseNotifier>().setResponseText(response);
-              },
-              child: const Text('info'),
+      flex: flex,
+      child: row
+          ? Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: buttons,
+            )
+          : Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: buttons,
             ),
-            OutlinedButton(
-              onPressed: () {
-                context.read<VideoNotifier>().setVideoRunning(true);
-                try {
-                  context.read<VideoNotifier>().controller.close;
-                } catch (error) {
-                  print('controller already closed');
-                  print(error);
-                }
-                context.read<VideoNotifier>().setController(StreamController());
-                Preview.getLivePreview(
-                    frames: -1,
-                    controller:
-                        Provider.of<VideoNotifier>(context, listen: false)
-                            .controller);
-              },
-              child: const Text('stream'),
-            ),
-            OutlinedButton(
-                onPressed: () {
-                  context.read<VideoNotifier>().setVideoRunning(false);
-                  Preview.stopPreview();
-                },
-                child: const Text('stop video'))
-          ],
-        ));
+    );
   }
 }

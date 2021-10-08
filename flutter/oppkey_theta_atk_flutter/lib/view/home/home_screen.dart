@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:oppkey_theta_atk_flutter/models/layout_notifier.dart';
 
 import 'home_buttons.dart';
 import 'home_response.dart';
+import 'package:provider/provider.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({
@@ -19,11 +21,20 @@ class HomeScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               TextButton(
-                  style: TextButton.styleFrom(primary: Colors.white),
+                style: TextButton.styleFrom(primary: Colors.white),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/file');
+                },
+                child: const Text('files'),
+              ),
+              TextButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, '/file');
+                    Provider.of<LayoutNotifier>(context, listen: false)
+                        .toggleLandscape();
                   },
-                  child: const Text('files')),
+                  child: Text(context.watch<LayoutNotifier>().landscape
+                      ? 'portait'
+                      : 'landscape'))
             ],
           ),
           const SizedBox(
@@ -31,13 +42,22 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: Column(
-        // ignore: prefer_const_literals_to_create_immutables
-        children: [
-          const HomeResponse(flex: 8),
-          const HomeButtons(flex: 1),
-        ],
-      ),
+      body: context.watch<LayoutNotifier>().landscape
+          ? Row(
+              children: [
+                HomeButtons(
+                  flex: 1,
+                  row: false,
+                ),
+                const HomeResponse(flex: 8),
+              ],
+            )
+          : Column(
+              children: [
+                const HomeResponse(flex: 8),
+                HomeButtons(flex: 1),
+              ],
+            ),
     );
   }
 }
