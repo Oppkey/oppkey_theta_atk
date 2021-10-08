@@ -1,78 +1,34 @@
-import 'dart:async';
-
 import 'package:flutter/material.dart';
-import 'package:theta/theta.dart';
-import 'package:thetaf/thetaf.dart';
+import 'package:oppkey_theta_atk_flutter/models/response_notifier.dart';
+import 'package:oppkey_theta_atk_flutter/models/video_notifier.dart';
+import 'package:oppkey_theta_atk_flutter/view/main_buttons.dart';
+import 'package:oppkey_theta_atk_flutter/view/main_window.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => ResponseNotifier()),
+        ChangeNotifierProvider(create: (_) => VideoNotifier()),
+      ],
+      child: const MainApp(),
+    ),
+  );
 }
 
-class MyApp extends StatefulWidget {
-  MyApp({Key? key}) : super(key: key);
-
-  @override
-  _MyAppState createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
-  StreamController controller = StreamController();
-  bool videoRunning = false;
-  var responseText = 'camera response';
+class MainApp extends StatelessWidget {
+  const MainApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         body: Column(
+          // ignore: prefer_const_literals_to_create_immutables
           children: [
-            Expanded(
-                flex: 8,
-                child: videoRunning
-                    ? LivePreview(controller)
-                    : Text(responseText)),
-            Expanded(
-                flex: 1,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    OutlinedButton(
-                      onPressed: () async {
-                        var response = await ThetaBase.get('info');
-                        setState(() {
-                          responseText = response;
-                        });
-                        print(response);
-                      },
-                      child: const Text('info'),
-                    ),
-                    OutlinedButton(
-                      onPressed: () {
-                        setState(() {
-                          try {
-                            controller.close();
-                          } catch (error) {
-                            print('client already closed');
-                          }
-
-                          controller = StreamController();
-                          Preview.getLivePreview(
-                              frames: -1, controller: controller);
-                          videoRunning = true;
-                        });
-                      },
-                      child: const Text('stream'),
-                    ),
-                    OutlinedButton(
-                        onPressed: () {
-                          Preview.stopPreview();
-                          setState(() {
-                            videoRunning = false;
-                          });
-                        },
-                        child: const Text('stop video'))
-                  ],
-                )),
+            const MainWindow(),
+            const MainButtons(),
           ],
         ),
       ),
