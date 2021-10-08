@@ -34,8 +34,8 @@ class HomeScreen extends StatelessWidget {
       body: Column(
         // ignore: prefer_const_literals_to_create_immutables
         children: [
-          const HomeResponse(),
-          const HomeButtons(),
+          const HomeResponse(flex: 8),
+          const HomeButtons(flex: 1),
         ],
       ),
     );

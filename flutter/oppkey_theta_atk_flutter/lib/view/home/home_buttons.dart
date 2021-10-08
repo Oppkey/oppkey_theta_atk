@@ -1,20 +1,21 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:oppkey_theta_atk_flutter/models/response_notifier.dart';
 import 'package:oppkey_theta_atk_flutter/models/video_notifier.dart';
-import 'package:provider/src/provider.dart';
+import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 
 class HomeButtons extends StatelessWidget {
+  final int flex;
   const HomeButtons({
+    required this.flex,
     Key? key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Expanded(
-        flex: 1,
+        flex: flex,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
@@ -22,7 +23,6 @@ class HomeButtons extends StatelessWidget {
               onPressed: () async {
                 var response = await ThetaBase.get('info');
                 context.read<ResponseNotifier>().setResponseText(response);
-                print(response);
               },
               child: const Text('info'),
             ),
