@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:oppkey_theta_atk_flutter/models/response_notifier.dart';
 import 'package:oppkey_theta_atk_flutter/models/video_notifier.dart';
-import 'package:oppkey_theta_atk_flutter/view/main_buttons.dart';
-import 'package:oppkey_theta_atk_flutter/view/main_window.dart';
+import 'package:oppkey_theta_atk_flutter/view/file/file_screen.dart';
 import 'package:provider/provider.dart';
+
+import 'view/home/home_screen.dart';
 
 void main() {
   runApp(
@@ -23,15 +24,13 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        body: Column(
-          // ignore: prefer_const_literals_to_create_immutables
-          children: [
-            const MainWindow(),
-            const MainButtons(),
-          ],
-        ),
-      ),
+      debugShowCheckedModeBanner: false,
+      routes: {
+        '/': (context) => const HomeScreen(),
+        '/file': (context) => const FileScreen(),
+      },
+      initialRoute: '/',
+      theme: ThemeData(primaryColor: Colors.lightGreen),
     );
   }
 }

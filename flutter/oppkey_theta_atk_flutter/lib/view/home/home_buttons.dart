@@ -6,8 +6,8 @@ import 'package:oppkey_theta_atk_flutter/models/video_notifier.dart';
 import 'package:provider/src/provider.dart';
 import 'package:theta/theta.dart';
 
-class MainButtons extends StatelessWidget {
-  const MainButtons({
+class HomeButtons extends StatelessWidget {
+  const HomeButtons({
     Key? key,
   }) : super(key: key);
 
