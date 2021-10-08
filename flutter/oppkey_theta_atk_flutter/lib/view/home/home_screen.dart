@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:oppkey_theta_atk_flutter/models/layout_notifier.dart';
+import 'package:oppkey_theta_atk_flutter/models/video_notifier.dart';
+import 'package:theta/theta.dart';
 
 import 'home_buttons.dart';
 import 'home_response.dart';
@@ -29,6 +31,8 @@ class HomeScreen extends StatelessWidget {
               ),
               TextButton(
                   onPressed: () {
+                    context.read<VideoNotifier>().setVideoRunning(false);
+                    Preview.stopPreview();
                     Provider.of<LayoutNotifier>(context, listen: false)
                         .toggleLandscape();
                   },
