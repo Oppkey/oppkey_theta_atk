@@ -7,4 +7,11 @@ class FileNotifier extends ChangeNotifier {
     _thumbs = thumbs;
     notifyListeners();
   }
+
+  double _numberOfThumbs = 10;
+  double get numberOfThumbs => _numberOfThumbs;
+  void setNumberOfThumbs(numberOfThumbs) {
+    _numberOfThumbs = numberOfThumbs;
+    notifyListeners();
+  }
 }

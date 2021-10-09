@@ -13,13 +13,35 @@ class FileButtons extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          OutlinedButton(
-              onPressed: () async {
-                List<String> thumbs = await thumbGetBytes(number: 10);
-                Provider.of<FileNotifier>(context, listen: false)
-                    .setThumbs(thumbs);
-              },
-              child: const Text('thumbs')),
+          Flexible(
+            fit: FlexFit.loose,
+            child: OutlinedButton(
+                onPressed: () async {
+                  int numberOfThumbs =
+                      context.read<FileNotifier>().numberOfThumbs.round();
+                  List<String> thumbs =
+                      await thumbGetBytes(number: numberOfThumbs);
+                  Provider.of<FileNotifier>(context, listen: false)
+                      .setThumbs(thumbs);
+                },
+                child: const Text('thumbs')),
+          ),
+          Flexible(
+              fit: FlexFit.loose,
+              child: Slider(
+                value: context.watch<FileNotifier>().numberOfThumbs,
+                min: 0,
+                max: 1000,
+                divisions: 10,
+                label: context
+                    .watch<FileNotifier>()
+                    .numberOfThumbs
+                    .ceil()
+                    .toString(),
+                onChanged: (double value) {
+                  context.read<FileNotifier>().setNumberOfThumbs(value);
+                },
+              ))
         ],
       ),
     );
