@@ -47,13 +47,13 @@ class FileButtons extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('max thumbs ' +
+                  Text('max allowed: ' +
                       context
                           .watch<FileNotifier>()
                           .numberOfThumbs
                           .ceil()
                           .toString()),
-                  Text('showing'),
+                  Text('showing:'),
                 ],
               ))
         ],
