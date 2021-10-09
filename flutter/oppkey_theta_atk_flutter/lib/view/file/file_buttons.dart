@@ -41,6 +41,20 @@ class FileButtons extends StatelessWidget {
                 onChanged: (double value) {
                   context.read<FileNotifier>().setNumberOfThumbs(value);
                 },
+              )),
+          Flexible(
+              fit: FlexFit.loose,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text('max thumbs ' +
+                      context
+                          .watch<FileNotifier>()
+                          .numberOfThumbs
+                          .ceil()
+                          .toString()),
+                  Text('showing'),
+                ],
               ))
         ],
       ),
