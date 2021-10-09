@@ -53,7 +53,8 @@ class FileButtons extends StatelessWidget {
                           .numberOfThumbs
                           .ceil()
                           .toString()),
-                  Text('showing:'),
+                  Text('showing: ' +
+                      context.watch<FileNotifier>().thumbs.length.toString()),
                 ],
               ))
         ],
