@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:oppkey_theta_atk_flutter/models/file_notifier.dart';
 import 'package:oppkey_theta_atk_flutter/models/layout_notifier.dart';
 import 'package:oppkey_theta_atk_flutter/models/response_notifier.dart';
 import 'package:oppkey_theta_atk_flutter/models/video_notifier.dart';
@@ -14,6 +15,7 @@ void main() {
         ChangeNotifierProvider(create: (_) => ResponseNotifier()),
         ChangeNotifierProvider(create: (_) => VideoNotifier()),
         ChangeNotifierProvider(create: (_) => LayoutNotifier()),
+        ChangeNotifierProvider(create: (_) => FileNotifier()),
       ],
       child: const MainApp(),
     ),
