@@ -14,4 +14,11 @@ class FileNotifier extends ChangeNotifier {
     _numberOfThumbs = numberOfThumbs;
     notifyListeners();
   }
+
+  bool _sc2Fix1 = false;
+  bool get sc2Fix1 => _sc2Fix1;
+  void setSc2Fix1(sc2Fix1) {
+    _sc2Fix1 = sc2Fix1;
+    notifyListeners();
+  }
 }

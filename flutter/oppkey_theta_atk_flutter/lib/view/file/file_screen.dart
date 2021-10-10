@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:oppkey_theta_atk_flutter/models/file_notifier.dart';
 import 'package:oppkey_theta_atk_flutter/view/file/file_buttons.dart';
 import 'package:oppkey_theta_atk_flutter/view/file/file_response.dart';
+import 'package:provider/provider.dart';
 
 class FileScreen extends StatelessWidget {
   const FileScreen({Key? key}) : super(key: key);
@@ -10,6 +12,25 @@ class FileScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.lightGreen,
+        actions: [
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Text('sc2 fix 1'),
+              Switch(
+                  value: context.watch<FileNotifier>().sc2Fix1,
+                  onChanged: (value) {
+                    Provider.of<FileNotifier>(context, listen: false)
+                        .setSc2Fix1(value);
+                    print(value);
+                  }),
+              const SizedBox(
+                width: 30,
+              ),
+            ],
+          )
+        ],
       ),
       body: Column(
         children: const [
