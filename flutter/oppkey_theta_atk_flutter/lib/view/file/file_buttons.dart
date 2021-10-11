@@ -19,8 +19,10 @@ class FileButtons extends StatelessWidget {
                 onPressed: () async {
                   int numberOfThumbs =
                       context.read<FileNotifier>().numberOfThumbs.round();
-                  List<String> thumbs =
-                      await thumbGetBytes(number: numberOfThumbs);
+                  bool showSc2 = context.read<FileNotifier>().sc2Fix1;
+                  List<String> thumbs = showSc2
+                      ? await sc2ThumbGetBytes(number: numberOfThumbs)
+                      : await thumbGetBytes(number: numberOfThumbs);
                   Provider.of<FileNotifier>(context, listen: false)
                       .setThumbs(thumbs);
                 },
