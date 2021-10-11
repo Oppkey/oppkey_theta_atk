@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:oppkey_theta_atk_flutter/models/file_notifier.dart';
+import 'package:oppkey_theta_atk_flutter/model/file_notifier.dart';
 import 'package:oppkey_theta_atk_flutter/view/file/file_buttons.dart';
 import 'package:oppkey_theta_atk_flutter/view/file/file_response.dart';
 import 'package:provider/provider.dart';

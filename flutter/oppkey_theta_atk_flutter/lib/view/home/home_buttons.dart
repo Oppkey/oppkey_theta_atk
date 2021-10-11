@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:oppkey_theta_atk_flutter/models/response_notifier.dart';
-import 'package:oppkey_theta_atk_flutter/models/video_notifier.dart';
+import 'package:oppkey_theta_atk_flutter/model/response_notifier.dart';
+import 'package:oppkey_theta_atk_flutter/model/video_notifier.dart';
 import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 
