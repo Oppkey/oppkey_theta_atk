@@ -14,7 +14,8 @@ class ListFiles extends Command {
       ..addOption('fileType', help: '--fileType=all | image | video')
       ..addOption('entryCount', help: '--entryCount=20')
       ..addOption('maxThumbSize',
-          help: '--maxThumbSize=640 to show thumbs | 0 for no thumbs');
+          help: '--maxThumbSize=640 to show thumbs | 0 for no thumbs')
+      ..addOption('startPosition', help: '--startPosition=101');
   }
 
   @override
@@ -23,6 +24,7 @@ class ListFiles extends Command {
     String fileType = 'all';
     int entryCount = 10;
     int maxThumbSize = 0;
+    int startPosition = 1;
 
     if (argResults != null) {
       if (argResults!.wasParsed('fileType')) {
@@ -34,13 +36,17 @@ class ListFiles extends Command {
       if (argResults!.wasParsed('maxThumbSize')) {
         maxThumbSize = int.parse(argResults!['maxThumbSize']);
       }
+      if (argResults!.wasParsed('startPosition')) {
+        startPosition = int.parse(argResults!['startPosition']);
+      }
     } else {
       print('argResults is null');
     }
     String response = await command('listFiles', parameters: {
       'fileType': fileType,
       'entryCount': entryCount,
-      'maxThumbSize': maxThumbSize
+      'maxThumbSize': maxThumbSize,
+      'startPosition': startPosition
     });
     print(response);
   }

@@ -24,6 +24,7 @@ and thetaf packages on mobile or desktop applications
 `maxThumbSize` of 640. [more information](docs/sc2/thumbnail_problem.md)  TODO: add summary of test to this repo and workaround
 * SC2 live preview stops when other API commands are given. TODO: test
 * cannot set preview parameters of SC2 live preview. TODO: test and document
+* SC2 check for camera status after interval or bracket shooting
 * SC2 camera._getMetadata API not working properly: TODO: update test with newest firmware
 * SC2 takes longer to be ready for next command, likely due to slower CPU. TODO: test camera status
 * SC2 `/osc/commands/status` not working as expected with bracket shooting "ready for next command"

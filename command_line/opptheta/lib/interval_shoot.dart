@@ -13,13 +13,25 @@ class IntervalShoot extends Command {
   @override
   final description = 'test interval shooting with 2 sets of 2 shots';
 
+  IntervalShoot() {
+    argParser.addOption('captureNumber', help: '--captureNumber=10');
+  }
+
   @override
   void run() async {
+    int captureNumber = 2;
+
+    if (argResults != null) {
+      if (argResults!.wasParsed('captureNumber')) {
+        captureNumber = int.parse(argResults!['captureNumber']);
+      }
+    }
+
     print(await setOption(name: 'captureMode', value: 'image'));
     await Future.delayed(Duration(milliseconds: 100));
     await setOption(name: 'captureInterval', value: 10);
     await Future.delayed(Duration(milliseconds: 100));
-    await setOption(name: 'captureNumber', value: 2);
+    await setOption(name: 'captureNumber', value: captureNumber);
     await command('startCapture', parameters: {'_mode': 'interval'});
     print('first interval set in progress');
     while (await checkForIdle() != 'idle') {
