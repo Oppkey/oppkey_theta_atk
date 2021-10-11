@@ -30,7 +30,7 @@ class ListFiles extends Command {
     String fileType = 'all';
     int entryCount = 10;
     int maxThumbSize = 0;
-    int startPosition = 1;
+    int startPosition = 0;
     String response = '';
     bool fixLimit = false;
     var allEntries = [];
@@ -102,7 +102,7 @@ class ListFiles extends Command {
           'fileType': fileType,
           'entryCount': 100,
           'maxThumbSize': maxThumbSize,
-          'startPosition': 100 * i + 1
+          'startPosition': 100 * i
         });
         if (!entriesOnly) {
           print(response);
