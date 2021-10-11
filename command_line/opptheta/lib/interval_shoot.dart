@@ -14,16 +14,22 @@ class IntervalShoot extends Command {
   final description = 'test interval shooting with 2 sets of 2 shots';
 
   IntervalShoot() {
-    argParser.addOption('captureNumber', help: '--captureNumber=10');
+    argParser
+      ..addOption('captureNumber', help: '--captureNumber=10')
+      ..addOption('sets', help: 'numbers of sequence sets');
   }
 
   @override
   void run() async {
     int captureNumber = 2;
+    int sets = 2;
 
     if (argResults != null) {
       if (argResults!.wasParsed('captureNumber')) {
         captureNumber = int.parse(argResults!['captureNumber']);
+      }
+      if (argResults!.wasParsed('sets')) {
+        sets = int.parse(argResults!['sets']);
       }
     }
 
@@ -38,11 +44,13 @@ class IntervalShoot extends Command {
       await Future.delayed(Duration(milliseconds: 500));
     }
     print('first interval set completed');
-    print('starting 2nd interval set');
-    await command('startCapture', parameters: {'_mode': 'interval'});
-    while (await checkForIdle() != 'idle') {
-      await Future.delayed(Duration(milliseconds: 500));
+    for (int i = 2; i <= sets; i++) {
+      print('starting interval set #$i');
+      await command('startCapture', parameters: {'_mode': 'interval'});
+      while (await checkForIdle() != 'idle') {
+        await Future.delayed(Duration(milliseconds: 500));
+      }
+      print('completed interval set #$i');
     }
-    print('2nd interval set completed');
   }
 }
