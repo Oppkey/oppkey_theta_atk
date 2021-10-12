@@ -34,10 +34,17 @@ class HomeButtons extends StatelessWidget {
             print(error);
           }
           context.read<VideoNotifier>().setController(StreamController());
-          Preview.getLivePreview(
-              frames: -1,
-              controller: Provider.of<VideoNotifier>(context, listen: false)
-                  .controller);
+          bool sc2Experiment = context.read<VideoNotifier>().sc2Experiment;
+          sc2Experiment
+              ? Sc2Preview.getLivePreview(
+                  frames: -1,
+                  frameDelay: 250,
+                  controller: Provider.of<VideoNotifier>(context, listen: false)
+                      .controller)
+              : Preview.getLivePreview(
+                  frames: -1,
+                  controller: Provider.of<VideoNotifier>(context, listen: false)
+                      .controller);
         },
         child: const Text('stream'),
       ),

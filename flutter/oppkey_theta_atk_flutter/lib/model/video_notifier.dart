@@ -16,4 +16,11 @@ class VideoNotifier extends ChangeNotifier {
     _controller = controller;
     notifyListeners();
   }
+
+  bool _sc2Experiment = false;
+  bool get sc2Experiment => _sc2Experiment;
+  void setSc2Experiment(sc2Experiment) {
+    _sc2Experiment = sc2Experiment;
+    notifyListeners();
+  }
 }

@@ -16,7 +16,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Oppkey THETA ATK Demo'),
+        title: const Text('Oppkey THETA Z1 ATK Demo'),
         backgroundColor: Colors.lightGreen,
         actions: [
           Row(
@@ -38,7 +38,16 @@ class HomeScreen extends StatelessWidget {
                   },
                   child: Text(context.watch<LayoutNotifier>().landscape
                       ? 'portait'
-                      : 'landscape'))
+                      : 'landscape')),
+              const SizedBox(width: 30),
+              // const Text('sc2 experiment'),
+              // Switch(
+              //     value: context.watch<VideoNotifier>().sc2Experiment,
+              //     onChanged: (value) {
+              //       Provider.of<VideoNotifier>(context, listen: false)
+              //           .setSc2Experiment(value);
+              //       print(value);
+              //     }),
             ],
           ),
           const SizedBox(
