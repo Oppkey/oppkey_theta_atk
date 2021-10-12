@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:oppkey_theta_atk_flutter/command/thumbs_command.dart';
 import 'package:oppkey_theta_atk_flutter/model/file_notifier.dart';
 import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
@@ -16,16 +17,7 @@ class FileButtons extends StatelessWidget {
           Flexible(
             fit: FlexFit.loose,
             child: OutlinedButton(
-                onPressed: () async {
-                  int numberOfThumbs =
-                      context.read<FileNotifier>().numberOfThumbs.round();
-                  bool showSc2 = context.read<FileNotifier>().sc2Fix1;
-                  List<String> thumbs = showSc2
-                      ? await sc2ThumbGetBytes(number: numberOfThumbs)
-                      : await thumbGetBytes(number: numberOfThumbs);
-                  Provider.of<FileNotifier>(context, listen: false)
-                      .setThumbs(thumbs);
-                },
+                onPressed: () => thumbsCommand(context),
                 child: const Text('thumbs')),
           ),
           Flexible(
