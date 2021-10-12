@@ -1,29 +1,12 @@
 {
-    "name": "R0012209.JPG",
-    "fileUrl": "http://192.168.1.1/files/thetasc26c21a247d9055838792badc5/100RICOH/R0012209.JPG",
-    "size": 4064810,
-    "isProcessed": true,
-    "previewUrl": "",
-    "dateTimeZone": "2021:10:11 13:09:38-07:00",
-    "lng": 0,
-    "lat": 0,
-    "width": 5376,
-    "height": 2688,
-    "_thumbSize": 9681
-  },
-
-
-
-    {
-    "name": "R0011968.JPG",
-    "fileUrl": "http://192.168.1.1/files/thetasc26c21a247d9055838792badc5/100RICOH/R0011968.JPG",
-    "size": 3461898,
-    "isProcessed": true,
-    "previewUrl": "",
-    "dateTimeZone": "2021:06:23 16:10:30-07:00",
-    "lng": 0,
-    "lat": 0,
-    "width": 5376,
-    "height": 2688,
-    "_thumbSize": 8422
-  }
+  "name": "camera.listFiles",
+  "results": {
+    "entries": [
+      {
+        "dateTimeZone": "2021:10:11 18:06:57-07:00",
+        "fileUrl": "http://192.168.1.1/files/150100524436344d42013765da9bc400/10
+0RICOH/R0011382.JPG",
+        "height": 3360,
+        "_intervalCaptureGroupId": "B0FC00B422971C99",
+        "isProcessed": true,
+        "name": "R0011382.JPG",
