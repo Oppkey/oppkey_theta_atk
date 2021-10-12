@@ -1,3 +1,6 @@
+# Linux snap builds
+*.snap
+
 # Miscellaneous
 *.class
 *.log
