@@ -30,12 +30,12 @@ class ListFiles extends Command {
     String fileType = 'all';
     int entryCount = 10;
     int maxThumbSize = 0;
+    // start position is optional
     int startPosition = 0;
     String response = '';
     bool fixLimit = false;
     var allEntries = [];
     bool entriesOnly = false;
-    var entriesOver100 = [];
 
     if (argResults != null) {
       if (argResults!.wasParsed('fileType')) {
@@ -109,11 +109,9 @@ class ListFiles extends Command {
         } else {
           Map<String, dynamic> responseMap = jsonDecode(response);
           var currentEntries = responseMap['results']['entries'];
-          entriesOver100.addAll(currentEntries);
+          allEntries.addAll(currentEntries);
         }
       }
-      print('number of entries over 100: ${entriesOver100.length}');
-      allEntries.addAll(entriesOver100);
     }
     if (entriesOnly) {
       var jsonEntries = jsonEncode(allEntries);
