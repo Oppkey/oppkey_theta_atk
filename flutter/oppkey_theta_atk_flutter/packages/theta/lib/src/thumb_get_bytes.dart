@@ -17,28 +17,45 @@ Future<List<String>> thumbGetBytes({int number = 5}) async {
     Map<String, dynamic> responseMap = jsonDecode(response);
     var _entries = responseMap['results']['entries'];
     for (var entry in _entries) {
-      thumbList.add(entry['thumbnail']);
+      String thumbEntry = entry['thumbnail'];
+      thumbList.add(thumbEntry);
     }
     // handle more than 100 entries
-    var _totalEntries = responseMap['results']['totalEntries'];
-    if (number >= _totalEntries) {
-      number = _totalEntries;
-    }
-    int loops = (number / 100).truncate();
+    if (number > 100) {
+      print('handling thumbs greater than 100');
 
-    for (int i = 1; i <= loops; i++) {
-      var response = await command(
-        'listFiles',
-        parameters: {
-          'fileType': 'image',
-          'entryCount': 100,
-          'startPostion': 100 * i,
-          'maxThumbSize': 640
-        },
-      );
-      Map<String, dynamic> responseMap = jsonDecode(response);
-      var currentEntries = responseMap['results']['entries'];
-      thumbList.addAll(currentEntries);
+      int _totalEntries = responseMap['results']['totalEntries'];
+      if (number >= _totalEntries) {
+        number = _totalEntries;
+      }
+      int loops = (number / 100).truncate();
+      print('loops: $loops');
+
+      for (int i = 1; i <= loops; i++) {
+        int currentEntryCount = 100;
+        if (number - 100 * i < 100) {
+          currentEntryCount = number - 100 * i;
+        }
+        var response = await command(
+          'listFiles',
+          parameters: {
+            'fileType': 'image',
+            'entryCount': currentEntryCount,
+            'startPostion': 100 * i,
+            'maxThumbSize': 640
+          },
+        );
+
+        Map<String, dynamic> responseMap = jsonDecode(response);
+        var _currentEntries = responseMap['results']['entries'];
+        for (var entry in _currentEntries) {
+          String thumbEntry = entry['thumbnail'];
+          thumbList.add(thumbEntry);
+        }
+      }
+
+      //   thumbList.addAll(currentEntries);
+      // }
     }
   } catch (error) {
     print(error);

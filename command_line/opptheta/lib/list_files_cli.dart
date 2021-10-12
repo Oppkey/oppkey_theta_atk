@@ -98,9 +98,13 @@ class ListFiles extends Command {
       int loops = (entryCount / 100).truncate();
 
       for (int i = 1; i <= loops; i++) {
+        int currentEntryCount = 100;
+        if (entryCount - 100 * i < 100) {
+          currentEntryCount = entryCount - 100 * i;
+        }
         response = await command('listFiles', parameters: {
           'fileType': fileType,
-          'entryCount': 100,
+          'entryCount': currentEntryCount,
           'maxThumbSize': maxThumbSize,
           'startPosition': 100 * i
         });
