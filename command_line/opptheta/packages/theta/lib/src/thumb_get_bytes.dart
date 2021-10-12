@@ -22,14 +22,14 @@ Future<List<String>> thumbGetBytes({int number = 5}) async {
     }
     // handle more than 100 entries
     if (number > 100) {
-      print('handling thumbs greater than 100');
+      // print('handling thumbs greater than 100');
 
       int _totalEntries = responseMap['results']['totalEntries'];
       if (number >= _totalEntries) {
         number = _totalEntries;
       }
       int loops = (number / 100).truncate();
-      print('loops: $loops');
+      // print('loops: $loops');
 
       for (int i = 1; i <= loops; i++) {
         int currentEntryCount = 100;
