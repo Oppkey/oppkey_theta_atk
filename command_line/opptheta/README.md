@@ -6,7 +6,7 @@ Command line tester for RICOH THETA API.
 
 1. Clone repository from GitHub
 2. cd into command_line/opptheta
-3. run dart pub
+3. run dart pub get
 
 (You can run pub get command but you will get a message saying "The top level `pub.bat` command is deprecated. Use `dart pub` instead." )
 
