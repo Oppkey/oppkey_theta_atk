@@ -131,6 +131,7 @@ Info: Compiling with sound null safety
 Generated: /home/craig/Development/ricoh/oppkey_theta_atk/command_line/opptheta/build/opptheta_linux_0.0.1
 ```
 #### Windows
+Using Windows PowerShell
 
 ```
 pwd
