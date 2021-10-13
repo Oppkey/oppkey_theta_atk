@@ -6,7 +6,9 @@ Command line tester for RICOH THETA API.
 
 1. Clone repository from GitHub
 2. cd into command_line/opptheta
-3. run pub get
+3. run dart get
+
+(You can run pub get command but you will get a message saying "The top level `pub.bat` command is deprecated. Use `dart pub` instead." )
 
 ```
 ricoh\oppkey_theta_atk\command_line\opptheta> pub get
@@ -127,4 +129,17 @@ analysis_options.yaml  bin  build  CHANGELOG.md  lib  packages  pubspec.lock  pu
 $ dart compile exe bin/opptheta.dart -o build/opptheta_linux_0.0.1 
 Info: Compiling with sound null safety
 Generated: /home/craig/Development/ricoh/oppkey_theta_atk/command_line/opptheta/build/opptheta_linux_0.0.1
+```
+#### Windows
+
+```
+pwd
+oppkey_theta_atk/command_line/opptheta
+
+ls
+analysis_options.yaml  bin  build  CHANGELOG.md  lib  packages  pubspec.lock  pubspec.yaml  README.md
+
+$ dart compile exe bin/opptheta.dart -o build/opptheta_windows_0.0.1.exe 
+Info: Compiling with sound null safety
+Generated: c:\users\jcasm\development\oppkey_theta_atk\command_line\opptheta\build\opptheta_windows_0.0.1.exe
 ```
