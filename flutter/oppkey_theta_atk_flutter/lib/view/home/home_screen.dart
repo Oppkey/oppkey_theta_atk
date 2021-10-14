@@ -33,6 +33,7 @@ class HomeScreen extends StatelessWidget {
                     child: Text(value),
                   );
                 }).toList(),
+                hint: const Text('screens'),
                 style: const TextStyle(color: Colors.black),
                 onChanged: (String? newValue) {
                   if (newValue == 'file') {
