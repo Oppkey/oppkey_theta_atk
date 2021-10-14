@@ -1,11 +1,34 @@
 # Oppkey THETA API Test Kit
 
-API test kit for RICOH THETA camera developers.
-
 Tools to test the [RICOH THETA Web API](https://api.ricoh/docs/theta-web-api-v2.1/) on different
 camera models.
 
-## Contents
+## Background
+
+Oppkey is a developer relations firm in Silicon Valley under contract
+with RICOH to help businesses build solutions for RICOH THETA camera.
+
+After helping dozens of companies deploy thousands of RICOH THETA
+cameras in products for used car, real estate, and construction
+markets, we've
+built up common tests based on questions from businesses about
+the camera behavior. RICOH considers these companies partners and
+relies on Oppkey to support high-quality developer relations services.
+
+The Oppkey THETA API Test Kit (ATK) are the tools we use internally to
+test camera behavior such as delay between commands, configuring
+multiple camera settings in sequence, status checks at the end of
+bracket or interval shooting, thumbnail requests, and live preview
+(motionJPEG) management.
+
+We get more questions from RICOH partners every week and update
+this API Test Kit regulary in order to help more people in the
+future.
+
+Feel free to use these tools yourself to experiment with the camera,
+build a prototype or replicate the results of our tests.
+
+## ATK Contents
 
 * theta - Dart library for the RICOH THETA Web API
 * opptheta - command line tester built on the theta library.
