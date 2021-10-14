@@ -20,15 +20,29 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: Colors.lightGreen,
         actions: [
           Row(
+            mainAxisAlignment: MainAxisAlignment.end,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              TextButton(
-                style: TextButton.styleFrom(primary: Colors.white),
-                onPressed: () {
-                  Navigator.pushNamed(context, '/file');
+              DropdownButton(
+                // value: context.watch<ScreenNotifer>().screen,
+
+                items: <String>['file', 'camera']
+                    .map<DropdownMenuItem<String>>((String value) {
+                  return DropdownMenuItem<String>(
+                    value: value,
+                    child: Text(value),
+                  );
+                }).toList(),
+                style: const TextStyle(color: Colors.black),
+                onChanged: (String? newValue) {
+                  if (newValue == 'file') {
+                    Navigator.pushNamed(context, '/file');
+                  } else if (newValue == 'camera') {
+                    Navigator.pushNamed(context, '/camera');
+                  }
                 },
-                child: const Text('files'),
               ),
+              const SizedBox(width: 100),
               TextButton(
                   onPressed: () {
                     context.read<VideoNotifier>().setVideoRunning(false);
@@ -39,7 +53,7 @@ class HomeScreen extends StatelessWidget {
                   child: Text(context.watch<LayoutNotifier>().landscape
                       ? 'portait'
                       : 'landscape')),
-              const SizedBox(width: 30),
+
               // const Text('sc2 experiment'),
               // Switch(
               //     value: context.watch<VideoNotifier>().sc2Experiment,

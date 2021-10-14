@@ -11,13 +11,14 @@ class FileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        title: const Text('File manager'),
         backgroundColor: Colors.lightGreen,
         actions: [
           Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Text('sc2 fix 1'),
+              const Text('sc2 fix 1'),
               Switch(
                   value: context.watch<FileNotifier>().sc2Fix1,
                   onChanged: (value) {
