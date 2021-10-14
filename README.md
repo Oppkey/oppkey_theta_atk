@@ -1,5 +1,7 @@
 # Oppkey THETA API Test Kit
 
+![live preview demo](docs/images/live_preview.gif)
+
 Tools to test the [RICOH THETA Web API](https://api.ricoh/docs/theta-web-api-v2.1/) on different
 camera models.
 
@@ -39,6 +41,13 @@ NVIDIA Jetson
 displaying live preview on RICOH THETA cameras
 * oppkey_theta_atk_flutter - demonstration of using the theta
 and thetaf packages on mobile or desktop applications
+
+## Mobile App Testing
+
+The command line scripts can run on iOS and Android devices using
+Flutter.
+
+
 
 ## Summary of Findings
 
