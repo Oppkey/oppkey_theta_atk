@@ -2,7 +2,7 @@
 
 ## 0.3.0
 
-## 0.0.2
+## 0.2.0
 
 - added `thumb --sc2` option to get thumbnails from SC2 cameras.
 example: `opptheta thumb --sc2=true --save=5`
