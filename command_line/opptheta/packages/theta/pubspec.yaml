@@ -1,6 +1,6 @@
 name: theta
 description: RICOH THETA WebAPI interface
-version: 0.0.1
+version: 0.2.0
 homepage: https://community.theta360.guide/t/dart-library-for-ricoh-theta-live-preview-testing/7312?u=craig
 
 environment:

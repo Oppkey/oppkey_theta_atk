@@ -1,7 +1,7 @@
 name: opptheta
 publish_to: none
 description: Oppkey API Test Kit for RICOH THETA
-version: 0.0.1
+version: 0.2.0
 # homepage: https://www.example.com
 
 environment:
