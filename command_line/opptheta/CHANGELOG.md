@@ -1,5 +1,7 @@
 # opptheta version changes
 
+## 0.3.0
+
 ## 0.0.2
 
 - added `thumb --sc2` option to get thumbnails from SC2 cameras.
