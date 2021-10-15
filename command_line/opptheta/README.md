@@ -126,9 +126,9 @@ oppkey_theta_atk/command_line/opptheta
 ls
 analysis_options.yaml  bin  build  CHANGELOG.md  lib  packages  pubspec.lock  pubspec.yaml  README.md
 
-$ dart compile exe bin/opptheta.dart -o build/opptheta_linux_0.0.1 
+$ dart compile exe bin/opptheta.dart -o build/opptheta_linux_0.3_pre 
 Info: Compiling with sound null safety
-Generated: /home/craig/Development/ricoh/oppkey_theta_atk/command_line/opptheta/build/opptheta_linux_0.0.1
+Generated: /home/craig/Development/ricoh/oppkey_theta_atk/command_line/opptheta/build/opptheta_linux_0.3_pre
 ```
 #### Windows
 Using Windows PowerShell
@@ -140,7 +140,8 @@ oppkey_theta_atk/command_line/opptheta
 ls
 analysis_options.yaml  bin  build  CHANGELOG.md  lib  packages  pubspec.lock  pubspec.yaml  README.md
 
-$ dart compile exe bin/opptheta.dart -o build/opptheta_windows_0.0.1.exe 
+$ dart compile exe bin/opptheta.dart -o build/opptheta_windows_0.3_pre.exe 
 Info: Compiling with sound null safety
-Generated: c:\users\jcasm\development\oppkey_theta_atk\command_line\opptheta\build\opptheta_windows_0.0.1.exe
+Generated: c:\users\jcasm\development\oppkey_theta_atk\command_line\opptheta\build\opptheta_windows_0.3_pre.exe
 ```
+
