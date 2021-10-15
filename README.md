@@ -44,14 +44,23 @@ and thetaf packages on mobile or desktop applications
 
 ## Mobile App Testing
 
+![thumb demo](docs/images/thumb.gif)
+
 The command line scripts can run on iOS and Android devices using
 Flutter.
+
+Mobile app demonstrations can show the expected behavior of the API
+or workaround.  For Example, the demonstration above shows a workaround
+for the SC2 camera.listFiles problem with returning thumbnail data.
+
+The demonstration shows 343 thumbnails from the SC2, quickly illustrating
+that it's possible to pull all the thumbnail images from the camera.
 
 
 
 ## Summary of Findings
 
-* camera.listFiles only shows 100 files regardless of if entry count is higher.  Possible startPosition workaround
+* camera.listFiles only shows 100 files regardless of if entry count is higher.  Example  startPosition workaround
 * SC2 API to get thumbnails is broken when using `camera.listFiles` and
 `maxThumbSize` of 640. [more information](docs/sc2/thumbnail_problem.md)  TODO: add summary of test to this repo and workaround
 * SC2 live preview stops when other API commands are given. TODO: test
