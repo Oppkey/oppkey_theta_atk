@@ -98,7 +98,7 @@ packages:
       path: "packages/theta"
       relative: true
     source: path
-    version: "0.0.1"
+    version: "0.3.0"
   typed_data:
     dependency: transitive
     description:

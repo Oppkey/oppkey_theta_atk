@@ -42,7 +42,7 @@ displaying live preview on RICOH THETA cameras
 * oppkey_theta_atk_flutter - demonstration of using the theta
 and thetaf packages on mobile or desktop applications
 
-## Mobile App Testing
+## Mobile App Testing (not SDK)
 
 ![thumb demo](docs/images/thumb.gif)
 
@@ -56,6 +56,9 @@ for the SC2 camera.listFiles problem with returning thumbnail data.
 The demonstration shows 343 thumbnails from the SC2, quickly illustrating
 that it's possible to pull all the thumbnail images from the camera.
 
+The Flutter app is a demonstration of the API and is not intended
+for used as an SDK.  We do not recommend you use the code
+as a basis for production applications.
 
 
 ## Summary of Findings
