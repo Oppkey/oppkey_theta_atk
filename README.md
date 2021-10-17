@@ -63,9 +63,8 @@ as a basis for production applications.
 
 ## Summary of Findings
 
+* SC2 API to get thumbnails is broken when using `camera.listFiles` and`maxThumbSize` of 640. [More information](docs/sc2/thumbnail_problem.md)  
 * camera.listFiles only shows 100 files regardless of if entry count is higher.  Example  startPosition workaround
-* SC2 API to get thumbnails is broken when using `camera.listFiles` and
-`maxThumbSize` of 640. [more information](docs/sc2/thumbnail_problem.md)  TODO: add summary of test to this repo and workaround
 * SC2 live preview stops when other API commands are given. TODO: test
 * cannot set preview parameters of SC2 live preview. TODO: test and document
 * SC2 check for camera status after interval or bracket shooting
