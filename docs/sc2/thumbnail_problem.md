@@ -34,6 +34,7 @@ try {
 
 ## Test Environment
 
+* SC2
 * "firmwareVersion": "01.64"
 
 ## Test Procedure
@@ -46,3 +47,4 @@ try {
 ## More Information
 
 * If you'd like a detailed description with code examples, please go to [https://theta360.guide/special/sc2/](https://theta360.guide/special/sc2/) and by entering your email address, you will have access to a wide range of SC2 articles and videos. Under the list of Articles, grab "Getting thumbnails from the RICOH THETA SC2" (PDF).
+* Video tutorial: [Comparing listFiles Thumbnail Command for RICOH THETA Z1, V and SC2](https://youtu.be/ZAiZy53YtkU)
