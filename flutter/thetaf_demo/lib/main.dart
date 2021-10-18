@@ -13,12 +13,32 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: ThetaWindow(
-          child: Column(
-            children: [
-              Container(
-                color: Colors.grey,
-              )
-            ],
+          child: Padding(
+            padding: const EdgeInsets.all(14.0),
+            child: Column(
+              children: [
+                const ResponseWindow(
+                  flex: 5,
+                ),
+                Expanded(
+                  flex: 2,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: const [
+                      InfoButton(),
+                      StateButton(),
+                      TakePictureButton()
+                    ],
+                  ),
+                ),
+                Expanded(
+                  flex: 2,
+                  child: Row(
+                    children: const [GetOptionsButton()],
+                  ),
+                )
+              ],
+            ),
           ),
         ),
       ),
