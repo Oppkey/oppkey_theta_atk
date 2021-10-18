@@ -19,16 +19,17 @@ The sequence of actions is:
 6. Return array
 
 Example code snippet:
-```
+
+```dart
 try {
-// loop through list of urls
-for (var i = 0; i < urls.length; i++) {
-var response =
-await client.get('${urls[i]}?type=thumb', headers: headers);
-print(response.statusCode);
-print('loading file ${i + 1}');
-thumbs.add(response.bodyBytes);
-}
+    // loop through list of urls
+    for (var i = 0; i < urls.length; i++) {
+        var response =
+        await client.get('${urls[i]}?type=thumb', headers: headers);
+        print(response.statusCode);
+        print('loading file ${i + 1}');
+        thumbs.add(response.bodyBytes);
+    }
 ```
 
 ## Test Environment
