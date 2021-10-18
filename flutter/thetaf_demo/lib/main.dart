@@ -21,7 +21,7 @@ class MainApp extends StatelessWidget {
                   flex: 5,
                 ),
                 Expanded(
-                  flex: 3,
+                  flex: 2,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: const [
@@ -29,6 +29,12 @@ class MainApp extends StatelessWidget {
                       StateButton(),
                       TakePictureButton()
                     ],
+                  ),
+                ),
+                Expanded(
+                  flex: 2,
+                  child: Row(
+                    children: const [GetOptionsButton()],
                   ),
                 )
               ],
