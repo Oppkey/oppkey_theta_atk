@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
-class HomeResponse extends StatelessWidget {
+class ResponseWindow extends StatelessWidget {
   final int flex;
-  const HomeResponse({
+  const ResponseWindow({
     required this.flex,
     Key? key,
   }) : super(key: key);
@@ -13,6 +13,10 @@ class HomeResponse extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
         flex: flex,
-        child: Text(context.watch<ResponseNotifier>().responseText));
+        child: SingleChildScrollView(
+            child: SizedBox(
+                width: double.infinity,
+                child: SelectableText(
+                    context.watch<ResponseNotifier>().responseText))));
   }
 }
