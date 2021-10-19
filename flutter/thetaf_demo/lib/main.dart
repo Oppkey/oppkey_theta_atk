@@ -34,7 +34,11 @@ class MainApp extends StatelessWidget {
                 Expanded(
                   flex: 2,
                   child: Row(
-                    children: const [GetOptionsButton()],
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: const [
+                      Z1GetOptionsButton(),
+                      Sc2GetOptionsButton()
+                    ],
                   ),
                 )
               ],

@@ -3,13 +3,13 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
-class Z1GetOptionsButton extends StatelessWidget {
+class Sc2GetOptionsButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;
   final bool autofocus;
   final Clip clipBehavior;
 
-  const Z1GetOptionsButton({
+  const Sc2GetOptionsButton({
     Key? key,
     this.style,
     this.focusNode,
@@ -24,12 +24,11 @@ class Z1GetOptionsButton extends StatelessWidget {
         focusNode: focusNode,
         autofocus: autofocus,
         clipBehavior: clipBehavior,
-        // onPressed: () => z1GetOptions(context),
         onPressed: () async {
-          var response = await getZ1Options();
+          var response = await getSc2Options();
           Provider.of<ResponseNotifier>(context, listen: false)
               .setResponseText(response);
         },
-        child: const Text('Z1 options'));
+        child: const Text('SC2 options'));
   }
 }
