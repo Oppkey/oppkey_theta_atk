@@ -14,3 +14,4 @@ export 'src/get_live_preview_working_old.dart';
 export 'src/sc2_get_live_preview.dart';
 export 'src/thumb_get_bytes.dart';
 export 'src/sc2_thumb_get_bytes.dart';
+export 'src/get_last_image_url.dart';

@@ -25,8 +25,8 @@ class MainApp extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: const [
-                      InfoButton(),
                       StateButton(),
+                      InfoButton(),
                       TakePictureButton()
                     ],
                   ),
