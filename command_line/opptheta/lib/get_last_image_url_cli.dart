@@ -11,7 +11,6 @@ class GetLastImageUrl extends Command {
   @override
   void run() async {
     String response = await theta.getLastImageUrl();
-    print('last image url');
     print(response);
   }
 }

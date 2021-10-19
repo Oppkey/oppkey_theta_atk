@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:args/command_runner.dart';
 import 'package:opptheta/get_last_image_url_cli.dart';
+import 'package:opptheta/get_z1_options_cli.dart';
 import 'package:opptheta/image_mode_cli.dart';
 import 'package:opptheta/info.dart';
 import 'package:opptheta/interval_shoot.dart';
@@ -35,7 +36,8 @@ void main(List<String> arguments) async {
     ..addCommand(PrintFrames())
     ..addCommand(Sc2SaveFrames())
     ..addCommand(Thumb())
-    ..addCommand(GetLastImageUrl());
+    ..addCommand(GetLastImageUrl())
+    ..addCommand(GetZ1Options());
 
   await runner.run(arguments).catchError((error) {
     if (error is! UsageException) throw error;
