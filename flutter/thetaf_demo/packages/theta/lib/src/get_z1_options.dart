@@ -9,7 +9,12 @@ Future<String> getZ1Options() async {
       'offDelay',
       'exposureProgram',
       'sleepDelay',
-      'videoStitching'
+      'videoStitching',
+      'dateTimeZone',
+      'aperture',
+      '_authentication',
+      '_autoBracket',
+      '_bitrate',
     ]
   });
   return response.toString();
