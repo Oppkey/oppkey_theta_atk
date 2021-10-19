@@ -4,17 +4,7 @@ import 'package:provider/provider.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
 Future<void> z1GetOptions(BuildContext context) async {
-  var response = await theta.command('getOptions', parameters: {
-    'optionNames': [
-      "iso",
-      "isoSupport",
-      "captureMode",
-      'offDelay',
-      'exposureProgram',
-      'sleepDelay',
-      'videoStitching'
-    ]
-  });
+  var response = await theta.getZ1Options();
   Provider.of<ResponseNotifier>(context, listen: false)
       .setResponseText(response);
 }
