@@ -24,7 +24,6 @@ class Z1GetOptionsButton extends StatelessWidget {
         focusNode: focusNode,
         autofocus: autofocus,
         clipBehavior: clipBehavior,
-        // onPressed: () => z1GetOptions(context),
         onPressed: () async {
           var response = await getZ1Options();
           Provider.of<ResponseNotifier>(context, listen: false)
