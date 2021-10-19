@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:thetaf/src/command/z1_get_options.dart';
+import 'package:provider/provider.dart';
+import 'package:theta/theta.dart';
+import 'package:thetaf/src/model/response_notifier.dart';
 
 class GetOptionsButton extends StatelessWidget {
   final ButtonStyle? style;
@@ -22,7 +24,12 @@ class GetOptionsButton extends StatelessWidget {
         focusNode: focusNode,
         autofocus: autofocus,
         clipBehavior: clipBehavior,
-        onPressed: () => z1GetOptions(context),
+        // onPressed: () => z1GetOptions(context),
+        onPressed: () async {
+          var response = await getZ1Options();
+          Provider.of<ResponseNotifier>(context, listen: false)
+              .setResponseText(response);
+        },
         child: const Text('Z1 options'));
   }
 }
