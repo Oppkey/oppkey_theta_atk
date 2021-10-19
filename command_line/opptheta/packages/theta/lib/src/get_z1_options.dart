@@ -14,6 +14,7 @@ Future<String> getZ1Options() async {
       'aperture',
       '_authentication',
       '_autoBracket',
+      '_bitrate',
     ]
   });
   return response.toString();
