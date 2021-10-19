@@ -13,6 +13,7 @@ Future<String> getZ1Options() async {
       'dateTimeZone',
       'aperture',
       '_authentication',
+      '_autoBracket',
     ]
   });
   return response.toString();
