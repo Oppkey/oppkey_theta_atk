@@ -12,6 +12,7 @@ Future<String> getSc2Options() async {
       '_autoBracket',
       '_bitrate',
       '_bluetoothPower',
+      'captureInterval',
     ]
   });
   return response.toString();
