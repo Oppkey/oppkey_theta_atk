@@ -19,6 +19,7 @@ Future<String> getZ1Options() async {
       '_bluetoothRole',
       'captureInterval',
       'captureMode',
+      'captureNumber',
     ]
   });
   return response.toString();
