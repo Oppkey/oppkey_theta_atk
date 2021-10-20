@@ -20,6 +20,7 @@ Future<String> getSc2Options() async {
       'dateTimeZone',
       'exposureCompensation',
       'exposureDelay',
+      'fileFormat',
     ]
   });
   return response.toString();
