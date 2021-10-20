@@ -29,6 +29,7 @@ Future<String> getZ1Options() async {
       'fileFormat',
       '_filter',
       '_function',
+      '_gain',
     ]
   });
   return response.toString();
