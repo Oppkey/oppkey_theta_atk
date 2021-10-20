@@ -21,9 +21,14 @@ class HomeScreen extends StatelessWidget {
                   Navigator.pushNamed(context, '/file');
                 }),
             ListTile(
-                title: const Text('Camera'),
+                title: const Text('Camera Settings'),
                 onTap: () {
                   Navigator.pushNamed(context, '/camera');
+                }),
+            ListTile(
+                title: const Text('Camera Use'),
+                onTap: () {
+                  Navigator.pushNamed(context, '/use');
                 }),
           ],
         ),
@@ -43,7 +48,6 @@ class HomeScreen extends StatelessWidget {
                   children: const [
                     StateButton(),
                     InfoButton(),
-                    TakePictureButton()
                   ],
                 ),
               ),
