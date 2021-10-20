@@ -35,6 +35,7 @@ Future<String> getZ1Options() async {
       'iso',
       'isoAutoHighLimit',
       '_language',
+      '_latestEnabledExposureDelayTime',
     ]
   });
   return response.toString();
