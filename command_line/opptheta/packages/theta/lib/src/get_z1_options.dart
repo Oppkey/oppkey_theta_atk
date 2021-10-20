@@ -34,6 +34,7 @@ Future<String> getZ1Options() async {
       '_imageStitching',
       'iso',
       'isoAutoHighLimit',
+      '_language',
     ]
   });
   return response.toString();
