@@ -26,6 +26,7 @@ Future<String> getSc2Options() async {
       '_gain',
       'gpsInfo',
       'isoAutoHighLimit',
+      '_latestEnabledExposureDelayTime',
     ]
   });
   return response.toString();
