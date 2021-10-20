@@ -46,6 +46,7 @@ Future<String> getZ1Options() async {
       'remainingSpace',
       'remainingVideoSeconds',
       'shutterSpeed',
+      '_shutterVolume',
     ]
   });
   return response.toString();
