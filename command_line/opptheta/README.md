@@ -50,6 +50,37 @@ Available commands:
 Run "opptheta help <command>" for more information about a command.
 ```
 
+## Available Options
+The THETA API has options that can be set. opptheta includes all options that are available. As of Oct 20, 2021, there are 51 options total.
+
+6 options can not be used with Z1
+* _bluetoothClassicEnable
+* _HDMIreso - only S and SC
+* _password 
+* _shootingMethod
+* _username
+* _wlanChannel
+
+18 options can not be used with SC2
+* aperture
+* _authentication
+* _compositeShootingOutputInterval
+* _compositeShootingTime
+* _HDMIreso - only  S and SC
+* _imageStitching
+* _language
+* _microphone
+* _microphoneChannel
+* _networkType
+* _password
+* _shootingMethod
+* _timeShift - Docs show supported by SC2B, not SC2 (currently testing with SC2)
+* _topBottomCorrection
+* _username
+* videoStitching
+* _visibilityReduction
+* _wlanFrequency
+
 ## Decoding Thumbnails
 
 On Linux or WSL, follow these steps:
