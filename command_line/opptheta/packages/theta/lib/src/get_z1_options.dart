@@ -40,6 +40,7 @@ Future<String> getZ1Options() async {
       '_microphone',
       '_microphoneChannel',
       '_networkType',
+      'offDelay',
     ]
   });
   return response.toString();
