@@ -15,6 +15,7 @@ Future<String> getSc2Options() async {
       'captureInterval',
       'captureMode',
       'captureNumber',
+      'clientVersion',
     ]
   });
   return response.toString();
