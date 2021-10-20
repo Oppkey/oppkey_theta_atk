@@ -20,6 +20,7 @@ Future<String> getZ1Options() async {
       'captureInterval',
       'captureMode',
       'captureNumber',
+      'clientVersion',
     ]
   });
   return response.toString();
