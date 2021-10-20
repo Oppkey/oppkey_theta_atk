@@ -37,6 +37,7 @@ Future<String> getSc2Options() async {
       '_shutterVolume',
       'totalSpace',
       'whiteBalance',
+      '_wlanChannel',
     ]
   });
   return response.toString();
