@@ -43,6 +43,7 @@ Future<String> getZ1Options() async {
       'offDelay',
       'previewFormat',
       'remainingPictures',
+      'remainingSpace',
     ]
   });
   return response.toString();
