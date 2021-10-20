@@ -36,6 +36,7 @@ Future<String> getSc2Options() async {
       'shutterSpeed',
       '_shutterVolume',
       'totalSpace',
+      'whiteBalance',
     ]
   });
   return response.toString();
