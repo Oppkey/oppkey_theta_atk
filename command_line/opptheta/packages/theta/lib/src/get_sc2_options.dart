@@ -10,6 +10,7 @@ Future<String> getSc2Options() async {
       'exposureProgram',
       'sleepDelay',
       '_autoBracket',
+      '_bitrate',
     ]
   });
   return response.toString();
