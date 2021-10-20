@@ -47,6 +47,7 @@ Future<String> getZ1Options() async {
       'remainingVideoSeconds',
       'shutterSpeed',
       '_shutterVolume',
+      '_timeShift',
     ]
   });
   return response.toString();
