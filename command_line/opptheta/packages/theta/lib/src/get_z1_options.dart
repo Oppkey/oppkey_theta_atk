@@ -53,6 +53,7 @@ Future<String> getZ1Options() async {
       'videoStitching',
       '_visibilityReduction',
       'whiteBalance',
+      '_wlanFrequency',
     ]
   });
   return response.toString();
