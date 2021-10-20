@@ -13,6 +13,7 @@ Future<String> getSc2Options() async {
       '_bitrate',
       '_bluetoothPower',
       'captureInterval',
+      'captureMode',
     ]
   });
   return response.toString();
