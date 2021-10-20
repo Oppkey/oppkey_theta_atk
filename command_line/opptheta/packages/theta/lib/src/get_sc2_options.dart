@@ -30,6 +30,7 @@ Future<String> getSc2Options() async {
       '_maxRecordableTime',
       '_preset',
       'previewFormat',
+      'remainingPictures',
     ]
   });
   return response.toString();
