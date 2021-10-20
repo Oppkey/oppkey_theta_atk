@@ -32,6 +32,7 @@ Future<String> getSc2Options() async {
       'previewFormat',
       'remainingPictures',
       'remainingSpace',
+      'remainingVideoSeconds',
     ]
   });
   return response.toString();
