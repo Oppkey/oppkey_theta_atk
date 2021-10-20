@@ -21,6 +21,7 @@ Future<String> getSc2Options() async {
       'exposureCompensation',
       'exposureDelay',
       'fileFormat',
+      '_filter',
     ]
   });
   return response.toString();
