@@ -34,6 +34,7 @@ Future<String> getSc2Options() async {
       'remainingSpace',
       'remainingVideoSeconds',
       'shutterSpeed',
+      '_shutterVolume',
     ]
   });
   return response.toString();
