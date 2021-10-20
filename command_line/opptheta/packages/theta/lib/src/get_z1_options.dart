@@ -33,6 +33,7 @@ Future<String> getZ1Options() async {
       'gpsInfo',
       '_imageStitching',
       'iso',
+      'isoAutoHighLimit',
     ]
   });
   return response.toString();
