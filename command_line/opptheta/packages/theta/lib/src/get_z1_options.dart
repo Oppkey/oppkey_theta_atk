@@ -44,6 +44,7 @@ Future<String> getZ1Options() async {
       'previewFormat',
       'remainingPictures',
       'remainingSpace',
+      'remainingVideoSeconds',
     ]
   });
   return response.toString();
