@@ -18,6 +18,7 @@ Future<String> getSc2Options() async {
       'clientVersion',
       '_colorTemperature',
       'dateTimeZone',
+      'exposureCompensation',
     ]
   });
   return response.toString();
