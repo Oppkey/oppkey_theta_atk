@@ -32,6 +32,7 @@ Future<String> getZ1Options() async {
       '_gain',
       'gpsInfo',
       '_imageStitching',
+      'iso',
     ]
   });
   return response.toString();
