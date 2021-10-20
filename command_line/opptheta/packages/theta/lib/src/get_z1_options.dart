@@ -51,6 +51,7 @@ Future<String> getZ1Options() async {
       '_topBottomCorrection',
       'totalSpace',
       'videoStitching',
+      '_visibilityReduction',
     ]
   });
   return response.toString();
