@@ -39,6 +39,7 @@ Future<String> getZ1Options() async {
       '_maxRecordableTime',
       '_microphone',
       '_microphoneChannel',
+      '_networkType',
     ]
   });
   return response.toString();
