@@ -9,6 +9,7 @@ Future<String> getSc2Options() async {
       'offDelay',
       'exposureProgram',
       'sleepDelay',
+      '_autoBracket',
     ]
   });
   return response.toString();
