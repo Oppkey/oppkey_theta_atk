@@ -42,6 +42,7 @@ Future<String> getZ1Options() async {
       '_networkType',
       'offDelay',
       'previewFormat',
+      'remainingPictures',
     ]
   });
   return response.toString();
