@@ -11,6 +11,7 @@ Future<String> getSc2Options() async {
       'sleepDelay',
       '_autoBracket',
       '_bitrate',
+      '_bluetoothPower',
     ]
   });
   return response.toString();
