@@ -22,6 +22,7 @@ Future<String> getZ1Options() async {
       'captureNumber',
       'clientVersion',
       '_colorTemperature',
+      '_compositeShootingOutputInterval',
     ]
   });
   return response.toString();
