@@ -47,10 +47,20 @@ class DownloadVideoButton extends StatelessWidget {
               'file size: $fileSize\n';
           Provider.of<ResponseNotifier>(context, listen: false)
               .setResponseText(responseText);
-          var videoFile = File(join(path, filename)).create(recursive: true);
+          print('creating file $path/$filename');
+          var videoFile =
+              await File(join(path, filename)).create(recursive: true);
           var url = Uri.parse(fileUrl);
-          var videoData = await http.get(url);
-          print('finished download');
+          print('started download');
+          try {
+            var videoData = await http.get(url);
+            print('finished download');
+            print('writing file');
+            await videoFile.writeAsBytes(videoData.bodyBytes);
+            print('finished writing file');
+          } catch (error) {
+            print(error);
+          }
         },
         child: const Text('Download Video'));
   }

@@ -14,7 +14,7 @@ class FileScreen extends StatefulWidget {
 class _FileScreenState extends State<FileScreen> {
   String path = '';
   void getDocsDirectory() async {
-    Directory docDir = await getApplicationDocumentsDirectory();
+    var docDir = await getApplicationDocumentsDirectory();
     print(docDir);
     path = docDir.toString();
   }
