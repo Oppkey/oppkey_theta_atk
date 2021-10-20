@@ -25,6 +25,7 @@ Future<String> getZ1Options() async {
       '_compositeShootingOutputInterval',
       '_compositeShootingTime',
       'exposureCompensation',
+      'exposureDelay',
     ]
   });
   return response.toString();
