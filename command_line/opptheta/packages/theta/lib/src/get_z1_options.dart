@@ -38,6 +38,7 @@ Future<String> getZ1Options() async {
       '_latestEnabledExposureDelayTime',
       '_maxRecordableTime',
       '_microphone',
+      '_microphoneChannel',
     ]
   });
   return response.toString();
