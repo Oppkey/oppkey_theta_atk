@@ -20,6 +20,11 @@ class HomeScreen extends StatelessWidget {
                 onTap: () {
                   Navigator.pushNamed(context, '/file');
                 }),
+            ListTile(
+                title: const Text('Camera'),
+                onTap: () {
+                  Navigator.pushNamed(context, '/camera');
+                }),
           ],
         ),
       ),
