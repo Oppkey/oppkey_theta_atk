@@ -16,6 +16,13 @@ Future<String> getZ1Options() async {
       '_autoBracket',
       '_bitrate',
       '_bluetoothPower',
+      '_bluetoothRole',
+      'captureInterval',
+      'captureMode',
+      'captureNumber',
+      'clientVersion',
+      '_colorTemperature',
+      '_compositeShootingOutputInterval',
     ]
   });
   return response.toString();
