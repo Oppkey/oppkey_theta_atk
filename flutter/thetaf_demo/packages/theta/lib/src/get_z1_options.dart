@@ -15,6 +15,7 @@ Future<String> getZ1Options() async {
       '_authentication',
       '_autoBracket',
       '_bitrate',
+      '_bluetoothPower',
     ]
   });
   return response.toString();

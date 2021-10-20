@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:thetaf/thetaf.dart';
+import 'package:thetaf_demo/view/screens/file_screen.dart';
+import 'view/screens/home_screen.dart';
 
 void main() {
   runApp(const MainApp());
@@ -11,41 +12,12 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        body: ThetaWindow(
-          child: Padding(
-            padding: const EdgeInsets.all(14.0),
-            child: Column(
-              children: [
-                const ResponseWindow(
-                  flex: 5,
-                ),
-                Expanded(
-                  flex: 2,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: const [
-                      StateButton(),
-                      InfoButton(),
-                      TakePictureButton()
-                    ],
-                  ),
-                ),
-                Expanded(
-                  flex: 2,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: const [
-                      Z1GetOptionsButton(),
-                      Sc2GetOptionsButton()
-                    ],
-                  ),
-                )
-              ],
-            ),
-          ),
-        ),
-      ),
+      title: 'Oppkey thetaf demo',
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const HomeScreen(),
+        '/file': (context) => const FileScreen(),
+      },
     );
   }
 }
