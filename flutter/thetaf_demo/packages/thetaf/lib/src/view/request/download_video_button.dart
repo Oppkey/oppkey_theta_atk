@@ -1,15 +1,20 @@
 import 'dart:convert';
+import 'dart:core';
+import 'dart:io';
+import 'package:path/path.dart';
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
+import 'package:http/http.dart' as http;
 
 class DownloadVideoButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;
   final bool autofocus;
   final Clip clipBehavior;
+  final String path;
 
   const DownloadVideoButton({
     Key? key,
@@ -17,6 +22,7 @@ class DownloadVideoButton extends StatelessWidget {
     this.focusNode,
     this.autofocus = false,
     this.clipBehavior = Clip.none,
+    required this.path,
   }) : super(key: key);
 
   @override
@@ -41,6 +47,10 @@ class DownloadVideoButton extends StatelessWidget {
               'file size: $fileSize\n';
           Provider.of<ResponseNotifier>(context, listen: false)
               .setResponseText(responseText);
+          var videoFile = File(join(path, filename)).create(recursive: true);
+          var url = Uri.parse(fileUrl);
+          var videoData = await http.get(url);
+          print('finished download');
         },
         child: const Text('Download Video'));
   }

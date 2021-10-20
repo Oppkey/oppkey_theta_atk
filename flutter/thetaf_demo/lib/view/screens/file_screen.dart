@@ -12,9 +12,11 @@ class FileScreen extends StatefulWidget {
 }
 
 class _FileScreenState extends State<FileScreen> {
+  String path = '';
   void getDocsDirectory() async {
     Directory docDir = await getApplicationDocumentsDirectory();
     print(docDir);
+    path = docDir.toString();
   }
 
   @override
@@ -36,7 +38,7 @@ class _FileScreenState extends State<FileScreen> {
                         getDocsDirectory();
                       },
                       child: const Text('get path')),
-                  const DownloadVideoButton(),
+                  DownloadVideoButton(path: path),
                 ],
               ),
             )
