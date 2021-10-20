@@ -17,6 +17,7 @@ Future<String> getSc2Options() async {
       'captureNumber',
       'clientVersion',
       '_colorTemperature',
+      'dateTimeZone',
     ]
   });
   return response.toString();
