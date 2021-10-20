@@ -28,6 +28,7 @@ Future<String> getSc2Options() async {
       'isoAutoHighLimit',
       '_latestEnabledExposureDelayTime',
       '_maxRecordableTime',
+      '_preset',
     ]
   });
   return response.toString();
