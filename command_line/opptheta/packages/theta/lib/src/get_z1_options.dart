@@ -49,6 +49,7 @@ Future<String> getZ1Options() async {
       '_shutterVolume',
       '_timeShift',
       '_topBottomCorrection',
+      'totalSpace',
     ]
   });
   return response.toString();
