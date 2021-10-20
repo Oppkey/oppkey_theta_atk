@@ -27,6 +27,7 @@ Future<String> getZ1Options() async {
       'exposureCompensation',
       'exposureDelay',
       'fileFormat',
+      '_filter',
     ]
   });
   return response.toString();
