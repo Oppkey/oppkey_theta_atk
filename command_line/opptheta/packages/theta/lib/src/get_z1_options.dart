@@ -50,6 +50,7 @@ Future<String> getZ1Options() async {
       '_timeShift',
       '_topBottomCorrection',
       'totalSpace',
+      'videoStitching',
     ]
   });
   return response.toString();
