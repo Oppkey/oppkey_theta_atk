@@ -24,6 +24,7 @@ Future<String> getSc2Options() async {
       '_filter',
       '_function',
       '_gain',
+      'gpsInfo',
     ]
   });
   return response.toString();
