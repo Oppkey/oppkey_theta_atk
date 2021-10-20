@@ -29,6 +29,7 @@ Future<String> getSc2Options() async {
       '_latestEnabledExposureDelayTime',
       '_maxRecordableTime',
       '_preset',
+      'previewFormat',
     ]
   });
   return response.toString();
