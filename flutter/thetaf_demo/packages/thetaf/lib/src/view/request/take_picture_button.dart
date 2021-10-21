@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:thetaf/src/command/take_picture_ready.dart';
+import 'package:thetaf/src/command/command.dart';
 
 class TakePictureButton extends StatelessWidget {
   final ButtonStyle? style;
@@ -22,7 +22,7 @@ class TakePictureButton extends StatelessWidget {
         focusNode: focusNode,
         autofocus: autofocus,
         clipBehavior: clipBehavior,
-        onPressed: () => takePictureReady(context),
+        onPressed: () => takePictureThumb(context),
         child: const Text('take picture'));
   }
 }

@@ -5,7 +5,7 @@ import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 import 'package:thetaf/src/model/window_notifier.dart';
 
-Future<void> takePictureReady(BuildContext context) async {
+Future<void> takePictureThumb(BuildContext context) async {
   Stopwatch stopwatch = Stopwatch();
   stopwatch.start();
   var response = await command('takePicture');
@@ -37,5 +37,8 @@ Future<void> takePictureReady(BuildContext context) async {
   Provider.of<ResponseNotifier>(context, listen: false)
       .setResponseText(responseText);
   stopwatch.stop();
+  List<String> thumbData = await sc2ThumbGetBytes();
+  Provider.of<WindowNotifier>(context, listen: false).setThumbData(thumbData);
+
   Provider.of<WindowNotifier>(context, listen: false).setShowThumbWindow(true);
 }
