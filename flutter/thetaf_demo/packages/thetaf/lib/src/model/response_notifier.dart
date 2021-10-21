@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/widgets.dart';
 
 class ResponseNotifier extends ChangeNotifier {
   String _responseText = 'camera response';

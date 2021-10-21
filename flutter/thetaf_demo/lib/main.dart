@@ -5,7 +5,9 @@ import 'package:thetaf_demo/view/screens/use_screen.dart';
 import 'view/screens/home_screen.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(
+    const MainApp(),
+  );
 }
 
 class MainApp extends StatelessWidget {
