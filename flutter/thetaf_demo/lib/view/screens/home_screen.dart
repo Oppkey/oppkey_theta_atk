@@ -55,9 +55,32 @@ class HomeScreen extends StatelessWidget {
                 flex: 2,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: const [
-                    StateButton(),
-                    InfoButton(),
+                  children: [
+                    StateButton(
+                      // this is an example of changing the buttonStyle
+                      // it is better to change the theme for all the
+                      // buttons when possible
+                      // this is just to show what is possible.
+                      // it is not a best practice to do this inline
+                      style: ButtonStyle(
+                        textStyle: MaterialStateProperty.all<TextStyle>(
+                            const TextStyle(fontSize: 40)),
+                        backgroundColor:
+                            MaterialStateProperty.all<Color>(Colors.lightGreen),
+                        foregroundColor:
+                            MaterialStateProperty.all<Color>(Colors.white),
+                      ),
+                    ),
+                    InfoButton(
+                      style: ButtonStyle(
+                        textStyle: MaterialStateProperty.all<TextStyle>(
+                            const TextStyle(fontSize: 40)),
+                        backgroundColor:
+                            MaterialStateProperty.all<Color>(Colors.orange),
+                        foregroundColor:
+                            MaterialStateProperty.all<Color>(Colors.white),
+                      ),
+                    ),
                   ],
                 ),
               ),
