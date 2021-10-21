@@ -52,6 +52,7 @@ class ExposureProgramButton extends StatelessWidget {
               response = await setOption(
                   name: 'exposureProgram', value: exposureProgramValue);
 
+              await Future.delayed(const Duration(milliseconds: 250));
               var responseCheck = await command('getOptions', parameters: {
                 'optionNames': ['exposureProgram']
               });

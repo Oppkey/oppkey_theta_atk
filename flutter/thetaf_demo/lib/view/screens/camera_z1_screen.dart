@@ -11,13 +11,23 @@ class CameraZ1Screen extends StatelessWidget {
         title: const Text('Z1 Specific Options'),
       ),
       body: ThetaWindow(
-          child: Column(
-        children: [
-          const ResponseWindow(flex: 8),
-          Row(
-            children: const [InfoButton()],
-          )
-        ],
+          child: Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: Column(
+          children: [
+            const ResponseWindow(flex: 8),
+            Expanded(
+              flex: 2,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: const [
+                  InfoButton(),
+                  ExposureProgramButton(),
+                ],
+              ),
+            )
+          ],
+        ),
       )),
     );
   }

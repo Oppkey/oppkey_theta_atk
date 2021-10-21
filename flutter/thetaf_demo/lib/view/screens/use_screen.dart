@@ -18,7 +18,6 @@ class UseScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: const [
                   TakePictureButton(),
-                  ExposureProgramButton(),
                 ],
               ),
             ),
