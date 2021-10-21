@@ -7,4 +7,11 @@ class WindowNotifier extends ChangeNotifier {
     _showThumbWindow = showThumbWindow;
     notifyListeners();
   }
+
+  List<String> _thumbData = [];
+  List<String> get thumbData => _thumbData;
+  void setThumbData(thumbData) {
+    _thumbData = thumbData;
+    notifyListeners();
+  }
 }
