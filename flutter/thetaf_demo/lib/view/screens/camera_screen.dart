@@ -21,6 +21,7 @@ class CameraScreen extends StatelessWidget {
                   ResetButton(),
                   DisableSleepDelayButton(),
                   EnableSleepDelayButton(),
+                  EnablePowerOffButton(),
                 ],
               ),
             ),

@@ -9,3 +9,4 @@ export 'request/download_video_button.dart';
 export 'request/reset_button.dart';
 export 'request/disable_sleep_delay_button.dart';
 export 'request/enable_sleep_delay_button.dart';
+export 'request/enable_power_off_button.dart';
