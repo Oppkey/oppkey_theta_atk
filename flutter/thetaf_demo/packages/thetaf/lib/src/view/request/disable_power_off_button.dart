@@ -26,6 +26,23 @@ class DisablePowerOffButton extends StatelessWidget {
         clipBehavior: clipBehavior,
         onPressed: () async {
           var response = await setOption(name: 'offDelay', value: 0);
+          // set title for response. Edit the line below
+          // for each option
+          response = 'attempting to set option for offDelay\n'
+                  '-------------------\n' +
+              response;
+
+          // delay 250ms before sending the camera another command
+          await Future.delayed(const Duration(milliseconds: 250));
+          // send command to check the option you just set
+          var responseCheck = await command('getOptions', parameters: {
+            'optionNames': ['offDelay']
+          });
+          // combine the two strings
+          response += '\nCheck the information below to verify option was set\n'
+              'We are using getOptions to pull the new value from the camera\n'
+              '\n$responseCheck';
+
           Provider.of<ResponseNotifier>(context, listen: false)
               .setResponseText(response);
         },
