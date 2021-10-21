@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+//TODO: this button does not work
+// need to add commands when the item is selected
 class ExposureProgramButton extends StatelessWidget {
   const ExposureProgramButton({Key? key}) : super(key: key);
 
