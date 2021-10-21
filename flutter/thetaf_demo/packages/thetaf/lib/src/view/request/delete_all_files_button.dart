@@ -24,6 +24,7 @@ class DeleteAllFilesButton extends StatelessWidget {
         focusNode: focusNode,
         autofocus: autofocus,
         clipBehavior: clipBehavior,
+        //TODO: This button works great now but needs to be tested more
         onPressed: () async {
           var response = await command('delete', parameters: {
             'fileUrls': ['all']

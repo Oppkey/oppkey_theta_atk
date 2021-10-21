@@ -26,6 +26,16 @@ class HomeScreen extends StatelessWidget {
                   Navigator.pushNamed(context, '/camera');
                 }),
             ListTile(
+                title: const Text('Z1 Settings'),
+                onTap: () {
+                  Navigator.pushNamed(context, '/cameraz1');
+                }),
+            ListTile(
+                title: const Text('SC2 Settings'),
+                onTap: () {
+                  Navigator.pushNamed(context, '/camerasc2');
+                }),
+            ListTile(
                 title: const Text('Camera Use'),
                 onTap: () {
                   Navigator.pushNamed(context, '/use');

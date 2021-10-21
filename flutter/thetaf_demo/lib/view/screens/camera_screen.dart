@@ -12,21 +12,58 @@ class CameraScreen extends StatelessWidget {
             child: Column(
           children: [
             const ResponseWindow(flex: 5),
-            Padding(
-              padding: const EdgeInsets.all(60.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: const [
-                  InfoButton(),
-                  ResetButton(),
-                  DisableSleepDelayButton(),
-                  EnableSleepDelayButton(),
-                  EnablePowerOffButton(),
-                  DisablePowerOffButton(),
-                  DeleteAllFilesButton(),
-                  List5FilesButton(),
-                ],
-              ),
+            // This row contains basic camera information commands
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: const [
+                InfoButton(),
+              ],
+            ),
+            const SizedBox(
+              height: 30,
+            ),
+            //This row is for controlling sleep settings.
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: const [
+                DisableSleepDelayButton(),
+                EnableSleepDelayButton(),
+              ],
+            ),
+            const SizedBox(
+              height: 30,
+            ),
+            //This rows is for controlling power off settings.
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: const [
+                EnablePowerOffButton(),
+                DisablePowerOffButton(),
+              ],
+            ),
+            const SizedBox(
+              height: 30,
+            ),
+            //This row contains commands that heavily change camera data or settings.
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: const [
+                DeleteAllFilesButton(),
+                ResetButton(),
+              ],
+            ),
+            const SizedBox(
+              height: 30,
+            ),
+            //This row is for getting information on files in the camera.
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: const [
+                List5FilesButton(),
+              ],
+            ),
+            const SizedBox(
+              height: 30,
             ),
           ],
         )));
