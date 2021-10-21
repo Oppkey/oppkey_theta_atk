@@ -32,7 +32,7 @@ Future<void> takePictureReady(BuildContext context) async {
   }
   responseText = responseText + '\nCamera is ready for next command';
   String url = await getLastImageUrl();
-  print(url);
+  // print(url);
   responseText += '\nFile is available at\n$url';
   Provider.of<ResponseNotifier>(context, listen: false)
       .setResponseText(responseText);

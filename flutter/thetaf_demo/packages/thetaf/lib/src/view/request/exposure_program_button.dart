@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:theta/theta.dart';
 
 //TODO: this button does not work
 // need to add commands when the item is selected
@@ -20,8 +21,34 @@ class ExposureProgramButton extends StatelessWidget {
                 child: Text(value),
               );
             }).toList(),
-            onChanged: (String? newValue) {
-              print('changed to $newValue');
+            onChanged: (String? newValue) async {
+              var response = '';
+              int exposureProgramValue = 2;
+
+              switch (newValue) {
+                case 'manual':
+                  exposureProgramValue = 1;
+                  break;
+                case 'normal':
+                  exposureProgramValue = 2;
+                  break;
+                case 'aperture':
+                  exposureProgramValue = 3;
+                  break;
+                case 'shutter':
+                  exposureProgramValue = 4;
+                  break;
+                case 'iso':
+                  exposureProgramValue = 5;
+                  break;
+                default:
+                  exposureProgramValue = 2;
+                  break;
+              }
+              response = await setOption(
+                  name: 'exposureProgram', value: exposureProgramValue);
+
+              print(response);
             },
           ),
         ],

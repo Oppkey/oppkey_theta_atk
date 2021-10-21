@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:thetaf/thetaf.dart';
 import 'package:path_provider/path_provider.dart';
@@ -15,7 +13,7 @@ class _FileScreenState extends State<FileScreen> {
   String path = '';
   void getDocsDirectory() async {
     var docDir = await getApplicationDocumentsDirectory();
-    print(docDir);
+    // print(docDir);
     path = docDir.toString();
   }
 
