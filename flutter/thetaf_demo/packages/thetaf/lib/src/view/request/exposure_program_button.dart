@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
+import 'package:thetaf/src/model/response_notifier.dart';
 
-//TODO: this button does not work
-// need to add commands when the item is selected
 class ExposureProgramButton extends StatelessWidget {
   const ExposureProgramButton({Key? key}) : super(key: key);
 
@@ -24,6 +24,10 @@ class ExposureProgramButton extends StatelessWidget {
             onChanged: (String? newValue) async {
               var response = '';
               int exposureProgramValue = 2;
+              String exposureProgramName = '';
+              if (newValue != null) {
+                exposureProgramName = newValue;
+              }
 
               switch (newValue) {
                 case 'manual':
@@ -39,7 +43,7 @@ class ExposureProgramButton extends StatelessWidget {
                   exposureProgramValue = 4;
                   break;
                 case 'iso':
-                  exposureProgramValue = 5;
+                  exposureProgramValue = 9;
                   break;
                 default:
                   exposureProgramValue = 2;
@@ -48,7 +52,14 @@ class ExposureProgramButton extends StatelessWidget {
               response = await setOption(
                   name: 'exposureProgram', value: exposureProgramValue);
 
-              print(response);
+              var responseCheck = await command('getOptions', parameters: {
+                'optionNames': ['exposureProgram']
+              });
+              response += '\n$responseCheck';
+              response += '------------------\n'
+                  'Exposure program now set to $exposureProgramName';
+              Provider.of<ResponseNotifier>(context, listen: false)
+                  .setResponseText(response);
             },
           ),
         ],
