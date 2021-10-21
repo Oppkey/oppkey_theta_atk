@@ -9,6 +9,7 @@ import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 import 'package:http/http.dart' as http;
 
+/// bad example.  Do not follow this
 class DownloadVideoButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;
