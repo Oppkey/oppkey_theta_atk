@@ -25,7 +25,7 @@ class EnablePowerOffButton extends StatelessWidget {
         autofocus: autofocus,
         clipBehavior: clipBehavior,
         onPressed: () async {
-          var response = await setOption(name: 'offDelay', value: 65535);
+          var response = await setOption(name: 'offDelay', value: 600);
           Provider.of<ResponseNotifier>(context, listen: false)
               .setResponseText(response);
         },
