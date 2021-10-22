@@ -80,15 +80,10 @@ class HomeScreen extends StatelessWidget {
                             MaterialStateProperty.all<Color>(Colors.white),
                       ),
                     ),
-                    InfoButton(
-                      style: ButtonStyle(
-                        textStyle: MaterialStateProperty.all<TextStyle>(
-                            const TextStyle(fontSize: 40)),
-                        backgroundColor:
-                            MaterialStateProperty.all<Color>(Colors.orange),
-                        foregroundColor:
-                            MaterialStateProperty.all<Color>(Colors.white),
-                      ),
+                    const InfoButton(
+                      fontSize: 40,
+                      backgroundColor: Colors.orange,
+                      textColor: Colors.white,
                     ),
                   ],
                 ),
