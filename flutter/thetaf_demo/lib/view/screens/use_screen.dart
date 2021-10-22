@@ -9,19 +9,40 @@ class UseScreen extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(title: const Text('Camera Usage')),
         body: ThetaWindow(
-            child: Column(
-          children: [
-            const ThumbWindow(flex: 5),
-            Padding(
-              padding: const EdgeInsets.all(60.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: const [
-                  TakePictureButton(),
-                ],
+            child: Padding(
+          padding: const EdgeInsets.all(30.0),
+          child: Column(
+            children: [
+              const ThumbWindow(flex: 8),
+              Expanded(
+                flex: 2,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: const [
+                    TakePictureButton(),
+                  ],
+                ),
               ),
-            ),
-          ],
+              Expanded(
+                flex: 2,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: const [SetModeImageButton(), SetModeVideoButton()],
+                ),
+              ),
+              Expanded(
+                flex: 2,
+                child: Row(
+                  children: const [
+                    ShowThumbButton(),
+                    HideThumbButton(
+                      label: 'log',
+                    )
+                  ],
+                ),
+              )
+            ],
+          ),
         )));
   }
 }

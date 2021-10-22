@@ -17,3 +17,4 @@ export 'request/list_5_files_button.dart';
 export 'request/exposure_program_button.dart';
 export 'request/set_mode_video_button.dart';
 export 'request/set_mode_image_button.dart';
+export 'request/thumb/thumb.dart';
