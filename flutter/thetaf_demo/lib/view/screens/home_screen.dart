@@ -53,7 +53,11 @@ class HomeScreen extends StatelessWidget {
           padding: const EdgeInsets.all(14.0),
           child: Column(
             children: [
+              /// example of changing response window style
               const ResponseWindow(
+                backgroundColor: Colors.blueGrey,
+                textColor: Color(0xfff5f5f5),
+                fontSize: 24.0,
                 flex: 5,
               ),
               Expanded(
