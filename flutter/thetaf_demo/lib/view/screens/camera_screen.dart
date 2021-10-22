@@ -19,6 +19,8 @@ class CameraScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: const [
                   InfoButton(),
+                  SetModeImageButton(),
+                  SetModeVideoButton(),
                 ],
               ),
               const SizedBox(
