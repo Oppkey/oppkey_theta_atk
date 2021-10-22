@@ -31,8 +31,8 @@ class GetLivePreviewButton extends StatelessWidget {
           try {
             context.read<VideoNotifier>().controller.close;
           } catch (error) {
-            print('controller already closed');
-            print(error);
+            // print('controller already closed');
+            // print(error);
           }
           context.read<VideoNotifier>().setController(StreamController());
           Preview.getLivePreview(

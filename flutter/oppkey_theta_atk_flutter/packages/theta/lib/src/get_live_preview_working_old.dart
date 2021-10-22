@@ -33,7 +33,7 @@ Future<void> getLivePreviewOld(StreamController controller,
   frameTimer.start();
 
   StreamSubscription? subscription;
-  subscription = await dataStream.listen((chunkOfStream) {
+  subscription = dataStream.listen((chunkOfStream) {
     if (frameCount > frames) {
       if (subscription != null) {
         subscription.cancel();

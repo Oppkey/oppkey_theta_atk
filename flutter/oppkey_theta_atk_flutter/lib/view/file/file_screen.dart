@@ -24,7 +24,7 @@ class FileScreen extends StatelessWidget {
                   onChanged: (value) {
                     Provider.of<FileNotifier>(context, listen: false)
                         .setSc2Fix1(value);
-                    print(value);
+                    // print(value);
                   }),
               const SizedBox(
                 width: 30,
