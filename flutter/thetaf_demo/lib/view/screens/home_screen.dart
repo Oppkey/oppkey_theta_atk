@@ -72,7 +72,7 @@ class HomeScreen extends StatelessWidget {
                     ),
                     InfoButton(
                       fontSize: 40,
-                      backgroundColor: Colors.orange,
+                      backgroundColor: Color(0xffFFB74D),
                       textColor: Colors.white,
                     ),
                   ],
