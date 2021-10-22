@@ -1,6 +1,7 @@
 import 'package:flutter/widgets.dart';
 
 class WindowNotifier extends ChangeNotifier {
+  // thumbnail windows
   bool _showThumbWindow = false;
   bool get showThumbWindow => _showThumbWindow;
   void setShowThumbWindow(bool showThumbWindow) {

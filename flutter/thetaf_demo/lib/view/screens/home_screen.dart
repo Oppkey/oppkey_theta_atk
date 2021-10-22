@@ -40,6 +40,11 @@ class HomeScreen extends StatelessWidget {
                 onTap: () {
                   Navigator.pushNamed(context, '/use');
                 }),
+            ListTile(
+                title: const Text('Preview'),
+                onTap: () {
+                  Navigator.pushNamed(context, '/preview');
+                }),
           ],
         ),
       ),
