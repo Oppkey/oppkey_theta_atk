@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
-import 'package:thetaf/src/model/video_notifier.dart';
+import '../../model/video_notifier.dart';
 
 class GetLivePreviewButton extends StatelessWidget {
   final ButtonStyle? style;

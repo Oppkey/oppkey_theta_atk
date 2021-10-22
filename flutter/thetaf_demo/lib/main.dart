@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:thetaf_demo/model/video_notifier.dart';
 import 'package:thetaf_demo/view/screens/camera_screen.dart';
 import 'package:thetaf_demo/view/screens/camera_z1_screen.dart';
 import 'package:thetaf_demo/view/screens/file_screen.dart';
@@ -8,9 +10,12 @@ import 'view/screens/camera_sc2_screen.dart';
 import 'view/screens/home_screen.dart';
 
 void main() {
-  runApp(
-    const MainApp(),
-  );
+  runApp(MultiProvider(
+    providers: [
+      ChangeNotifierProvider(create: (_) => VideoNotifier()),
+    ],
+    child: const MainApp(),
+  ));
 }
 
 class MainApp extends StatelessWidget {
