@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/window_notifier.dart';
 
 class ShowThumbButton extends StatelessWidget {
@@ -24,6 +25,9 @@ class ShowThumbButton extends StatelessWidget {
         autofocus: autofocus,
         clipBehavior: clipBehavior,
         onPressed: () async {
+          List<String> thumbData = await sc2ThumbGetBytes();
+          Provider.of<WindowNotifier>(context, listen: false)
+              .setThumbData(thumbData);
           Provider.of<WindowNotifier>(context, listen: false)
               .setShowThumbWindow(true);
         },

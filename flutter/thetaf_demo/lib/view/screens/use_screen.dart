@@ -33,6 +33,7 @@ class UseScreen extends StatelessWidget {
               Expanded(
                 flex: 2,
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: const [
                     ShowThumbButton(),
                     HideThumbButton(

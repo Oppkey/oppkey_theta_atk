@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:thetaf/thetaf.dart';
 import 'package:thetaf_demo/model/video_notifier.dart';
 import 'package:thetaf_demo/view/request/get_live_preview_button.dart';
+import 'package:thetaf_demo/view/request/stop_preview_button.dart';
 
 class PreviewScreen extends StatelessWidget {
   const PreviewScreen({Key? key}) : super(key: key);
@@ -22,6 +23,7 @@ class PreviewScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: const [
                 GetLivePreviewButton(),
+                StopPreviewButton(),
               ],
             ),
           )
