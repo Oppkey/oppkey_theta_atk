@@ -89,7 +89,7 @@ class HomeScreen extends StatelessWidget {
                       textColor: Colors.white,
                     ),
                     Sc2GetOptionsButton(
-                      backgroundColor: Color(0xff8D6E63),
+                      backgroundColor: Color(0xffA1887F),
                       textColor: Colors.white,
                       fontSize: 40,
                     )
