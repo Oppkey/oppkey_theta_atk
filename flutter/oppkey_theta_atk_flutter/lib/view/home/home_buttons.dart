@@ -7,8 +7,8 @@ import 'package:theta/theta.dart';
 
 class HomeButtons extends StatelessWidget {
   final int flex;
-  bool row;
-  HomeButtons({
+  final bool row;
+  const HomeButtons({
     required this.flex,
     this.row = true,
     Key? key,
@@ -30,8 +30,8 @@ class HomeButtons extends StatelessWidget {
           try {
             context.read<VideoNotifier>().controller.close;
           } catch (error) {
-            print('controller already closed');
-            print(error);
+            // print('controller already closed');
+            // print(error);
           }
           context.read<VideoNotifier>().setController(StreamController());
           bool sc2Experiment = context.read<VideoNotifier>().sc2Experiment;
