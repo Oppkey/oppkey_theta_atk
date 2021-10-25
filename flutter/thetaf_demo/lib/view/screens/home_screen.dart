@@ -10,7 +10,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Oppkey thetaf demo'),
+        title: const Text('Oppkey thetaf demo - Inspect Camera'),
       ),
       drawer: Drawer(
         child: ListView(
@@ -53,42 +53,25 @@ class HomeScreen extends StatelessWidget {
           padding: const EdgeInsets.all(14.0),
           child: Column(
             children: [
-              /// example of changing response window style
-              const ResponseWindow(
-                backgroundColor: Colors.blueGrey,
-                textColor: Color(0xfff5f5f5),
-                fontSize: 24.0,
+              /// example of using syntax highlighting
+              const ThetaSyntaxWindow(
+                // fontSize: 22,
                 flex: 5,
               ),
               Expanded(
                 flex: 2,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
+                  children: const [
                     StateButton(
-                      // this is an example of changing the buttonStyle
-                      // it is better to change the theme for all the
-                      // buttons when possible
-                      // this is just to show what is possible.
-                      // it is not a best practice to do this inline
-                      style: ButtonStyle(
-                        textStyle: MaterialStateProperty.all<TextStyle>(
-                            const TextStyle(fontSize: 40)),
-                        backgroundColor:
-                            MaterialStateProperty.all<Color>(Colors.lightGreen),
-                        foregroundColor:
-                            MaterialStateProperty.all<Color>(Colors.white),
-                      ),
+                      fontSize: 40,
+                      backgroundColor: Colors.lightGreen,
+                      textColor: Colors.white,
                     ),
                     InfoButton(
-                      style: ButtonStyle(
-                        textStyle: MaterialStateProperty.all<TextStyle>(
-                            const TextStyle(fontSize: 40)),
-                        backgroundColor:
-                            MaterialStateProperty.all<Color>(Colors.orange),
-                        foregroundColor:
-                            MaterialStateProperty.all<Color>(Colors.white),
-                      ),
+                      fontSize: 40,
+                      backgroundColor: Color(0xffFFB74D),
+                      textColor: Colors.white,
                     ),
                   ],
                 ),
@@ -97,7 +80,18 @@ class HomeScreen extends StatelessWidget {
                 flex: 2,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: const [Z1GetOptionsButton(), Sc2GetOptionsButton()],
+                  children: const [
+                    Z1GetOptionsButton(
+                      fontSize: 40,
+                      backgroundColor: Color(0xFF9575CD),
+                      textColor: Colors.white,
+                    ),
+                    Sc2GetOptionsButton(
+                      backgroundColor: Color(0xffA1887F),
+                      textColor: Colors.white,
+                      fontSize: 40,
+                    )
+                  ],
                 ),
               )
             ],

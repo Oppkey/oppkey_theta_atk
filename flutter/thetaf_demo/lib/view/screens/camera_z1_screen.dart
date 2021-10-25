@@ -15,7 +15,13 @@ class CameraZ1Screen extends StatelessWidget {
         padding: const EdgeInsets.all(20.0),
         child: Column(
           children: [
-            const ResponseWindow(flex: 8),
+            // showing example of adding color to the
+            // base ResponseWindow
+            const ResponseWindow(
+                backgroundColor: Colors.blueGrey,
+                textColor: Color(0xfff5f5f5),
+                fontSize: 24.0,
+                flex: 8),
             Expanded(
               flex: 2,
               child: Row(

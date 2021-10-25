@@ -25,6 +25,10 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Oppkey thetaf demo',
+      theme: ThemeData(
+          primarySwatch: Colors.grey,
+          appBarTheme: const AppBarTheme(
+              titleTextStyle: TextStyle(color: Colors.white, fontSize: 20))),
       initialRoute: '/',
       routes: {
         '/': (context) => const HomeScreen(),
