@@ -25,9 +25,7 @@ class StopVideoCaptureButton extends StatelessWidget {
         autofocus: autofocus,
         clipBehavior: clipBehavior,
         onPressed: () async {
-          var response = await command('stopCapture', parameters: {
-            'fileUrls': ['all']
-          });
+          var response = await command('stopCapture');
           Provider.of<ResponseNotifier>(context, listen: false)
               .setResponseText(response);
         },
