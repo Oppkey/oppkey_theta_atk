@@ -21,6 +21,8 @@ class CameraScreen extends StatelessWidget {
                   InfoButton(),
                   SetModeImageButton(),
                   SetModeVideoButton(),
+                  StartVideoCaptureButton(),
+                  StopVideoCaptureButton(),
                 ],
               ),
               const SizedBox(
@@ -53,6 +55,8 @@ class CameraScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: const [
                   DeleteAllFilesButton(),
+                  DeleteAllImagesButton(),
+                  DeleteAllVideosButton(),
                   ResetButton(),
                 ],
               ),
@@ -64,6 +68,7 @@ class CameraScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: const [
                   List5FilesButton(),
+                  List5VideosButton(),
                 ],
               ),
               const SizedBox(

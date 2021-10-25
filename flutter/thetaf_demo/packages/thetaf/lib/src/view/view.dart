@@ -16,3 +16,8 @@ export 'request/exposure_program_button.dart';
 export 'request/set_mode_video_button.dart';
 export 'request/set_mode_image_button.dart';
 export 'request/thumb/thumb.dart';
+export 'request/stop_video_capture_button.dart';
+export 'request/start_video_capture_button.dart';
+export 'request/list_5_videos_button.dart';
+export 'request/delete_all_images_button.dart';
+export 'request/delete_all_videos_button.dart';
