@@ -28,12 +28,9 @@ class StopVideoCaptureButton extends StatelessWidget {
           var response = await command('stopCapture', parameters: {
             'fileUrls': ['all']
           });
+          Provider.of<ResponseNotifier>(context, listen: false)
+              .setResponseText(response);
         },
-//        onPressed: () async {
-//          var response = await command('stopCapture');
-//          Provider.of<ResponseNotifier>(context, listen: false)
-//              .setResponseText(response);
-//        },
         child: const Text('stop video capture'));
   }
 }

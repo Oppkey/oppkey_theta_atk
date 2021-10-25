@@ -25,9 +25,10 @@ class StartVideoCaptureButton extends StatelessWidget {
         autofocus: autofocus,
         clipBehavior: clipBehavior,
         onPressed: () async {
-          var response =
-              await command('startCapture', parameters: {'_mode': 'video'});
+          var response = await command('startCapture');
+          Provider.of<ResponseNotifier>(context, listen: false)
+              .setResponseText(response);
         },
-        child: const Text('DO NOT USE - start video capture'));
+        child: const Text('start video capture'));
   }
 }
