@@ -1,6 +1,5 @@
 import 'dart:async';
-
-import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class VideoNotifier extends ChangeNotifier {
   bool _videoRunning = false;
@@ -14,13 +13,6 @@ class VideoNotifier extends ChangeNotifier {
   StreamController get controller => _controller;
   void setController(controller) {
     _controller = controller;
-    notifyListeners();
-  }
-
-  bool _sc2Experiment = false;
-  bool get sc2Experiment => _sc2Experiment;
-  void setSc2Experiment(sc2Experiment) {
-    _sc2Experiment = sc2Experiment;
     notifyListeners();
   }
 }

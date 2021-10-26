@@ -1,6 +1,8 @@
 # theta changes
 
-## 0.0.2
+## 0.3.0
+
+## 0.2.0
 
 - added sc2ThumbGetBytes to use different algorithm to get thumbnails
 from SC2 cameras.

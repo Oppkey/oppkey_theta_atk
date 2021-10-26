@@ -1,3 +1,5 @@
 library thetaf;
 
-export 'src/live_preview.dart';
+export 'src/theta_window.dart';
+export 'src/view/view.dart';
+export 'src/command/command.dart';

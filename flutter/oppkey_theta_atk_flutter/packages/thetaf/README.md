@@ -11,8 +11,11 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+# thetaf
+
+Flutter widgets for RICOH THETA camera application prototyping.
+Package is intended for API testing and rapid prototyping.
+This is not suitable for production applications.
 
 ## Features
 
@@ -23,14 +26,24 @@ TODO: List what your package can do. Maybe include images, gifs, or videos.
 TODO: List prerequisites and provide or point to information on how to
 start using the package.
 
+* RICOH THETA must be connected to development workstation using Wi-Fi with
+the camera as the access point
+
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
+### Start with `ThetaWindow` as root widget under `Scaffold`
 
 ```dart
-const like = 'sample';
+import 'package:thetaf/thetaf.dart';
+...
+return MaterialApp(
+    home: Scaffold(
+        body: ThetaWindow(
+            child: Column(
+
 ```
+
+### Put thetaf widgets as children of `ThetaWindow`
 
 ## Additional information
 

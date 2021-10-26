@@ -1,5 +1,5 @@
 name: oppkey_theta_atk_flutter
-description: Oppkey demonstration of RICOH THETA API access with theta and thetaf packages
+description: Demonstration of thetaf Flutter widgets for RICOH THETA cameras
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -29,14 +29,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  theta:
-    path: packages/theta
-  thetaf:
-    path: packages/thetaf
+  path_provider: ^2.0.5
+
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  thetaf:
+    path: packages/thetaf
   provider: ^6.0.1
 
 dev_dependencies:

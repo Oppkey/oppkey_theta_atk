@@ -2,9 +2,7 @@
     package="com.example.oppkey_theta_atk_flutter">
    <application
         android:label="oppkey_theta_atk_flutter"
-        android:icon="@mipmap/ic_launcher"
-        android:usesCleartextTraffic="true"
-        >
+        android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
@@ -40,6 +38,4 @@
             android:name="flutterEmbedding"
             android:value="2" />
     </application>
-    <uses-permission android:name="android.permission.INTERNET"/>
-
 </manifest>

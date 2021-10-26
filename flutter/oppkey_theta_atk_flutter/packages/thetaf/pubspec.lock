@@ -44,7 +44,7 @@ packages:
     source: hosted
     version: "1.15.0"
   dio:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: dio
       url: "https://pub.dartlang.org"
@@ -69,6 +69,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.4"
+  flutter_syntax_view:
+    dependency: "direct main"
+    description:
+      name: flutter_syntax_view
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "4.0.0"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -80,7 +87,7 @@ packages:
       name: http
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.13.3"
+    version: "0.13.4"
   http_parser:
     dependency: transitive
     description:
@@ -109,6 +116,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.7.0"
+  nested:
+    dependency: transitive
+    description:
+      name: nested
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.0"
   path:
     dependency: transitive
     description:
@@ -116,13 +130,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.8.0"
-  pedantic:
-    dependency: transitive
+  provider:
+    dependency: "direct main"
     description:
-      name: pedantic
+      name: provider
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.11.1"
+    version: "6.0.1"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -170,6 +184,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.4.2"
+  theta:
+    dependency: "direct main"
+    description:
+      path: "../theta"
+      relative: true
+    source: path
+    version: "0.3.0"
   typed_data:
     dependency: transitive
     description:
@@ -185,5 +206,5 @@ packages:
     source: hosted
     version: "2.1.0"
 sdks:
-  dart: ">=2.12.0 <3.0.0"
-  flutter: ">=1.17.0"
+  dart: ">=2.14.3 <3.0.0"
+  flutter: ">=2.5.2"
