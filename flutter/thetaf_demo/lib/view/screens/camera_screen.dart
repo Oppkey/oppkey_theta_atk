@@ -53,8 +53,18 @@ class CameraScreen extends StatelessWidget {
               //This row contains commands that heavily change camera data or settings.
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: const [
-                  DeleteAllFilesButton(),
+                children: [
+                  DeleteAllFilesButton(
+                    style: ButtonStyle(
+                      textStyle: MaterialStateProperty.all<TextStyle>(
+                        TextStyle(fontSize: 42),
+                      ),
+                      foregroundColor:
+                          MaterialStateProperty.all<Color>(Colors.white),
+                      backgroundColor:
+                          MaterialStateProperty.all<Color>(Colors.red),
+                    ),
+                  ),
                   DeleteAllImagesButton(),
                   DeleteAllVideosButton(),
                   ResetButton(),

@@ -25,6 +25,7 @@ class DeleteAllImagesButton extends StatelessWidget {
         autofocus: autofocus,
         clipBehavior: clipBehavior,
         onPressed: () async {
+          // Needs more testing. Code appears accurate. Deletes all files, not just images. Bug possible.
           var response = await command('delete', parameters: {
             'fileUrls': ['image']
           });
