@@ -3,8 +3,6 @@ import 'package:flutter_syntax_view/flutter_syntax_view.dart';
 import 'package:provider/provider.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
-import 'theta_syntax_theme.dart';
-
 class ThetaSyntaxWindow extends StatelessWidget {
   final int flex;
   final double fontSize;

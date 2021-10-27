@@ -7,4 +7,3 @@
 ## Status of Camera Image Stitching
 
 ![image processing](docs/images/take_picture.gif)
-

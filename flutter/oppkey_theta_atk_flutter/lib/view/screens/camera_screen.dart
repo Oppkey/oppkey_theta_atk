@@ -57,7 +57,7 @@ class CameraScreen extends StatelessWidget {
                   DeleteAllFilesButton(
                     style: ButtonStyle(
                       textStyle: MaterialStateProperty.all<TextStyle>(
-                        TextStyle(fontSize: 42),
+                        const TextStyle(fontSize: 42),
                       ),
                       foregroundColor:
                           MaterialStateProperty.all<Color>(Colors.white),
@@ -65,9 +65,9 @@ class CameraScreen extends StatelessWidget {
                           MaterialStateProperty.all<Color>(Colors.red),
                     ),
                   ),
-                  DeleteAllImagesButton(),
-                  DeleteAllVideosButton(),
-                  ResetButton(),
+                  const DeleteAllImagesButton(),
+                  const DeleteAllVideosButton(),
+                  const ResetButton(),
                 ],
               ),
               const SizedBox(

@@ -10,7 +10,6 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var width = window.physicalSize.width;
-    var height = window.physicalSize.height;
     bool mobile = width < 1200;
 
     return Scaffold(
