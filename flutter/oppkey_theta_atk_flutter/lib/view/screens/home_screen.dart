@@ -15,7 +15,7 @@ class HomeScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Oppkey thetaf demo - Inspect Camera'),
+        title: const Text('Oppkey THETA ATK Flutter'),
       ),
       drawer: const HomeScreenDrawer(),
       body: ThetaWindow(

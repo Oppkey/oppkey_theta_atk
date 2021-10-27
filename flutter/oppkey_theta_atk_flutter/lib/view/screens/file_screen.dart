@@ -31,6 +31,7 @@ class _FileScreenState extends State<FileScreen> {
               flex: 3,
               child: Row(
                 children: [
+                  const List5FilesButton(),
                   TextButton(
                       onPressed: () {
                         getDocsDirectory();
