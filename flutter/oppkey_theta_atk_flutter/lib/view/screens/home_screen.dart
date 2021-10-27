@@ -34,12 +34,12 @@ class HomeScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: const [
                     StateButton(
-                      fontSize: 40,
+                      fontSize: 32,
                       backgroundColor: Colors.lightGreen,
                       textColor: Colors.white,
                     ),
                     InfoButton(
-                      fontSize: 40,
+                      fontSize: 32,
                       backgroundColor: Color(0xffFFB74D),
                       textColor: Colors.white,
                     ),
@@ -52,7 +52,7 @@ class HomeScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     const Z1GetOptionsButton(
-                      fontSize: 40,
+                      fontSize: 32,
                       backgroundColor: Color(0xFF9575CD),
                       textColor: Colors.white,
                     ),
@@ -60,7 +60,7 @@ class HomeScreen extends StatelessWidget {
                         ? const Sc2GetOptionsButton(
                             backgroundColor: Color(0xffA1887F),
                             textColor: Colors.white,
-                            fontSize: 40,
+                            fontSize: 32,
                           )
                         : Container(),
                   ],
@@ -72,7 +72,7 @@ class HomeScreen extends StatelessWidget {
                       child: Sc2GetOptionsButton(
                         backgroundColor: Color(0xffA1887F),
                         textColor: Colors.white,
-                        fontSize: 40,
+                        fontSize: 32,
                       ),
                     )
                   : Container(),
