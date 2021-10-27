@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:oppkey_theta_atk_flutter/view/component/home_screen_drawer.dart';
 import 'package:thetaf/thetaf.dart';
 import 'dart:ui';
 
@@ -16,42 +17,7 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Oppkey thetaf demo - Inspect Camera'),
       ),
-      drawer: Drawer(
-        child: ListView(
-          children: [
-            ListTile(
-                title: const Text('file'),
-                onTap: () {
-                  Navigator.pushNamed(context, '/file');
-                }),
-            ListTile(
-                title: const Text('Camera Settings'),
-                onTap: () {
-                  Navigator.pushNamed(context, '/camera');
-                }),
-            ListTile(
-                title: const Text('Z1 Settings'),
-                onTap: () {
-                  Navigator.pushNamed(context, '/cameraz1');
-                }),
-            ListTile(
-                title: const Text('SC2 Settings'),
-                onTap: () {
-                  Navigator.pushNamed(context, '/camerasc2');
-                }),
-            ListTile(
-                title: const Text('Camera Use'),
-                onTap: () {
-                  Navigator.pushNamed(context, '/use');
-                }),
-            ListTile(
-                title: const Text('Preview'),
-                onTap: () {
-                  Navigator.pushNamed(context, '/preview');
-                }),
-          ],
-        ),
-      ),
+      drawer: const HomeScreenDrawer(),
       body: ThetaWindow(
         child: Padding(
           padding: const EdgeInsets.all(14.0),
