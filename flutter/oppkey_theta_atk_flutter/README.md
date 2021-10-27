@@ -6,5 +6,5 @@
 
 ## Status of Camera Image Stitching
 
-![image processing](docs/images/processing.png)
+![image processing](docs/images/take_picture.gif)
 
