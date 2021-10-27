@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:thetaf/thetaf.dart';
+import 'dart:ui';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({
@@ -8,6 +9,10 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var width = window.physicalSize.width;
+    var height = window.physicalSize.height;
+    bool mobile = width < 1200;
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Oppkey thetaf demo - Inspect Camera'),
@@ -80,20 +85,32 @@ class HomeScreen extends StatelessWidget {
                 flex: 2,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: const [
-                    Z1GetOptionsButton(
+                  children: [
+                    const Z1GetOptionsButton(
                       fontSize: 40,
                       backgroundColor: Color(0xFF9575CD),
                       textColor: Colors.white,
                     ),
-                    Sc2GetOptionsButton(
-                      backgroundColor: Color(0xffA1887F),
-                      textColor: Colors.white,
-                      fontSize: 40,
-                    )
+                    !mobile
+                        ? const Sc2GetOptionsButton(
+                            backgroundColor: Color(0xffA1887F),
+                            textColor: Colors.white,
+                            fontSize: 40,
+                          )
+                        : Container(),
                   ],
                 ),
-              )
+              ),
+              mobile
+                  ? const Expanded(
+                      flex: 1,
+                      child: Sc2GetOptionsButton(
+                        backgroundColor: Color(0xffA1887F),
+                        textColor: Colors.white,
+                        fontSize: 40,
+                      ),
+                    )
+                  : Container(),
             ],
           ),
         ),
