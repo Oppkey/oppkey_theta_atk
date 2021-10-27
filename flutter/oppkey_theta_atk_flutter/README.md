@@ -2,7 +2,7 @@
 
 ## Inspect Camera Settings
 
-![button example](docs/images/options_listing.gif)
+![button example](docs/images/options_listing_android.gif)
 
 ## Status of Camera Image Stitching
 
