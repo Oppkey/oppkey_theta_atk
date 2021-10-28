@@ -11,7 +11,7 @@ class CameraScreen extends StatelessWidget {
         body: ThetaWindow(
             child: Padding(
           padding: const EdgeInsets.all(20.0),
-          child: Column(
+          child: ListView(
             children: [
               const ResponseWindow(flex: 5),
               // This row contains basic camera information commands
@@ -20,6 +20,10 @@ class CameraScreen extends StatelessWidget {
                 children: const [
                   InfoButton(),
                   SetModeImageButton(),
+                ],
+              ),
+              Row(
+                children: [
                   SetModeVideoButton(),
                   StartVideoCaptureButton(),
                   StopVideoCaptureButton(),
