@@ -26,6 +26,10 @@ class CameraScreen extends StatelessWidget {
                         SetModeVideoButton(),
                       ],
                     ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: const [
@@ -33,7 +37,9 @@ class CameraScreen extends StatelessWidget {
                         StopVideoCaptureButton(),
                       ],
                     ),
-
+                    const SizedBox(
+                      height: 10,
+                    ),
                     //This row is for controlling sleep settings.
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -41,6 +47,9 @@ class CameraScreen extends StatelessWidget {
                         DisableSleepDelayButton(),
                         EnableSleepDelayButton(),
                       ],
+                    ),
+                    const SizedBox(
+                      height: 10,
                     ),
                     //This rows is for controlling power off settings.
                     Row(
@@ -50,7 +59,9 @@ class CameraScreen extends StatelessWidget {
                         DisablePowerOffButton(),
                       ],
                     ),
-
+                    const SizedBox(
+                      height: 10,
+                    ),
                     //This row contains commands that heavily change camera data or settings.
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -77,6 +88,10 @@ class CameraScreen extends StatelessWidget {
                         // const DeleteAllImagesButton(),
                       ],
                     ),
+                    const SizedBox(
+                      height: 30,
+                    ),
+
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
@@ -90,6 +105,9 @@ class CameraScreen extends StatelessWidget {
                         ),
                       ],
                     ),
+                    const SizedBox(
+                      height: 10,
+                    ),
 
                     //This row is for getting information on files in the camera.
                     Row(
@@ -97,6 +115,18 @@ class CameraScreen extends StatelessWidget {
                       children: const [
                         List5FilesButton(),
                         List5VideosButton(),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: const [
+                        EnableVideoStitchingButton(),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: const [
+                        DisableVideoStitchingButton(),
                       ],
                     ),
                     const SizedBox(

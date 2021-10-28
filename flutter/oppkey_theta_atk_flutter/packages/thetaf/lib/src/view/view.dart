@@ -21,3 +21,5 @@ export 'request/start_video_capture_button.dart';
 export 'request/list_5_videos_button.dart';
 export 'request/delete_all_images_button.dart';
 export 'request/delete_all_videos_button.dart';
+export 'request/enable_video_stitching_button.dart';
+export 'request/disable_video_stitching_button.dart';
