@@ -23,12 +23,74 @@ class CameraZ1Screen extends StatelessWidget {
                 fontSize: 24.0,
                 flex: 8),
             Expanded(
-              flex: 2,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: const [
-                  InfoButton(),
-                  ExposureProgramButton(),
+              flex: 8,
+              child: ListView(
+                children: [
+                  Row(
+                    children: [
+                      ExposureProgramButton(),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: const [
+                      InfoButton(),
+                    ],
+                  ),
+                  Row(
+                    children: [Text('More Z1 Options')],
+                  ),
+                  Row(
+                    children: [Text('More Z1 Options')],
+                  ),
+                  Row(
+                    children: [Text('More Z1 Options')],
+                  ),
+                  Row(
+                    children: [Text('More Z1 Options')],
+                  ),
+                  Row(
+                    children: [Text('More Z1 Options')],
+                  ),
+                  Row(
+                    children: [Text('More Z1 Options')],
+                  ),
+                  Row(
+                    children: [Text('More Z1 Options')],
+                  ),
+                  Row(
+                    children: [Text('More Z1 Options')],
+                  ),
+                  Row(
+                    children: [Text('More Z1 Options')],
+                  ),
+                  Row(
+                    children: [Text('More Z1 Options')],
+                  ),
+                  Row(
+                    children: [Text('More Z1 Options')],
+                  ),
+                  Row(
+                    children: [Text('More Z1 Options')],
+                  ),
+                  Row(
+                    children: [Text('More Z1 Options')],
+                  ),
+                  Row(
+                    children: [Text('More Z1 Options')],
+                  ),
+                  Row(
+                    children: [Text('More Z1 Options')],
+                  ),
+                  Row(
+                    children: [Text('More Z1 Options')],
+                  ),
+                  Row(
+                    children: [Text('More Z1 Options')],
+                  ),
+                  Row(
+                    children: [Text('More Z1 Options')],
+                  ),
                 ],
               ),
             )

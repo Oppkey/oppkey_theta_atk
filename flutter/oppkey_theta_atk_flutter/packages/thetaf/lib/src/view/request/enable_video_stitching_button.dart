@@ -36,8 +36,9 @@ class EnableVideoStitchingButton extends StatelessWidget {
           // delay 250ms before sending the camera another command
           await Future.delayed(const Duration(milliseconds: 250));
           // send command to check the option you just set
-          var responseCheck =
-              await setOption(name: 'videoStitching', value: 'ondevice');
+          var responseCheck = await command('getOptions', parameters: {
+            'optionNames': ['videoStitching']
+          });
           // combine the two strings
           response += '\nCheck the information below to verify option was set\n'
               'We are using getOptions to pull the new value from the camera\n'
