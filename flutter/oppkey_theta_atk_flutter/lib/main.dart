@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:oppkey_theta_atk_flutter/model/video_notifier.dart';
 import 'package:oppkey_theta_atk_flutter/view/screens/camera_screen.dart';
 import 'package:oppkey_theta_atk_flutter/view/screens/camera_z1_screen.dart';
-import 'package:oppkey_theta_atk_flutter/view/screens/file_screen.dart';
+import 'package:oppkey_theta_atk_flutter/view/screens/file/file_screen.dart';
 import 'package:oppkey_theta_atk_flutter/view/screens/preview_screen.dart';
 import 'package:oppkey_theta_atk_flutter/view/screens/use_screen.dart';
 import 'view/screens/camera_sc2_screen.dart';
