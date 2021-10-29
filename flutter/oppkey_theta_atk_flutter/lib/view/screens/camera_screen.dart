@@ -189,12 +189,6 @@ class CameraScreen extends StatelessWidget {
                         SetFilterNoiseReductionButton(),
                       ],
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: const [
-                        SetFilterHhhdrButton(),
-                      ],
-                    ),
                     const SizedBox(
                       height: 30,
                     ),

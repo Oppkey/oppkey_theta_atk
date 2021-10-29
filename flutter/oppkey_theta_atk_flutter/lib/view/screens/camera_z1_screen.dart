@@ -38,6 +38,12 @@ class CameraZ1Screen extends StatelessWidget {
                     ],
                   ),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: const [
+                      SetFilterHhhdrButton(),
+                    ],
+                  ),
+                  Row(
                     children: [Text('More Z1 Options')],
                   ),
                   Row(
