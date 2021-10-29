@@ -15,33 +15,39 @@ class UseScreen extends StatelessWidget {
             children: [
               const ThumbWindow(flex: 8),
               Expanded(
-                flex: 2,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: const [
-                    TakePictureButton(),
-                  ],
-                ),
+                flex: 8,
+                child: ListView(children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: const [
+                      TakePictureButton(),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: const [
+                      SetModeImageButton(),
+                      SetModeVideoButton()
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: const [
+                      ShowThumbButton(),
+                      HideThumbButton(
+                        label: 'log',
+                      )
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: const [
+                      StartVideoCaptureButton(),
+                      StopVideoCaptureButton(),
+                    ],
+                  ),
+                ]),
               ),
-              Expanded(
-                flex: 2,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: const [SetModeImageButton(), SetModeVideoButton()],
-                ),
-              ),
-              Expanded(
-                flex: 2,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: const [
-                    ShowThumbButton(),
-                    HideThumbButton(
-                      label: 'log',
-                    )
-                  ],
-                ),
-              )
             ],
           ),
         )));
