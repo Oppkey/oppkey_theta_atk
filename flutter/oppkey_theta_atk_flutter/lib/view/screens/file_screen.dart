@@ -1,46 +1,37 @@
 import 'package:flutter/material.dart';
 import 'package:thetaf/thetaf.dart';
-import 'package:path_provider/path_provider.dart';
 
-class FileScreen extends StatefulWidget {
+class FileScreen extends StatelessWidget {
   const FileScreen({Key? key}) : super(key: key);
-
-  @override
-  State<FileScreen> createState() => _FileScreenState();
-}
-
-class _FileScreenState extends State<FileScreen> {
-  String path = '';
-  void getDocsDirectory() async {
-    var docDir = await getApplicationDocumentsDirectory();
-    // print(docDir);
-    path = docDir.toString();
-  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('File Tester'),
-      ),
       body: ThetaWindow(
         child: Column(
           children: [
-            const ResponseWindow(flex: 4),
+            const ResponseWindow(flex: 5),
             Expanded(
-              flex: 3,
-              child: Row(
-                children: [
-                  const List5FilesButton(),
-                  TextButton(
-                      onPressed: () {
-                        getDocsDirectory();
-                      },
-                      child: const Text('get path')),
-                  DownloadVideoButton(path: path),
-                ],
-              ),
-            )
+                flex: 5,
+                child: Column(
+                  children: [
+                    Container(
+                      color: Colors.blueGrey,
+                      child: Row(
+                        children: [
+                          const Text('On Camera: '),
+                          List5FilesButton(
+                            style: ButtonStyle(
+                              foregroundColor: MaterialStateProperty.all<Color>(
+                                  Colors.white),
+                            ),
+                          ),
+                          const List5VideosButton(),
+                        ],
+                      ),
+                    ),
+                  ],
+                ))
           ],
         ),
       ),
