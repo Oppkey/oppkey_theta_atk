@@ -165,6 +165,36 @@ class CameraScreen extends StatelessWidget {
                         SetExposureCompensation2Button(),
                       ],
                     ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: const [
+                        SetFilterOffButton(),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: const [
+                        SetFilterHdrButton(),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: const [
+                        SetFilterDrcompButton(),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: const [
+                        SetFilterNoiseReductionButton(),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: const [
+                        SetFilterHhhdrButton(),
+                      ],
+                    ),
                     const SizedBox(
                       height: 30,
                     ),

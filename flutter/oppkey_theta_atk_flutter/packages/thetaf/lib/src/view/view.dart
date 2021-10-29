@@ -22,12 +22,14 @@ export 'request/delete_all_images_button.dart';
 export 'request/delete_all_videos_button.dart';
 export 'request/enable_video_stitching_button.dart';
 export 'request/disable_video_stitching_button.dart';
-<<<<<<< HEAD
 export 'request/set_exposure_compensation_0.dart';
 export 'request/set_exposure_compensation_1.dart';
 export 'request/set_exposure_compensation_2.dart';
 export 'request/set_exposure_compensation_neg1.dart';
 export 'request/set_exposure_compensation_neg2.dart';
-=======
 export 'request/file/file.dart';
->>>>>>> cfa87ef28584bf6dbf682a293539e22e6251f500
+export 'request/set_filter_off.dart';
+export 'request/set_filter_hdr.dart';
+export 'request/set_filter_drcomp.dart';
+export 'request/set_filter_noise_reduction.dart';
+export 'request/set_filter_hhhdr.dart';
