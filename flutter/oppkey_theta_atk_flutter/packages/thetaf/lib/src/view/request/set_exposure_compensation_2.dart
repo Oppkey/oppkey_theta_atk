@@ -3,13 +3,13 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
-class DisableVideoStitchingButton extends StatelessWidget {
+class SetExposureCompensation2Button extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;
   final bool autofocus;
   final Clip clipBehavior;
 
-  const DisableVideoStitchingButton({
+  const SetExposureCompensation2Button({
     Key? key,
     this.style,
     this.focusNode,
@@ -25,7 +25,8 @@ class DisableVideoStitchingButton extends StatelessWidget {
         autofocus: autofocus,
         clipBehavior: clipBehavior,
         onPressed: () async {
-          var response = await setOption(name: 'videoStitching', value: 'none');
+          var response =
+              await setOption(name: 'exposureCompensation', value: 2.0);
           // set title for response. Edit the line below
           // for each option
           response = 'attempting to set option for videoStitching\n'
@@ -36,7 +37,7 @@ class DisableVideoStitchingButton extends StatelessWidget {
           await Future.delayed(const Duration(milliseconds: 250));
           // send command to check the option you just set
           var responseCheck = await await command('getOptions', parameters: {
-            'optionNames': ['videoStitching']
+            'optionNames': ['exposureCompensation']
           });
           // combine the two strings
           response += '\nCheck the information below to verify option was set\n'
@@ -46,6 +47,6 @@ class DisableVideoStitchingButton extends StatelessWidget {
           Provider.of<ResponseNotifier>(context, listen: false)
               .setResponseText(response);
         },
-        child: const Text('disable video stitching (Z1 only)'));
+        child: const Text('set exposure compensation to 2'));
   }
 }
