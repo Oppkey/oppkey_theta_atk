@@ -4,7 +4,7 @@ import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
 class ExposureProgramButton extends StatelessWidget {
-  const ExposureProgramButton({Key? key}) : super(key: key);
+  const ExposureProgramButton({Key? key, ButtonStyle style}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
