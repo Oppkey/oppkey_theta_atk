@@ -28,14 +28,62 @@ class CameraZ1Screen extends StatelessWidget {
                 children: [
                   Row(
                     children: [
-                      ExposureProgramButton(),
+                      Text(
+                          'To set aperture, exposureProgram must be set to Manual or Aperture Priority')
                     ],
+                  ),
+                  Container(
+                    color: Colors.blueAccent,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        ExposureProgramButton(),
+                        SetAperture0Button(
+                          style: ButtonStyle(
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.blueGrey),
+                          ),
+                        ),
+                        SetAperture2dot1Button(
+                          style: ButtonStyle(
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.blueGrey),
+                          ),
+                        ),
+                        SetAperture3dot5Button(
+                          style: ButtonStyle(
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.blueGrey),
+                          ),
+                        ),
+                        SetAperture5dot6Button(
+                          style: ButtonStyle(
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.blueGrey),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 10,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: const [
                       InfoButton(),
                     ],
+                  ),
+                  const SizedBox(
+                    height: 10,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,

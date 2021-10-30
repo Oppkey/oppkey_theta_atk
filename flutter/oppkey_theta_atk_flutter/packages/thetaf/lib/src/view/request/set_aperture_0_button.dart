@@ -3,20 +3,20 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
-class SetExposureCompensation0Button extends StatelessWidget {
+class SetAperture0Button extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;
   final bool autofocus;
   final Clip clipBehavior;
   final String label;
 
-  const SetExposureCompensation0Button({
+  const SetAperture0Button({
     Key? key,
     this.style,
     this.focusNode,
     this.autofocus = false,
     this.clipBehavior = Clip.none,
-    this.label = 'set exposure compensation to 0',
+    this.label = '0',
   }) : super(key: key);
 
   @override
@@ -27,11 +27,10 @@ class SetExposureCompensation0Button extends StatelessWidget {
         autofocus: autofocus,
         clipBehavior: clipBehavior,
         onPressed: () async {
-          var response =
-              await setOption(name: 'exposureCompensation', value: 0.0);
+          var response = await setOption(name: 'aperture', value: 0);
           // set title for response. Edit the line below
           // for each option
-          response = 'attempting to set option for videoStitching\n'
+          response = 'attempting to set option for aperture\n'
                   '-------------------\n' +
               response;
 
@@ -39,7 +38,7 @@ class SetExposureCompensation0Button extends StatelessWidget {
           await Future.delayed(const Duration(milliseconds: 250));
           // send command to check the option you just set
           var responseCheck = await await command('getOptions', parameters: {
-            'optionNames': ['exposureCompensation']
+            'optionNames': ['aperture']
           });
           // combine the two strings
           response += '\nCheck the information below to verify option was set\n'

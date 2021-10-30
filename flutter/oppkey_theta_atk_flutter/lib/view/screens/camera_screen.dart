@@ -7,39 +7,20 @@ class CameraScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: const Text('Camera Screen')),
+        appBar: AppBar(
+          title: const Text('Camera Settings'),
+          backgroundColor: Colors.teal,
+        ),
         body: ThetaWindow(
             child: Padding(
           padding: const EdgeInsets.all(20.0),
           child: Column(
             children: [
               const ResponseWindow(flex: 4),
-              // This row contains basic camera information commands
               Expanded(
                 flex: 6,
                 child: ListView(
                   children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: const [
-                        SetModeImageButton(),
-                        SetModeVideoButton(),
-                      ],
-                    ),
-                    const SizedBox(
-                      height: 10,
-                    ),
-
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: const [
-                        StartVideoCaptureButton(),
-                        StopVideoCaptureButton(),
-                      ],
-                    ),
-                    const SizedBox(
-                      height: 10,
-                    ),
                     //This row is for controlling sleep settings.
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -52,46 +33,51 @@ class CameraScreen extends StatelessWidget {
                       height: 10,
                     ),
                     //This rows is for controlling power off settings.
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: const [
-                        EnablePowerOffButton(),
-                        DisablePowerOffButton(),
-                      ],
+                    Container(
+                      color: Colors.pink,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: const [
+                          EnablePowerOffButton(),
+                          DisablePowerOffButton(),
+                        ],
+                      ),
                     ),
                     const SizedBox(
                       height: 10,
                     ),
                     //This row contains commands that heavily change camera data or settings.
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        DeleteAllFilesButton(
-                          style: ButtonStyle(
-                            textStyle: MaterialStateProperty.all<TextStyle>(
-                              const TextStyle(fontSize: 16),
+                    Container(
+                      color: Colors.pink,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          DeleteAllFilesButton(
+                            style: ButtonStyle(
+                              textStyle: MaterialStateProperty.all<TextStyle>(
+                                const TextStyle(fontSize: 16),
+                              ),
+                              foregroundColor: MaterialStateProperty.all<Color>(
+                                  Colors.white),
+                              backgroundColor:
+                                  MaterialStateProperty.all<Color>(Colors.red),
                             ),
-                            foregroundColor:
-                                MaterialStateProperty.all<Color>(Colors.white),
-                            backgroundColor:
-                                MaterialStateProperty.all<Color>(Colors.red),
                           ),
-                        ),
-                        ResetButton(
-                          style: ButtonStyle(
-                            foregroundColor:
-                                MaterialStateProperty.all<Color>(Colors.white),
-                            backgroundColor:
-                                MaterialStateProperty.all<Color>(Colors.red),
+                          ResetButton(
+                            style: ButtonStyle(
+                              foregroundColor: MaterialStateProperty.all<Color>(
+                                  Colors.white),
+                              backgroundColor:
+                                  MaterialStateProperty.all<Color>(Colors.red),
+                            ),
                           ),
-                        ),
-                        // const DeleteAllImagesButton(),
-                      ],
+                          // const DeleteAllImagesButton(),
+                        ],
+                      ),
                     ),
                     const SizedBox(
                       height: 30,
                     ),
-
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
@@ -108,25 +94,30 @@ class CameraScreen extends StatelessWidget {
                     const SizedBox(
                       height: 10,
                     ),
-
-                    //This row is for getting information on files in the camera.
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: const [
-                        List5FilesButton(),
-                        List5VideosButton(),
+                      children: [
+                        EnableVideoStitchingButton(
+                          style: ButtonStyle(
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor:
+                                MaterialStateProperty.all<Color>(Colors.teal),
+                          ),
+                        ),
                       ],
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: const [
-                        EnableVideoStitchingButton(),
-                      ],
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: const [
-                        DisableVideoStitchingButton(),
+                      children: [
+                        DisableVideoStitchingButton(
+                          style: ButtonStyle(
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor:
+                                MaterialStateProperty.all<Color>(Colors.green),
+                          ),
+                        ),
                       ],
                     ),
                     Row(

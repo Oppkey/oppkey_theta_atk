@@ -16,12 +16,12 @@ class HomeScreenDrawer extends StatelessWidget {
                 Navigator.pushNamed(context, '/camera');
               }),
           ListTile(
-              title: const Text('Z1 Settings'),
+              title: const Text('Z1 Specific Settings'),
               onTap: () {
                 Navigator.pushNamed(context, '/cameraz1');
               }),
           ListTile(
-              title: const Text('SC2 Settings'),
+              title: const Text('SC2 Specific Settings'),
               onTap: () {
                 Navigator.pushNamed(context, '/camerasc2');
               }),

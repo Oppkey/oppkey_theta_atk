@@ -33,3 +33,7 @@ export 'request/set_filter_hdr.dart';
 export 'request/set_filter_drcomp.dart';
 export 'request/set_filter_noise_reduction.dart';
 export 'request/set_filter_hhhdr.dart';
+export 'request/set_aperture_0_button.dart';
+export 'request/set_aperture_2dot1_button.dart';
+export 'request/set_aperture_3dot5_button.dart';
+export 'request/set_aperture_5dot6_button.dart';
