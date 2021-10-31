@@ -26,10 +26,11 @@ class CameraZ1Screen extends StatelessWidget {
               flex: 8,
               child: ListView(
                 children: [
+                  const Text(
+                      'To set aperture, exposureProgram must be set to Manual or Aperture Priority'),
                   Row(
-                    children: [
-                      Text(
-                          'To set aperture, exposureProgram must be set to Manual or Aperture Priority')
+                    children: const [
+                      ExposureProgramButton(),
                     ],
                   ),
                   Container(
@@ -37,7 +38,6 @@ class CameraZ1Screen extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        ExposureProgramButton(),
                         SetAperture0Button(
                           style: ButtonStyle(
                             foregroundColor:
