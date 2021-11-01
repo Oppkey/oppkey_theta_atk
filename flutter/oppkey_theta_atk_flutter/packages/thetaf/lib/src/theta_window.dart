@@ -5,6 +5,16 @@ import 'package:thetaf/src/model/window_notifier.dart';
 
 import 'model/response_notifier.dart';
 
+/// all other widgets must be wrapped inside a ThetaWindow
+/// widget.
+/// import 'package:thetaf/thetaf.dart';
+///```
+///...
+///return MaterialApp(
+///    home: Scaffold(
+///        body: ThetaWindow(
+///            child: Column(
+/// ```
 class ThetaWindow extends StatelessWidget {
   final Widget child;
   const ThetaWindow({required this.child, Key? key}) : super(key: key);
