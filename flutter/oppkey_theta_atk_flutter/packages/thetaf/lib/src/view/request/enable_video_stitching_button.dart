@@ -8,6 +8,7 @@ class EnableVideoStitchingButton extends StatelessWidget {
   final FocusNode? focusNode;
   final bool autofocus;
   final Clip clipBehavior;
+  final String label;
 
   const EnableVideoStitchingButton({
     Key? key,
@@ -15,6 +16,7 @@ class EnableVideoStitchingButton extends StatelessWidget {
     this.focusNode,
     this.autofocus = false,
     this.clipBehavior = Clip.none,
+    this.label = 'Enable',
   }) : super(key: key);
 
   @override
@@ -47,6 +49,6 @@ class EnableVideoStitchingButton extends StatelessWidget {
           Provider.of<ResponseNotifier>(context, listen: false)
               .setResponseText(response);
         },
-        child: const Text('enable video stitching (Z1 only)'));
+        child: Text(label));
   }
 }

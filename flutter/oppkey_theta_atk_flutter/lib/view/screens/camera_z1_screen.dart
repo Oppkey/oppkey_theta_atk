@@ -22,6 +22,9 @@ class CameraZ1Screen extends StatelessWidget {
                 textColor: Color(0xfff5f5f5),
                 fontSize: 24.0,
                 flex: 8),
+            const SizedBox(
+              height: 10,
+            ),
             Expanded(
               flex: 8,
               child: ListView(
@@ -76,74 +79,58 @@ class CameraZ1Screen extends StatelessWidget {
                   const SizedBox(
                     height: 10,
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: const [
-                      InfoButton(),
-                    ],
+                  const Text(
+                      'You can enable or disable video stitching on the Z1. If disabled, the video is recorded in dual fisheye (two hemispheres).'),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Container(
+                    color: Colors.blueAccent,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        EnableVideoStitchingButton(
+                          style: ButtonStyle(
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.blueGrey),
+                          ),
+                        ),
+                        DisableVideoStitchingButton(
+                          style: ButtonStyle(
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.blueGrey),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                   const SizedBox(
                     height: 10,
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: const [
-                      SetFilterHhhdrButton(),
-                    ],
+                  const Text(
+                      'You can set the _filter option which controls the image processing filter. The Handheld HDR value, good for reducing a small about of shakiness in an image, can only be used with the Z1. Make sure mode is set to image.'),
+                  const SizedBox(
+                    height: 10,
                   ),
-                  Row(
-                    children: [Text('More Z1 Options')],
-                  ),
-                  Row(
-                    children: [Text('More Z1 Options')],
-                  ),
-                  Row(
-                    children: [Text('More Z1 Options')],
-                  ),
-                  Row(
-                    children: [Text('More Z1 Options')],
-                  ),
-                  Row(
-                    children: [Text('More Z1 Options')],
-                  ),
-                  Row(
-                    children: [Text('More Z1 Options')],
-                  ),
-                  Row(
-                    children: [Text('More Z1 Options')],
-                  ),
-                  Row(
-                    children: [Text('More Z1 Options')],
-                  ),
-                  Row(
-                    children: [Text('More Z1 Options')],
-                  ),
-                  Row(
-                    children: [Text('More Z1 Options')],
-                  ),
-                  Row(
-                    children: [Text('More Z1 Options')],
-                  ),
-                  Row(
-                    children: [Text('More Z1 Options')],
-                  ),
-                  Row(
-                    children: [Text('More Z1 Options')],
-                  ),
-                  Row(
-                    children: [Text('More Z1 Options')],
-                  ),
-                  Row(
-                    children: [Text('More Z1 Options')],
-                  ),
-                  Row(
-                    children: [Text('More Z1 Options')],
-                  ),
-                  Row(
-                    children: [Text('More Z1 Options')],
-                  ),
-                  Row(
-                    children: [Text('More Z1 Options')],
+                  Container(
+                    color: Colors.blueAccent,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        SetFilterHhhdrButton(
+                          style: ButtonStyle(
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.blueGrey),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ],
               ),
