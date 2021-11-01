@@ -36,6 +36,11 @@ class HomeScreenDrawer extends StatelessWidget {
                 Navigator.pushNamed(context, '/preview');
               }),
           ListTile(
+              title: const Text('Admin'),
+              onTap: () {
+                Navigator.pushNamed(context, '/admin');
+              }),
+          ListTile(
               title: const Text('File'),
               onTap: () {
                 Navigator.pushNamed(context, '/file');

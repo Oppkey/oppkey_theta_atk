@@ -8,6 +8,7 @@ import 'package:oppkey_theta_atk_flutter/view/screens/preview_screen.dart';
 import 'package:oppkey_theta_atk_flutter/view/screens/use_screen.dart';
 import 'view/screens/camera_sc2_screen.dart';
 import 'view/screens/home_screen.dart';
+import 'view/screens/admin_screen.dart';
 
 void main() {
   runApp(MultiProvider(
@@ -39,6 +40,7 @@ class MainApp extends StatelessWidget {
         '/cameraz1': (context) => const CameraZ1Screen(),
         '/camerasc2': (context) => const CameraSC2Screen(),
         '/preview': (context) => const PreviewScreen(),
+        '/admin': (context) => const AdminScreen(),
       },
     );
   }
