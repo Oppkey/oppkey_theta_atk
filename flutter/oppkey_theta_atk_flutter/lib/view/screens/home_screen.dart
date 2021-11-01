@@ -24,6 +24,7 @@ class HomeScreen extends StatelessWidget {
           child: Column(
             children: [
               /// example of using syntax highlighting
+
               const ThetaSyntaxWindow(
                 // fontSize: 22,
                 flex: 5,
