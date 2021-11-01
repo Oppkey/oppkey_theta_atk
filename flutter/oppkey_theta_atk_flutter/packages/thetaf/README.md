@@ -19,12 +19,20 @@ This is not suitable for production applications.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+<!-- TODO: List what your package can do. Maybe include images, gifs, or videos. -->
+
+* API request and response for [RICOH THETA WebAPI v2.1](https://api.ricoh/docs/theta-web-api-v2.1/)
+* Widgets can be used on iOS, Android, and desktop. Web is not supported.
+
+![use screen](readme_assets/images/use_screen.png)
+
+![home screen](readme_assets/images/admin_screen.png)
 
 ## Getting started
 
+<!-- 
 TODO: List prerequisites and provide or point to information on how to
-start using the package.
+start using the package. -->
 
 * RICOH THETA must be connected to development workstation using Wi-Fi with
 the camera as the access point
@@ -46,7 +54,7 @@ return MaterialApp(
 ### Put thetaf widgets as children of `ThetaWindow`
 
 ## Additional information
-
+<!-- 
 TODO: Tell users more about the package: where to find more information, how to 
 contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+from the package authors, and more. -->
