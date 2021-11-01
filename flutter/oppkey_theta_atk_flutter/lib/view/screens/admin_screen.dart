@@ -43,6 +43,7 @@ class AdminScreen extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         DeleteAllFilesButton(
+                          label: 'DELETE EVERYTHING',
                           style: ButtonStyle(
                             textStyle: MaterialStateProperty.all<TextStyle>(
                               const TextStyle(fontSize: 16),
