@@ -24,7 +24,7 @@ This is not suitable for production applications.
 * API request and response for [RICOH THETA WebAPI v2.1](https://api.ricoh/docs/theta-web-api-v2.1/)
 * Widgets can be used on iOS, Android, and desktop. Web is not supported.
 
-![use screen](readme_assets/images/use_screen.png)
+![use screen](readme_assets/images/home_screen.png)
 
 ![home screen](readme_assets/images/admin_screen.png)
 

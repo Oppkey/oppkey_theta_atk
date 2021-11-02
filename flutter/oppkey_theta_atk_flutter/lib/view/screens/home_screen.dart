@@ -23,7 +23,7 @@ class HomeScreen extends StatelessWidget {
           padding: const EdgeInsets.all(14.0),
           child: Column(
             children: [
-              /// example of using syntax highlighting
+              // example of using syntax highlighting
               const ThetaSyntaxWindow(
                 // fontSize: 22,
                 flex: 5,
