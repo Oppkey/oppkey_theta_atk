@@ -8,10 +8,12 @@ class StateButton extends StatelessWidget {
   final double fontSize;
   final Color textColor;
   final Color backgroundColor;
+  final String label;
   const StateButton({
     this.fontSize = 14.0,
     this.textColor = Colors.black,
     this.backgroundColor = Colors.white,
+    this.label = 'State',
     Key? key,
   }) : super(key: key);
 
@@ -26,6 +28,6 @@ class StateButton extends StatelessWidget {
           Provider.of<ResponseNotifier>(context, listen: false)
               .setResponseText(response);
         },
-        label: 'state');
+        label: label);
   }
 }

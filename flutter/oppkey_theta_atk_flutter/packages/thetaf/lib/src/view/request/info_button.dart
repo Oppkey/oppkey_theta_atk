@@ -8,10 +8,12 @@ class InfoButton extends StatelessWidget {
   final Color textColor;
   final Color backgroundColor;
   final double fontSize;
+  final String label;
   const InfoButton({
     this.textColor = Colors.black,
     this.backgroundColor = Colors.white,
     this.fontSize = 14.0,
+    this.label = 'Info',
     Key? key,
   }) : super(key: key);
 
@@ -26,6 +28,6 @@ class InfoButton extends StatelessWidget {
           Provider.of<ResponseNotifier>(context, listen: false)
               .setResponseText(response);
         },
-        label: 'info');
+        label: label);
   }
 }

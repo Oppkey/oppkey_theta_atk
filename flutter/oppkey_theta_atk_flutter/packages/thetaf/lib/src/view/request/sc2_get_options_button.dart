@@ -8,11 +8,13 @@ class Sc2GetOptionsButton extends StatelessWidget {
   final double fontSize;
   final Color textColor;
   final Color backgroundColor;
+  final String label;
 
   const Sc2GetOptionsButton({
     this.fontSize = 14.0,
     this.textColor = Colors.black,
     this.backgroundColor = Colors.white,
+    this.label = 'SC2 Get Options',
     Key? key,
   }) : super(key: key);
 
@@ -27,6 +29,6 @@ class Sc2GetOptionsButton extends StatelessWidget {
           Provider.of<ResponseNotifier>(context, listen: false)
               .setResponseText(response);
         },
-        label: 'SC2 options');
+        label: 'label');
   }
 }

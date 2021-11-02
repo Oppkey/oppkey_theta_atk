@@ -21,60 +21,143 @@ class CameraScreen extends StatelessWidget {
                 flex: 6,
                 child: ListView(
                   children: [
-                    //This row is for controlling sleep settings.
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: const [
-                        SetExposureCompensationneg2Button(),
-                      ],
+                    const SizedBox(
+                      height: 10,
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: const [
-                        SetExposureCompensationneg1Button(),
-                      ],
+                    const Text(
+                        'You can set exposureCompensation. Here are 5 example settings.'),
+                    const SizedBox(
+                      height: 10,
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: const [
-                        SetExposureCompensation0Button(),
-                      ],
+                    Container(
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          SetExposureCompensationneg2Button(
+                            label: '-2',
+                            style: ButtonStyle(
+                              textStyle: MaterialStateProperty.all<TextStyle>(
+                                const TextStyle(fontSize: 16),
+                              ),
+                              foregroundColor: MaterialStateProperty.all<Color>(
+                                  Colors.white),
+                              backgroundColor: MaterialStateProperty.all<Color>(
+                                  Colors.lightGreen),
+                            ),
+                          ),
+                          SetExposureCompensationneg1Button(
+                            label: '-1',
+                            style: ButtonStyle(
+                              textStyle: MaterialStateProperty.all<TextStyle>(
+                                const TextStyle(fontSize: 16),
+                              ),
+                              foregroundColor: MaterialStateProperty.all<Color>(
+                                  Colors.white),
+                              backgroundColor: MaterialStateProperty.all<Color>(
+                                  Colors.lightGreen),
+                            ),
+                          ),
+                          SetExposureCompensation0Button(
+                            label: '0',
+                            style: ButtonStyle(
+                              textStyle: MaterialStateProperty.all<TextStyle>(
+                                const TextStyle(fontSize: 16),
+                              ),
+                              foregroundColor: MaterialStateProperty.all<Color>(
+                                  Colors.white),
+                              backgroundColor: MaterialStateProperty.all<Color>(
+                                  Colors.lightGreen),
+                            ),
+                          ),
+                          SetExposureCompensation1Button(
+                            label: '1',
+                            style: ButtonStyle(
+                              textStyle: MaterialStateProperty.all<TextStyle>(
+                                const TextStyle(fontSize: 16),
+                              ),
+                              foregroundColor: MaterialStateProperty.all<Color>(
+                                  Colors.white),
+                              backgroundColor: MaterialStateProperty.all<Color>(
+                                  Colors.lightGreen),
+                            ),
+                          ),
+                          SetExposureCompensation2Button(
+                            label: '2',
+                            style: ButtonStyle(
+                              textStyle: MaterialStateProperty.all<TextStyle>(
+                                const TextStyle(fontSize: 16),
+                              ),
+                              foregroundColor: MaterialStateProperty.all<Color>(
+                                  Colors.white),
+                              backgroundColor: MaterialStateProperty.all<Color>(
+                                  Colors.lightGreen),
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: const [
-                        SetExposureCompensation1Button(),
-                      ],
+                    const SizedBox(
+                      height: 10,
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: const [
-                        SetExposureCompensation2Button(),
-                      ],
+                    const Text(
+                        'You can set _filter to control images settings.'),
+                    const SizedBox(
+                      height: 10,
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: const [
-                        SetFilterOffButton(),
-                      ],
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: const [
-                        SetFilterHdrButton(),
-                      ],
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: const [
-                        SetFilterDrcompButton(),
-                      ],
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: const [
-                        SetFilterNoiseReductionButton(),
-                      ],
+                    Container(
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          SetFilterOffButton(
+                            label: 'OFF',
+                            style: ButtonStyle(
+                              textStyle: MaterialStateProperty.all<TextStyle>(
+                                const TextStyle(fontSize: 16),
+                              ),
+                              foregroundColor: MaterialStateProperty.all<Color>(
+                                  Colors.white),
+                              backgroundColor: MaterialStateProperty.all<Color>(
+                                  Colors.lightBlue),
+                            ),
+                          ),
+                          SetFilterHdrButton(
+                            label: 'HDR',
+                            style: ButtonStyle(
+                              textStyle: MaterialStateProperty.all<TextStyle>(
+                                const TextStyle(fontSize: 16),
+                              ),
+                              foregroundColor: MaterialStateProperty.all<Color>(
+                                  Colors.white),
+                              backgroundColor: MaterialStateProperty.all<Color>(
+                                  Colors.lightBlue),
+                            ),
+                          ),
+                          SetFilterDrcompButton(
+                            label: 'DR Comp',
+                            style: ButtonStyle(
+                              textStyle: MaterialStateProperty.all<TextStyle>(
+                                const TextStyle(fontSize: 16),
+                              ),
+                              foregroundColor: MaterialStateProperty.all<Color>(
+                                  Colors.white),
+                              backgroundColor: MaterialStateProperty.all<Color>(
+                                  Colors.lightBlue),
+                            ),
+                          ),
+                          SetFilterNoiseReductionButton(
+                            label: 'Noise Reduction',
+                            style: ButtonStyle(
+                              textStyle: MaterialStateProperty.all<TextStyle>(
+                                const TextStyle(fontSize: 16),
+                              ),
+                              foregroundColor: MaterialStateProperty.all<Color>(
+                                  Colors.white),
+                              backgroundColor: MaterialStateProperty.all<Color>(
+                                  Colors.lightBlue),
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                     const SizedBox(
                       height: 30,

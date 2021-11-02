@@ -54,7 +54,18 @@ class AdminScreen extends StatelessWidget {
                                 MaterialStateProperty.all<Color>(Colors.red),
                           ),
                         ),
-                        ResetButton(
+                        DeleteAllImagesButton(
+                          style: ButtonStyle(
+                            textStyle: MaterialStateProperty.all<TextStyle>(
+                              const TextStyle(fontSize: 16),
+                            ),
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor:
+                                MaterialStateProperty.all<Color>(Colors.red),
+                          ),
+                        ),
+                        DeleteAllVideosButton(
                           style: ButtonStyle(
                             foregroundColor:
                                 MaterialStateProperty.all<Color>(Colors.white),
@@ -66,10 +77,13 @@ class AdminScreen extends StatelessWidget {
                       ],
                     ),
                   ),
+                  const SizedBox(
+                    height: 10,
+                  ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      DeleteAllVideosButton(
+                      ResetButton(
                         style: ButtonStyle(
                           foregroundColor:
                               MaterialStateProperty.all<Color>(Colors.white),
@@ -91,7 +105,7 @@ class AdminScreen extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        EnablePowerOffButton(
+                        DisablePowerOffButton(
                           style: ButtonStyle(
                             foregroundColor:
                                 MaterialStateProperty.all<Color>(Colors.white),
@@ -99,7 +113,7 @@ class AdminScreen extends StatelessWidget {
                                 Colors.lightGreen),
                           ),
                         ),
-                        DisablePowerOffButton(
+                        EnablePowerOffButton(
                           style: ButtonStyle(
                             foregroundColor:
                                 MaterialStateProperty.all<Color>(Colors.white),
@@ -109,6 +123,9 @@ class AdminScreen extends StatelessWidget {
                         ),
                       ],
                     ),
+                  ),
+                  const SizedBox(
+                    height: 10,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,

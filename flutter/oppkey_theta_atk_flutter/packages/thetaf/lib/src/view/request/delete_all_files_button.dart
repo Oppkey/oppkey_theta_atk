@@ -4,7 +4,7 @@ import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
 /// label: 'new label',
-/// example   `label: 'DELETE EVERYTHING',`
+/// example `label: 'DELETE EVERYTHING',`
 class DeleteAllFilesButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;
