@@ -16,7 +16,7 @@ class SetExposureCompensation1Button extends StatelessWidget {
     this.focusNode,
     this.autofocus = false,
     this.clipBehavior = Clip.none,
-    this.label = "Set Exposure Compensation to 1",
+    this.label = "EV 1.0",
   }) : super(key: key);
 
   @override

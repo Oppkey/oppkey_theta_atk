@@ -33,16 +33,8 @@ class HomeScreen extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: const [
-                    StateButton(
-                      fontSize: 32,
-                      backgroundColor: Colors.lightGreen,
-                      textColor: Colors.white,
-                    ),
-                    InfoButton(
-                      fontSize: 32,
-                      backgroundColor: Color(0xffFFB74D),
-                      textColor: Colors.white,
-                    ),
+                    StateButton(),
+                    InfoButton(),
                   ],
                 ),
               ),
@@ -51,29 +43,15 @@ class HomeScreen extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    const Z1GetOptionsButton(
-                      fontSize: 32,
-                      backgroundColor: Color(0xFF9575CD),
-                      textColor: Colors.white,
-                    ),
-                    !mobile
-                        ? const Sc2GetOptionsButton(
-                            backgroundColor: Color(0xffA1887F),
-                            textColor: Colors.white,
-                            fontSize: 32,
-                          )
-                        : Container(),
+                    const Z1GetOptionsButton(),
+                    !mobile ? const Sc2GetOptionsButton() : Container(),
                   ],
                 ),
               ),
               mobile
                   ? const Expanded(
                       flex: 1,
-                      child: Sc2GetOptionsButton(
-                        backgroundColor: Color(0xffA1887F),
-                        textColor: Colors.white,
-                        fontSize: 32,
-                      ),
+                      child: Sc2GetOptionsButton(),
                     )
                   : Container(),
             ],

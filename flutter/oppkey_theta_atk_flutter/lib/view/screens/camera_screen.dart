@@ -34,7 +34,6 @@ class CameraScreen extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           SetExposureCompensationneg2Button(
-                            label: '-2',
                             style: ButtonStyle(
                               textStyle: MaterialStateProperty.all<TextStyle>(
                                 const TextStyle(fontSize: 16),
@@ -46,7 +45,6 @@ class CameraScreen extends StatelessWidget {
                             ),
                           ),
                           SetExposureCompensationneg1Button(
-                            label: '-1',
                             style: ButtonStyle(
                               textStyle: MaterialStateProperty.all<TextStyle>(
                                 const TextStyle(fontSize: 16),
@@ -58,7 +56,6 @@ class CameraScreen extends StatelessWidget {
                             ),
                           ),
                           SetExposureCompensation0Button(
-                            label: '0',
                             style: ButtonStyle(
                               textStyle: MaterialStateProperty.all<TextStyle>(
                                 const TextStyle(fontSize: 16),
@@ -70,7 +67,6 @@ class CameraScreen extends StatelessWidget {
                             ),
                           ),
                           SetExposureCompensation1Button(
-                            label: '1',
                             style: ButtonStyle(
                               textStyle: MaterialStateProperty.all<TextStyle>(
                                 const TextStyle(fontSize: 16),
@@ -82,7 +78,6 @@ class CameraScreen extends StatelessWidget {
                             ),
                           ),
                           SetExposureCompensation2Button(
-                            label: '2',
                             style: ButtonStyle(
                               textStyle: MaterialStateProperty.all<TextStyle>(
                                 const TextStyle(fontSize: 16),
@@ -109,7 +104,6 @@ class CameraScreen extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           SetFilterOffButton(
-                            label: 'OFF',
                             style: ButtonStyle(
                               textStyle: MaterialStateProperty.all<TextStyle>(
                                 const TextStyle(fontSize: 16),
@@ -121,7 +115,6 @@ class CameraScreen extends StatelessWidget {
                             ),
                           ),
                           SetFilterHdrButton(
-                            label: 'HDR',
                             style: ButtonStyle(
                               textStyle: MaterialStateProperty.all<TextStyle>(
                                 const TextStyle(fontSize: 16),
@@ -133,7 +126,6 @@ class CameraScreen extends StatelessWidget {
                             ),
                           ),
                           SetFilterDrcompButton(
-                            label: 'DR Comp',
                             style: ButtonStyle(
                               textStyle: MaterialStateProperty.all<TextStyle>(
                                 const TextStyle(fontSize: 16),
@@ -145,7 +137,6 @@ class CameraScreen extends StatelessWidget {
                             ),
                           ),
                           SetFilterNoiseReductionButton(
-                            label: 'Noise Reduction',
                             style: ButtonStyle(
                               textStyle: MaterialStateProperty.all<TextStyle>(
                                 const TextStyle(fontSize: 16),

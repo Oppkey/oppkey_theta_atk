@@ -16,7 +16,7 @@ class SetFilterDrcompButton extends StatelessWidget {
     this.focusNode,
     this.autofocus = false,
     this.clipBehavior = Clip.none,
-    this.label = "Set _filter to DR Comp",
+    this.label = "DR compensat.",
   }) : super(key: key);
 
   @override
