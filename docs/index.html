@@ -14,6 +14,10 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link
+      href="oppkey.css"
+      rel="stylesheet"
+    />
 
     <meta name="theme-color" content="#7952b3" />
 
@@ -68,14 +72,25 @@
                 <h1 class="display-5 fw-bold">RICOH THETA API Test Kit</h1>
                 <p>API usage examples, documentation, and reusable widgets</p>
                 <p>
-                  <a
+                  <form action="https://formspree.io/f/mgerjzny" method="post" id="email" name="atk-download" accept-charset="utf-8">
+                    <!-- <label for="email-address">email</label> -->
+                    <input type="email" name="_replyto" id="email-address" placeholder="email" required="">
+                    <input type="submit" value="Get It!" class="btn btn-primary btn-lg">
+                  </form>
+                  <!-- <a
                     href="https://github.com/Oppkey/oppkey_theta_atk/releases"
                     class="btn btn-primary btn-lg"
                     type="button"
                   >
                     Download Now
-                  </a>
+                  </a> -->
+                  <div class=privacy>
+                    <a href="legal/privacy.html">privacy policy</a>
+                    |
+                    <a href="#registration">why we collect email</a>
+                  </div>
                 </p>
+    
                 <img
                   src="images/cameras.png"
                   width="50%"
@@ -202,10 +217,33 @@
         
         <!-- BEGIN ROW additional atk information -->
         <div class="row align-items-md-stretch">
-          <div class="col-md-6">
+          <div class="col-md-6" id="registration">
             <!-- <div class="h-100 p-5 text-white bg-dark rounded-3"> -->
-            <div class="h-100 p-5 bg-light border rounded-3">
-         
+            <div class="h-100 p-5 bg-light border rounded-3" >
+              <h2>Why we require email</h2>
+              <p>
+                Although .guide is an independent site, we receive sponsorship from RICOH. In order to justify the value of this site to our sponsor, we report back to RICOH on popularity metrics for different types of content. .guide does not sell anything and there are no paid ads or endorsements on our sites. We succeed if the content we provide is of use to people.
+              </p>
+              <p>
+            There is little public documentation on the ricohapi GitHub 
+            READMEs and web sites about API usage
+            and workarounds. We are slowly collecting tests from the 
+            community and augmenting community tests with our own tests. 
+            The process takes time. There are still many gaps in the 
+            API usage documentation and it will take more time to 
+            solve these problems. Registration helps us verify 
+            the value of our work with the community. Thank you.
+</p>
+<p>
+          If you ever find information on this site that is useful, 
+          please let us know or let someone at RICOH know. The effort by you will help all of us to continue the exchange of community content.
+              </p>
+              <p>
+                Thank you again for your continued support.
+              </p>
+              <p>
+                Jesse Casman (jcasman@oppkey.com) and Craig Oda (craig@oppkey.com)  of Oppkey
+              </p>
             </div>
           </div>
           <div class="col-md-6">
