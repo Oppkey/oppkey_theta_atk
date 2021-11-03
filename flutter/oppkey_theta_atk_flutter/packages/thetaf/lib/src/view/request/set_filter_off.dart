@@ -16,7 +16,7 @@ class SetFilterOffButton extends StatelessWidget {
     this.focusNode,
     this.autofocus = false,
     this.clipBehavior = Clip.none,
-    this.label = "Set _filter to OFF",
+    this.label = "OFF",
   }) : super(key: key);
 
   @override

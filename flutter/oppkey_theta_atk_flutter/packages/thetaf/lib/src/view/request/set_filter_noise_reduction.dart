@@ -16,7 +16,7 @@ class SetFilterNoiseReductionButton extends StatelessWidget {
     this.focusNode,
     this.autofocus = false,
     this.clipBehavior = Clip.none,
-    this.label = "Set _filter to Noise Reduction",
+    this.label = "Noise reduct.",
   }) : super(key: key);
 
   @override

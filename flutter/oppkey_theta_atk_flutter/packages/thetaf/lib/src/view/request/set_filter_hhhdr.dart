@@ -16,7 +16,7 @@ class SetFilterHhhdrButton extends StatelessWidget {
       this.focusNode,
       this.autofocus = false,
       this.clipBehavior = Clip.none,
-      this.label = 'Set _filter to Handheld HDR'})
+      this.label = 'Handheld HDR'})
       : super(key: key);
 
   @override
