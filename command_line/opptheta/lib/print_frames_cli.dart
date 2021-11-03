@@ -39,7 +39,7 @@ class PrintFrames extends Command {
     }
     Stopwatch durationTimer = Stopwatch();
     durationTimer.start();
-    var frameCount = 0;
+    // var frameCount = 0;
     if (duration != -1) {
       frames = -1;
     }
@@ -49,7 +49,7 @@ class PrintFrames extends Command {
 
     controller.stream.listen((frame) {
       print(frame);
-      frameCount++;
+      // frameCount++;
       if (frames == -1 && duration != -1) {
         if (durationTimer.elapsedMilliseconds > duration * 1000) {
           Preview.stopPreview();
