@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
+/// Tells you how many brackets are set.
 class SetAutobracketNumbersButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;
@@ -16,7 +17,7 @@ class SetAutobracketNumbersButton extends StatelessWidget {
     this.focusNode,
     this.autofocus = false,
     this.clipBehavior = Clip.none,
-    this.label = '_autoBracket Number',
+    this.label = 'DO_NOT_USE_autoBracket Number',
   }) : super(key: key);
 
   @override
@@ -27,7 +28,8 @@ class SetAutobracketNumbersButton extends StatelessWidget {
         autofocus: autofocus,
         clipBehavior: clipBehavior,
         onPressed: () async {
-          var response =
+          //TODO: Need to fix _autoBracket parameters?
+          String response =
               await setOption(name: '_autoBracket', value: '_bracketNumber');
           // set title for response. Edit the line below
           // for each option
