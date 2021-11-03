@@ -29,67 +29,65 @@ class CameraScreen extends StatelessWidget {
                     const SizedBox(
                       height: 10,
                     ),
-                    Container(
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          SetExposureCompensationneg2Button(
-                            style: ButtonStyle(
-                              textStyle: MaterialStateProperty.all<TextStyle>(
-                                const TextStyle(fontSize: 16),
-                              ),
-                              foregroundColor: MaterialStateProperty.all<Color>(
-                                  Colors.white),
-                              backgroundColor: MaterialStateProperty.all<Color>(
-                                  Colors.lightGreen),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        SetExposureCompensationneg2Button(
+                          style: ButtonStyle(
+                            textStyle: MaterialStateProperty.all<TextStyle>(
+                              const TextStyle(fontSize: 16),
                             ),
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.lightGreen),
                           ),
-                          SetExposureCompensationneg1Button(
-                            style: ButtonStyle(
-                              textStyle: MaterialStateProperty.all<TextStyle>(
-                                const TextStyle(fontSize: 16),
-                              ),
-                              foregroundColor: MaterialStateProperty.all<Color>(
-                                  Colors.white),
-                              backgroundColor: MaterialStateProperty.all<Color>(
-                                  Colors.lightGreen),
+                        ),
+                        SetExposureCompensationneg1Button(
+                          style: ButtonStyle(
+                            textStyle: MaterialStateProperty.all<TextStyle>(
+                              const TextStyle(fontSize: 16),
                             ),
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.lightGreen),
                           ),
-                          SetExposureCompensation0Button(
-                            style: ButtonStyle(
-                              textStyle: MaterialStateProperty.all<TextStyle>(
-                                const TextStyle(fontSize: 16),
-                              ),
-                              foregroundColor: MaterialStateProperty.all<Color>(
-                                  Colors.white),
-                              backgroundColor: MaterialStateProperty.all<Color>(
-                                  Colors.lightGreen),
+                        ),
+                        SetExposureCompensation0Button(
+                          style: ButtonStyle(
+                            textStyle: MaterialStateProperty.all<TextStyle>(
+                              const TextStyle(fontSize: 16),
                             ),
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.lightGreen),
                           ),
-                          SetExposureCompensation1Button(
-                            style: ButtonStyle(
-                              textStyle: MaterialStateProperty.all<TextStyle>(
-                                const TextStyle(fontSize: 16),
-                              ),
-                              foregroundColor: MaterialStateProperty.all<Color>(
-                                  Colors.white),
-                              backgroundColor: MaterialStateProperty.all<Color>(
-                                  Colors.lightGreen),
+                        ),
+                        SetExposureCompensation1Button(
+                          style: ButtonStyle(
+                            textStyle: MaterialStateProperty.all<TextStyle>(
+                              const TextStyle(fontSize: 16),
                             ),
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.lightGreen),
                           ),
-                          SetExposureCompensation2Button(
-                            style: ButtonStyle(
-                              textStyle: MaterialStateProperty.all<TextStyle>(
-                                const TextStyle(fontSize: 16),
-                              ),
-                              foregroundColor: MaterialStateProperty.all<Color>(
-                                  Colors.white),
-                              backgroundColor: MaterialStateProperty.all<Color>(
-                                  Colors.lightGreen),
+                        ),
+                        SetExposureCompensation2Button(
+                          style: ButtonStyle(
+                            textStyle: MaterialStateProperty.all<TextStyle>(
+                              const TextStyle(fontSize: 16),
                             ),
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.lightGreen),
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
                     const SizedBox(
                       height: 10,
@@ -99,56 +97,78 @@ class CameraScreen extends StatelessWidget {
                     const SizedBox(
                       height: 10,
                     ),
-                    Container(
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          SetFilterOffButton(
-                            style: ButtonStyle(
-                              textStyle: MaterialStateProperty.all<TextStyle>(
-                                const TextStyle(fontSize: 16),
-                              ),
-                              foregroundColor: MaterialStateProperty.all<Color>(
-                                  Colors.white),
-                              backgroundColor: MaterialStateProperty.all<Color>(
-                                  Colors.lightBlue),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        SetFilterOffButton(
+                          style: ButtonStyle(
+                            textStyle: MaterialStateProperty.all<TextStyle>(
+                              const TextStyle(fontSize: 16),
                             ),
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.lightBlue),
                           ),
-                          SetFilterHdrButton(
-                            style: ButtonStyle(
-                              textStyle: MaterialStateProperty.all<TextStyle>(
-                                const TextStyle(fontSize: 16),
-                              ),
-                              foregroundColor: MaterialStateProperty.all<Color>(
-                                  Colors.white),
-                              backgroundColor: MaterialStateProperty.all<Color>(
-                                  Colors.lightBlue),
+                        ),
+                        SetFilterHdrButton(
+                          style: ButtonStyle(
+                            textStyle: MaterialStateProperty.all<TextStyle>(
+                              const TextStyle(fontSize: 16),
                             ),
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.lightBlue),
                           ),
-                          SetFilterDrcompButton(
-                            style: ButtonStyle(
-                              textStyle: MaterialStateProperty.all<TextStyle>(
-                                const TextStyle(fontSize: 16),
-                              ),
-                              foregroundColor: MaterialStateProperty.all<Color>(
-                                  Colors.white),
-                              backgroundColor: MaterialStateProperty.all<Color>(
-                                  Colors.lightBlue),
+                        ),
+                        SetFilterDrcompButton(
+                          style: ButtonStyle(
+                            textStyle: MaterialStateProperty.all<TextStyle>(
+                              const TextStyle(fontSize: 16),
                             ),
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.lightBlue),
                           ),
-                          SetFilterNoiseReductionButton(
-                            style: ButtonStyle(
-                              textStyle: MaterialStateProperty.all<TextStyle>(
-                                const TextStyle(fontSize: 16),
-                              ),
-                              foregroundColor: MaterialStateProperty.all<Color>(
-                                  Colors.white),
-                              backgroundColor: MaterialStateProperty.all<Color>(
-                                  Colors.lightBlue),
+                        ),
+                        SetFilterNoiseReductionButton(
+                          style: ButtonStyle(
+                            textStyle: MaterialStateProperty.all<TextStyle>(
+                              const TextStyle(fontSize: 16),
                             ),
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.lightBlue),
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    const Text(
+                        'You can set __autoBracket to get the number of bracketed images.'),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        SetAutobracketNumbersButton(
+                          style: ButtonStyle(
+                            textStyle: MaterialStateProperty.all<TextStyle>(
+                              const TextStyle(fontSize: 16),
+                            ),
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.lightBlue),
+                          ),
+                        ),
+                      ],
                     ),
                     const SizedBox(
                       height: 30,

@@ -25,7 +25,7 @@ class FileScreen extends StatelessWidget {
                       child: const OnCameraButtons(),
                     ),
                     Row(
-                      children: [DownloadButton()],
+                      children: const [DownloadButton()],
                     )
                   ],
                 ))

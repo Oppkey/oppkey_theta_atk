@@ -37,44 +37,41 @@ class AdminScreen extends StatelessWidget {
                   const SizedBox(
                     height: 10,
                   ),
-                  Container(
-                    // color: Colors.pink,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        DeleteAllFilesButton(
-                          style: ButtonStyle(
-                            textStyle: MaterialStateProperty.all<TextStyle>(
-                              const TextStyle(fontSize: 16),
-                            ),
-                            foregroundColor:
-                                MaterialStateProperty.all<Color>(Colors.white),
-                            backgroundColor:
-                                MaterialStateProperty.all<Color>(Colors.red),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      DeleteAllFilesButton(
+                        style: ButtonStyle(
+                          textStyle: MaterialStateProperty.all<TextStyle>(
+                            const TextStyle(fontSize: 16),
                           ),
+                          foregroundColor:
+                              MaterialStateProperty.all<Color>(Colors.white),
+                          backgroundColor:
+                              MaterialStateProperty.all<Color>(Colors.red),
                         ),
-                        DeleteAllImagesButton(
-                          style: ButtonStyle(
-                            textStyle: MaterialStateProperty.all<TextStyle>(
-                              const TextStyle(fontSize: 16),
-                            ),
-                            foregroundColor:
-                                MaterialStateProperty.all<Color>(Colors.white),
-                            backgroundColor:
-                                MaterialStateProperty.all<Color>(Colors.red),
+                      ),
+                      DeleteAllImagesButton(
+                        style: ButtonStyle(
+                          textStyle: MaterialStateProperty.all<TextStyle>(
+                            const TextStyle(fontSize: 16),
                           ),
+                          foregroundColor:
+                              MaterialStateProperty.all<Color>(Colors.white),
+                          backgroundColor:
+                              MaterialStateProperty.all<Color>(Colors.red),
                         ),
-                        DeleteAllVideosButton(
-                          style: ButtonStyle(
-                            foregroundColor:
-                                MaterialStateProperty.all<Color>(Colors.white),
-                            backgroundColor:
-                                MaterialStateProperty.all<Color>(Colors.red),
-                          ),
+                      ),
+                      DeleteAllVideosButton(
+                        style: ButtonStyle(
+                          foregroundColor:
+                              MaterialStateProperty.all<Color>(Colors.white),
+                          backgroundColor:
+                              MaterialStateProperty.all<Color>(Colors.red),
                         ),
-                        // const DeleteAllImagesButton(),
-                      ],
-                    ),
+                      ),
+                      // const DeleteAllImagesButton(),
+                    ],
                   ),
                   const SizedBox(
                     height: 10,
@@ -100,28 +97,26 @@ class AdminScreen extends StatelessWidget {
                     height: 10,
                   ),
                   //This row is for controlling power off settings.
-                  Container(
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        DisablePowerOffButton(
-                          style: ButtonStyle(
-                            foregroundColor:
-                                MaterialStateProperty.all<Color>(Colors.white),
-                            backgroundColor: MaterialStateProperty.all<Color>(
-                                Colors.lightGreen),
-                          ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      DisablePowerOffButton(
+                        style: ButtonStyle(
+                          foregroundColor:
+                              MaterialStateProperty.all<Color>(Colors.white),
+                          backgroundColor: MaterialStateProperty.all<Color>(
+                              Colors.lightGreen),
                         ),
-                        EnablePowerOffButton(
-                          style: ButtonStyle(
-                            foregroundColor:
-                                MaterialStateProperty.all<Color>(Colors.white),
-                            backgroundColor: MaterialStateProperty.all<Color>(
-                                Colors.lightGreen),
-                          ),
+                      ),
+                      EnablePowerOffButton(
+                        style: ButtonStyle(
+                          foregroundColor:
+                              MaterialStateProperty.all<Color>(Colors.white),
+                          backgroundColor: MaterialStateProperty.all<Color>(
+                              Colors.lightGreen),
                         ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
                   const SizedBox(
                     height: 10,
@@ -147,7 +142,35 @@ class AdminScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  const Text(
+                      'For setting authentication when connecting to a smartphone. _networkType must be in client mode.'),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      SetAuthenticationNoneButton(
+                        style: ButtonStyle(
+                          foregroundColor:
+                              MaterialStateProperty.all<Color>(Colors.white),
+                          backgroundColor: MaterialStateProperty.all<Color>(
+                              Colors.lightGreen),
+                        ),
+                      ),
+                      SetAuthenticationDigestButton(
+                        style: ButtonStyle(
+                          foregroundColor:
+                              MaterialStateProperty.all<Color>(Colors.white),
+                          backgroundColor: MaterialStateProperty.all<Color>(
+                              Colors.lightGreen),
+                        ),
+                      ),
+                    ],
+                  ),
                   const SizedBox(
                     height: 30,
                   ),
