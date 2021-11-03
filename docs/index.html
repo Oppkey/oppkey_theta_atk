@@ -32,15 +32,16 @@
         }
       }
     </style>
+    <script src="https://kit.fontawesome.com/6c45addb37.js" crossorigin="anonymous"></script>
+
   </head>
   <body>
     <main>
       <div class="container py-4">
         <header class="pb-3 mb-4 border-bottom">
-          <a
-            href="https://oppkey.com"
-            class="d-flex align-items-center text-dark text-decoration-none"
-          >
+        <div
+            class="d-flex align-items-center text-dark text-decoration-none">
+          
             <img
               src="images/oppkey_logo.png"
               alt="Oppkey"
@@ -48,25 +49,37 @@
               style="padding: 5px"
             />
             <span class="fs-4"> THETA ATK</span>
-          </a>
+          </div>
         </header>
 
         <div class="p-5 mb-4 bg-light rounded-3">
           <div class="container-fluid py-5">
             <div class="row">
               <div class="col-md-6">
-                <img class="img-fluid" alt="live preview" src="images/live_preview.gif" />
+                <img
+                  class="img-fluid"
+                  alt="live preview"
+                  src="images/live_preview.gif"
+                />
               </div>
               <div class="col-md-6">
                 <h1 class="display-5 fw-bold">RICOH THETA API Test Kit</h1>
                 <p>API usage examples, documentation, and reusable widgets</p>
-                <a
-                  href="https://github.com/Oppkey/oppkey_theta_atk/releases"
-                  class="btn btn-primary btn-lg"
-                  type="button"
-                >
-                  Download Now
-                </a>
+                <p>
+                  <a
+                    href="https://github.com/Oppkey/oppkey_theta_atk/releases"
+                    class="btn btn-primary btn-lg"
+                    type="button"
+                  >
+                    Download Now
+                  </a>
+                </p>
+                <img
+                  src="images/cameras.png"
+                  width="50%"
+                  alt="cameras"
+                  class="img-fluid"
+                />
               </div>
             </div>
           </div>
@@ -114,35 +127,76 @@
 
         <!-- additional atk information -->
         <div class="row align-items-md-stretch">
-            <div class="col-md-6">
-              <!-- <div class="h-100 p-5 text-white bg-dark rounded-3"> -->
-              <div class="h-100 p-5 bg-light border rounded-3">
-                <p>
-                    Create custom thumbnail viewers
-                </p>
+          <div class="col-md-6">
+            <!-- <div class="h-100 p-5 text-white bg-dark rounded-3"> -->
+            <div class="h-100 p-5 bg-light border rounded-3">
+              <h2>ATK Documenation</h2>
+              <ul>
+                <li>
+                  <a href="https://oppkey.github.io/oppkey_thetaf/">
+                    oppkey_thetaf Flutter Widgets API documentation</a
+                  >
+                </li>
+              </ul>
+              <p>Create custom thumbnail viewers</p>
 
-                <img class="img-fluid" alt="thumb" src="images/thumb.gif">
-
-                <ul>
-                  <li><a href="https://oppkey.github.io/oppkey_thetaf/">
-                    oppkey_thetaf Flutter Widgets API documentation</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="h-100 p-5 bg-light border rounded-3">
-                <p>
-                    Get every camera option
-                </p>
-                <img class="img-fluid" alt="thumb" src="images/options_listing_android.gif">
-          
-              </div>
+              <img class="img-fluid" alt="thumb" src="images/thumb.gif" />
             </div>
           </div>
-        <footer class="pt-3 mt-4 text-muted border-top">&copy; 2021</footer>
+          <div class="col-md-6">
+            <div class="h-100 p-5 bg-light border rounded-3">
+              <p>Get every camera option</p>
+              <img
+                class="img-fluid"
+                alt="thumb"
+                src="images/options_listing_android.gif"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-md-stretch">
+          <div class="col-md-6">
+            <!-- <div class="h-100 p-5 text-white bg-dark rounded-3"> -->
+            <div class="h-100 p-5 bg-light border rounded-3">
+          
+              <p>Check camera status during internal stitching</p>
+
+              <img class="img-fluid" alt="thumb" src="images/take_picture.gif" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="h-100 p-5 bg-light border rounded-3">
+              <h2>About</h2>
+              <p>
+                This is an independent site run by 
+                <a href="https://oppkey.com">Oppkey</a>.
+                The site
+                receives sponsorship from RICOH, but it is not an
+                official RICOH site. If you need additional help with the
+                API, please post to the <a href="https://community.theta360.guide">forum</a>.
+                You can also direct message Oppkey president Jesse Casman on the forum @jcasman. 
+                If you cannot create an account on the forum, send Oppkey an email at 
+                info@oppkey.com. 
+              </p>
+              <p>
+                Oppkey is a developer relations firm 
+                helping people understand and use APIs created
+                by some of the world's leading technology organizations. 
+                We are located in Palo Alto and San Francisco in California.
+              </p>
+            </div>
+          </div>
+        </div>     
+        <footer class="pt-3 mt-4 text-muted border-top">
+       <a href="https://www.theta360.guide">theta360.guide</a>      <a href="https://twitter.com/theta360dev"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.facebook.com/theta360guide/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://youtube.com/theta360developers"><i class="fab fa-youtube"></i></a>
+          <a href="https://medium.com/theta360-guide"><i class="fab fa-medium-m"></i></a>
+        </footer>   
+        <footer class="pt-3 mt-4 text-muted border-top">&copy; Oppkey 2021
+        </footer>
       </div>
     </main>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
