@@ -30,21 +30,21 @@ class HomeScreenDrawer extends StatelessWidget {
               onTap: () {
                 Navigator.pushNamed(context, '/use');
               }),
-          ListTile(
-              title: const Text('Preview'),
-              onTap: () {
-                Navigator.pushNamed(context, '/preview');
-              }),
+          // ListTile(
+          //     title: const Text('Preview'),
+          //     onTap: () {
+          //       Navigator.pushNamed(context, '/preview');
+          //     }),
           ListTile(
               title: const Text('Admin'),
               onTap: () {
                 Navigator.pushNamed(context, '/admin');
               }),
-          ListTile(
-              title: const Text('File'),
-              onTap: () {
-                Navigator.pushNamed(context, '/file');
-              }),
+          // ListTile(
+          //     title: const Text('File'),
+          //     onTap: () {
+          //       Navigator.pushNamed(context, '/file');
+          //     }),
         ],
       ),
     );
