@@ -3,6 +3,19 @@
 }
 
 .vheader {
-    font-size: 10px;
+    font-size: 14px;
     text-align: right;
+}
+
+a.vheader-link:link {
+    text-decoration: none;
+}
+a.vheader-link:hover {
+    background-color: lightblue;
+}
+
+
+.version {
+    font-size: 8px;
+    text-align: left;
 }
