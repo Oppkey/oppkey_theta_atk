@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
-/// Tells you how many brackets are set.
+/// Tells you how many brackets are set when setting bracketed shooting.
 class SetAutobracketNumbersButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;
