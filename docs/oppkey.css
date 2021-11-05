@@ -5,13 +5,23 @@
 .vheader {
     font-size: 14px;
     text-align: right;
+    color: #4A4A4A;
 }
 
+
 a.vheader-link:link {
+    padding: 12px;
+    /* padding-right: 12px; */
     text-decoration: none;
+    color: #4A4A4A;
+
 }
 a.vheader-link:hover {
     background-color: lightblue;
+}
+
+a.vheader-link:visited {
+   color: #4A4A4A;
 }
 
 
