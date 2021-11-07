@@ -43,3 +43,5 @@ export 'request/set_autobracket_numbers_button.dart';
 export 'request/set_bitrate_video_fine_button.dart';
 export 'request/set_bitrate_video_normal_button.dart';
 export 'request/set_bitrate_image_auto_button.dart';
+export 'request/set_bluetooth_power_on_button.dart';
+export 'request/set_bluetooth_power_off_button.dart';

@@ -29,6 +29,13 @@ class CameraZ1Screen extends StatelessWidget {
               flex: 8,
               child: ListView(
                 children: [
+                  const Text('Set _bluetoothPower to ON or OFF'),
+                  Row(
+                    children: const [
+                      SetBluetoothPowerOnButton(),
+                      SetBluetoothPowerOffButton(),
+                    ],
+                  ),
                   const Text(
                       'To set aperture, exposureProgram must be set to Manual or Aperture Priority'),
                   Row(
