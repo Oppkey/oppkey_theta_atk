@@ -3,9 +3,11 @@
 }
 
 .vheader {
-    font-size: 14px;
+    font-size: 16px;
     text-align: right;
     color: #4A4A4A;
+    /* font-weight: 500; */
+    
 }
 
 
@@ -16,9 +18,9 @@ a.vheader-link:link {
     color: #4A4A4A;
 
 }
-a.vheader-link:hover {
+/* a.vheader-link:hover {
     background-color: lightblue;
-}
+} */
 
 a.vheader-link:visited {
    color: #4A4A4A;
