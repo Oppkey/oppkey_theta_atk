@@ -40,3 +40,6 @@ export 'request/set_aperture_5dot6_button.dart';
 export 'request/set_athentication_none_button.dart';
 export 'request/set_athentication_digest_button.dart';
 export 'request/set_autobracket_numbers_button.dart';
+export 'request/set_bitrate_video_fine_button.dart';
+export 'request/set_bitrate_video_normal_button.dart';
+export 'request/set_bitrate_image_auto_button.dart';
