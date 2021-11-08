@@ -58,19 +58,6 @@ return MaterialApp(
 
 ## Additional information
 
-As of Nov 8, 2021, the following API options are included in the thetaf package:
-
-### Camera
-* info, state, Get Z1 Options, Get SC2 Options
-### Z1 Specific Options
-* set _bluetoothPower to ON/OFF, exposureProgram, setting _aperture to 0/2.1/3.5/5.6, videoStitching Enable/disable, Set _filter to Handheld HDR
-### SC2 Specific Options
-* set _preset for face, nightView, lensbylensExposure. For SC2B, you can set room.
-### Camera Use
-* takePicture, setMode to Image or Video, thumbs, log, Start/Stop videoCapture
-### Admin
-* Delete all, Delete images, Delete video, reset, Disable/Enable power off, Disable/Enable sleep, Set _authetication to None or Digest
-
 <!-- 
 TODO: Tell users more about the package: where to find more information, how to 
 contribute to the package, how to file issues, what response they can expect 
