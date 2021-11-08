@@ -18,48 +18,62 @@ class CameraSC2Screen extends StatelessWidget {
             flex: 8,
             child: ListView(
               children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: const [InfoButton()],
+                const SizedBox(
+                  height: 10,
                 ),
-                const SizedBox(height: 10),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: const [InfoButton()],
-                ),
-                const SizedBox(height: 10),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: const [InfoButton()],
-                ),
-                const SizedBox(height: 10),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: const [InfoButton()],
-                ),
-                const SizedBox(height: 10),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: const [InfoButton()],
-                ),
-                const SizedBox(height: 10),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: const [InfoButton()],
+                const Text(
+                    'For SC2, you can set _preset for face, nightView, lensbylensExposure. For SC2B, you can set room.'),
+                const SizedBox(
+                  height: 10,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: const [InfoButton()],
-                ),
-                const SizedBox(height: 10),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: const [InfoButton()],
-                ),
-                const SizedBox(height: 10),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: const [InfoButton()],
+                  children: [
+                    EnablePresetFaceButton(
+                      style: ButtonStyle(
+                        textStyle: MaterialStateProperty.all<TextStyle>(
+                          const TextStyle(fontSize: 16),
+                        ),
+                        foregroundColor:
+                            MaterialStateProperty.all<Color>(Colors.white),
+                        backgroundColor:
+                            MaterialStateProperty.all<Color>(Colors.lightGreen),
+                      ),
+                    ),
+                    EnablePresetNightviewButton(
+                      style: ButtonStyle(
+                        textStyle: MaterialStateProperty.all<TextStyle>(
+                          const TextStyle(fontSize: 16),
+                        ),
+                        foregroundColor:
+                            MaterialStateProperty.all<Color>(Colors.white),
+                        backgroundColor:
+                            MaterialStateProperty.all<Color>(Colors.lightGreen),
+                      ),
+                    ),
+                    EnablePresetLensbylensexposureButton(
+                      style: ButtonStyle(
+                        textStyle: MaterialStateProperty.all<TextStyle>(
+                          const TextStyle(fontSize: 16),
+                        ),
+                        foregroundColor:
+                            MaterialStateProperty.all<Color>(Colors.white),
+                        backgroundColor:
+                            MaterialStateProperty.all<Color>(Colors.lightGreen),
+                      ),
+                    ),
+                    EnablePresetRoomButton(
+                      style: ButtonStyle(
+                        textStyle: MaterialStateProperty.all<TextStyle>(
+                          const TextStyle(fontSize: 16),
+                        ),
+                        foregroundColor:
+                            MaterialStateProperty.all<Color>(Colors.white),
+                        backgroundColor:
+                            MaterialStateProperty.all<Color>(Colors.lightGreen),
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),

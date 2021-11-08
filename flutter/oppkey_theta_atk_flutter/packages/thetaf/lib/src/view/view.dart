@@ -45,3 +45,7 @@ export 'request/set_bitrate_video_normal_button.dart';
 export 'request/set_bitrate_image_auto_button.dart';
 export 'request/set_bluetooth_power_on_button.dart';
 export 'request/set_bluetooth_power_off_button.dart';
+export 'request/enable_preset_face_button.dart';
+export 'request/enable_preset_nightview_button.dart';
+export 'request/enable_preset_lensbylensexposure_button.dart';
+export 'request/enable_preset_room_button.dart';
