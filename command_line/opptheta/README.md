@@ -163,7 +163,7 @@ $ dart compile exe bin/opptheta.dart -o build/opptheta_linux_0.3_pre
 Info: Compiling with sound null safety
 Generated: /home/craig/Development/ricoh/oppkey_theta_atk/command_line/opptheta/build/opptheta_linux_0.3_pre
 ```
-#### Windows
+#### Windows - command line
 Using Windows PowerShell
 
 ```
@@ -177,7 +177,7 @@ $ dart compile exe bin/opptheta.dart -o build/opptheta_windows_0.3_pre.exe
 Info: Compiling with sound null safety
 Generated: c:\users\jcasm\development\oppkey_theta_atk\command_line\opptheta\build\opptheta_windows_0.3_pre.exe
 ```
-#### Mac
+#### Mac - command line
 Using Terminal
 
 ```
@@ -191,5 +191,21 @@ $ dart compile exe bin/opptheta.dart -o build/opptheta_mac_0.3.0
 Info: Compiling with sound null safety
 Generated: /Users/jcasman/Development/RICOH/oppkey_theta_atk/command_line/opptheta/build/opptheta_mac_0.3.0
 ```
+#### Android - Flutter app
+Building on Windows, using Windows PowerShell
+FAILED TEST Nov 9, 2021 - Do not use
+
+```
+pwd
+\oppkey_theta_atk\flutter\oppkey_theta_atk_flutter>
+
+ls
+analysis_options.yaml  bin  build  CHANGELOG.md  lib  packages  pubspec.lock  pubspec.yaml  README.md
+
+$ flutter build apk
+✓  Built build\app\outputs\flutter-apk\app-release.apk (18.0MB).
+
+```
+
 
 
