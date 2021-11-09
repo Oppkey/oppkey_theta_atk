@@ -138,8 +138,10 @@ Refer to the theta package for a working example.
 
 Desired binaries in order of priority.
 
-* Windows
-* Mac
+* Windows command line
+* Mac command line
+* Android apk
+* Windows desktop
 
 If there is time
 
@@ -175,4 +177,19 @@ $ dart compile exe bin/opptheta.dart -o build/opptheta_windows_0.3_pre.exe
 Info: Compiling with sound null safety
 Generated: c:\users\jcasm\development\oppkey_theta_atk\command_line\opptheta\build\opptheta_windows_0.3_pre.exe
 ```
+#### Mac
+Using Terminal
+
+```
+pwd
+oppkey_theta_atk/command_line/opptheta
+
+ls
+analysis_options.yaml  bin  build  CHANGELOG.md  lib  packages  pubspec.lock  pubspec.yaml  README.md
+
+$ dart compile exe bin/opptheta.dart -o build/opptheta_mac_0.3.0
+Info: Compiling with sound null safety
+Generated: /Users/jcasman/Development/RICOH/oppkey_theta_atk/command_line/opptheta/build/opptheta_mac_0.3.0
+```
+
 
