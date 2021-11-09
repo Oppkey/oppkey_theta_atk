@@ -56025,7 +56025,7 @@ if(q.jO()){q=r.e
 P.xF("email is "+q.a.a)
 s=t.N
 r.x.E(0,P.at(["email",q.a.a],s,s))
-C.aa.a2F(window,"https://github.com/Oppkey/oppkey_theta_atk/releases","_blank")
+C.aa.a2F(window,"https://oppkey.github.io/oppkey_theta_atk/section/download.html","_blank")
 q.js(0,C.GZ)}},
 $S:0}
 E.TM.prototype={}
