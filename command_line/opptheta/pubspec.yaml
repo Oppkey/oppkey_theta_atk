@@ -1,8 +1,8 @@
 name: opptheta
 publish_to: none
-description: Oppkey API Test Kit for RICOH THETA
-version: 0.3.0
-# homepage: https://www.example.com
+description: Command line tester for RICOH THETA 360 cameras by Oppkey
+version: 0.4.0
+homepage: https://oppkey.github.io/oppkey_theta_atk/
 
 environment:
   sdk: '>=2.14.3 <3.0.0'
