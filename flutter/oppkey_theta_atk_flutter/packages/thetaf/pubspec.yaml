@@ -1,7 +1,7 @@
 name: thetaf
 description: Flutter widgets for RICOH THETA camera
 version: 0.4.0
-homepage:
+homepage: https://oppkey.github.io/oppkey_theta_atk/
 publish_to: none
 
 environment:
