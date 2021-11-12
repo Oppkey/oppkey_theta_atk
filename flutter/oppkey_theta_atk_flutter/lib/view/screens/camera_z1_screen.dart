@@ -44,7 +44,6 @@ class CameraZ1Screen extends StatelessWidget {
                     ],
                   ),
                   Container(
-                    color: Colors.blueAccent,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
@@ -83,6 +82,60 @@ class CameraZ1Screen extends StatelessWidget {
                       ],
                     ),
                   ),
+                  const Text(
+                      'To set iso, exposureProgram must be set to Manual or Iso Priority'),
+                  Row(
+                    children: const [
+                      ExposureProgramButton(),
+                    ],
+                  ),
+                  Container(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        SetIso80Button(
+                          style: ButtonStyle(
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.blueGrey.shade100),
+                          ),
+                        ),
+                        SetIso200Button(
+                          style: ButtonStyle(
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.blueGrey.shade300),
+                          ),
+                        ),
+                        SetIso640Button(
+                          style: ButtonStyle(
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.blueGrey.shade500),
+                          ),
+                        ),
+                        SetIso2000Button(
+                          style: ButtonStyle(
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.blueGrey.shade700),
+                          ),
+                        ),
+                        SetIso6400Button(
+                          style: ButtonStyle(
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.blueGrey.shade900),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                   const SizedBox(
                     height: 10,
                   ),
@@ -92,7 +145,6 @@ class CameraZ1Screen extends StatelessWidget {
                     height: 10,
                   ),
                   Container(
-                    color: Colors.blueAccent,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
@@ -124,7 +176,6 @@ class CameraZ1Screen extends StatelessWidget {
                     height: 10,
                   ),
                   Container(
-                    color: Colors.blueAccent,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
