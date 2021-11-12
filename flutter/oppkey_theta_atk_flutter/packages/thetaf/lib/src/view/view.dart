@@ -49,3 +49,7 @@ export 'request/enable_preset_face_button.dart';
 export 'request/enable_preset_nightview_button.dart';
 export 'request/enable_preset_lensbylensexposure_button.dart';
 export 'request/enable_preset_room_button.dart';
+export 'request/set_colortemp_2500_button.dart';
+export 'request/set_colortemp_5000_button.dart';
+export 'request/set_colortemp_7500_button.dart';
+export 'request/set_colortemp_10000_button.dart';

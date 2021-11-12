@@ -267,14 +267,14 @@ packages:
       path: "packages/theta"
       relative: true
     source: path
-    version: "0.3.0"
+    version: "0.4.0"
   thetaf:
     dependency: "direct main"
     description:
       path: "packages/thetaf"
       relative: true
     source: path
-    version: "0.3.0"
+    version: "0.4.0"
   typed_data:
     dependency: transitive
     description:
