@@ -168,6 +168,30 @@ class AdminScreen extends StatelessWidget {
                               Colors.lightGreen),
                         ),
                       ),
+                      SetShutterVolume20Button(
+                        style: ButtonStyle(
+                          foregroundColor:
+                              MaterialStateProperty.all<Color>(Colors.white),
+                          backgroundColor: MaterialStateProperty.all<Color>(
+                              Colors.lightGreen),
+                        ),
+                      ),
+                      SetShutterVolume50Button(
+                        style: ButtonStyle(
+                          foregroundColor:
+                              MaterialStateProperty.all<Color>(Colors.white),
+                          backgroundColor: MaterialStateProperty.all<Color>(
+                              Colors.lightGreen),
+                        ),
+                      ),
+                      SetShutterVolume100Button(
+                        style: ButtonStyle(
+                          foregroundColor:
+                              MaterialStateProperty.all<Color>(Colors.white),
+                          backgroundColor: MaterialStateProperty.all<Color>(
+                              Colors.lightGreen),
+                        ),
+                      ),
                     ],
                   ),
                   const SizedBox(
