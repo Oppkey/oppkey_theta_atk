@@ -207,7 +207,7 @@ class CameraScreen extends StatelessWidget {
                       height: 10,
                     ),
                     const Text(
-                        'You can set __autoBracket to get the number of bracketed images.'),
+                        'You can set _autoBracket to get the number of bracketed images.'),
                     const SizedBox(
                       height: 10,
                     ),
@@ -261,6 +261,47 @@ class CameraScreen extends StatelessWidget {
                           ),
                         ),
                         SetBitrateImageAutoButton(
+                          style: ButtonStyle(
+                            textStyle: MaterialStateProperty.all<TextStyle>(
+                              const TextStyle(fontSize: 16),
+                            ),
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.lightBlue),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        GetRemainingPicsButton(
+                          style: ButtonStyle(
+                            textStyle: MaterialStateProperty.all<TextStyle>(
+                              const TextStyle(fontSize: 16),
+                            ),
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.lightBlue),
+                          ),
+                        ),
+                        GetRemainingSpaceButton(
+                          style: ButtonStyle(
+                            textStyle: MaterialStateProperty.all<TextStyle>(
+                              const TextStyle(fontSize: 16),
+                            ),
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.lightBlue),
+                          ),
+                        ),
+                        GetRemainingVideoButton(
                           style: ButtonStyle(
                             textStyle: MaterialStateProperty.all<TextStyle>(
                               const TextStyle(fontSize: 16),

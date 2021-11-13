@@ -58,3 +58,8 @@ export 'request/set_iso_200_button.dart';
 export 'request/set_iso_640_button.dart';
 export 'request/set_iso_2000_button.dart';
 export 'request/set_iso_6400_button.dart';
+export 'request/get_remainingpics_button.dart';
+export 'request/set_shutter_volume_5_button.dart';
+export 'request/set_shutter_volumen_off_button.dart';
+export 'request/get_remainingspace_button.dart';
+export 'request/get_remainingvideo_button.dart';

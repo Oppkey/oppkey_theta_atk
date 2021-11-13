@@ -145,6 +145,34 @@ class AdminScreen extends StatelessWidget {
                   const SizedBox(
                     height: 10,
                   ),
+                  const Text('Set the shutter volume.'),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      SetShutterVolumeOffButton(
+                        style: ButtonStyle(
+                          foregroundColor:
+                              MaterialStateProperty.all<Color>(Colors.white),
+                          backgroundColor: MaterialStateProperty.all<Color>(
+                              Colors.lightGreen),
+                        ),
+                      ),
+                      SetShutterVolume5Button(
+                        style: ButtonStyle(
+                          foregroundColor:
+                              MaterialStateProperty.all<Color>(Colors.white),
+                          backgroundColor: MaterialStateProperty.all<Color>(
+                              Colors.lightGreen),
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
                   const Text(
                       'For setting authentication when connecting to a smartphone. _networkType must be in client mode.'),
                   const SizedBox(
