@@ -25,6 +25,49 @@ class CameraScreen extends StatelessWidget {
                       height: 10,
                     ),
                     const Text(
+                        'You can set the shooting function: normal, selfTimer, mySetting.'),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        SetFunctionNormalButton(
+                          style: ButtonStyle(
+                            textStyle: MaterialStateProperty.all<TextStyle>(
+                              const TextStyle(fontSize: 16),
+                            ),
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.lightGreen),
+                          ),
+                        ),
+                        SetFunctionSelfTimerButton(
+                          style: ButtonStyle(
+                            textStyle: MaterialStateProperty.all<TextStyle>(
+                              const TextStyle(fontSize: 16),
+                            ),
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.lightGreen),
+                          ),
+                        ),
+                        SetFunctionMySettingButton(
+                          style: ButtonStyle(
+                            textStyle: MaterialStateProperty.all<TextStyle>(
+                              const TextStyle(fontSize: 16),
+                            ),
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.lightGreen),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const Text(
                         'You can set exposureCompensation. Here are 5 example settings.'),
                     const SizedBox(
                       height: 10,
@@ -202,9 +245,6 @@ class CameraScreen extends StatelessWidget {
                           ),
                         ),
                       ],
-                    ),
-                    const SizedBox(
-                      height: 10,
                     ),
                     const SizedBox(
                       height: 10,

@@ -66,3 +66,6 @@ export 'request/get_remainingpics_button.dart';
 export 'request/get_remainingspace_button.dart';
 export 'request/get_remainingvideo_button.dart';
 export "request/get_datetimezone_button.dart";
+export "request/set_function_normal_button.dart";
+export 'request/set_function_selftimer_button.dart';
+export 'request/set_function_mysetting_button.dart';
