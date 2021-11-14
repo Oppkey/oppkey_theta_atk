@@ -3,6 +3,7 @@ import 'package:args/command_runner.dart';
 import 'package:opptheta/get_last_file_info_cli.dart';
 import 'package:opptheta/get_last_image_url_cli.dart';
 import 'package:opptheta/get_last_video_url_cli.dart';
+import 'package:opptheta/get_options_cli.dart';
 import 'package:opptheta/get_sc2_options_cli.dart';
 import 'package:opptheta/get_z1_options_cli.dart';
 import 'package:opptheta/image_mode_cli.dart';
@@ -43,7 +44,8 @@ void main(List<String> arguments) async {
     ..addCommand(GetZ1Options())
     ..addCommand(GetSc2Options())
     ..addCommand(GetLastVideoUrl())
-    ..addCommand(GetLastFileInfo());
+    ..addCommand(GetLastFileInfo())
+    ..addCommand(GetOptions());
 
   await runner.run(arguments).catchError((error) {
     if (error is! UsageException) throw error;
