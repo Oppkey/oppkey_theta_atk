@@ -3,22 +3,22 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
-/// Based on Oppkey testing, DOES NOT WORK with Z1. Set White Balance
-/// _underwater.
-class SetWhiteBalanceUnderwaterButton extends StatelessWidget {
+/// Set White Balance to fluorescent which is called
+/// Fluorescent light 3 (white).
+class SetWhiteBalanceFluorescent3Button extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;
   final bool autofocus;
   final Clip clipBehavior;
   final String label;
 
-  const SetWhiteBalanceUnderwaterButton({
+  const SetWhiteBalanceFluorescent3Button({
     Key? key,
     this.style,
     this.focusNode,
     this.autofocus = false,
     this.clipBehavior = Clip.none,
-    this.label = '_underwater',
+    this.label = 'Fluorescent Light 3',
   }) : super(key: key);
 
   @override
@@ -30,7 +30,7 @@ class SetWhiteBalanceUnderwaterButton extends StatelessWidget {
         clipBehavior: clipBehavior,
         onPressed: () async {
           var response =
-              await setOption(name: 'whiteBalance', value: '_underwater');
+              await setOption(name: 'whiteBalance', value: 'fluorescent');
           // set title for response. Edit the line below
           // for each option
           response = 'attempting to set option for whiteBalance\n'

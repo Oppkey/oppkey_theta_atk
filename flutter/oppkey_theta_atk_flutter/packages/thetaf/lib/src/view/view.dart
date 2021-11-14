@@ -78,3 +78,8 @@ export 'request/set_whitebalance_shade_button.dart';
 export 'request/set_whitebalance_cloudy_button.dart';
 export 'request/set_whitebalance_incandescent1_button.dart';
 export 'request/set_whitebalance_incandescent2_button.dart';
+export 'request/set_whitebalance_fluorescent1_button.dart';
+export 'request/set_whitebalance_fluorescent2_button.dart';
+export 'request/set_whitebalance_fluorescent3_button.dart';
+export 'request/set_whitebalance_fluorescent4_button.dart';
+export 'request/set_whitebalance_colortemperature_button.dart';

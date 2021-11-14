@@ -324,6 +324,82 @@ class CameraScreen extends StatelessWidget {
                         ),
                       ],
                     ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        SetWhiteBalanceFluorescent1Button(
+                          style: ButtonStyle(
+                            textStyle: MaterialStateProperty.all<TextStyle>(
+                              const TextStyle(fontSize: 16),
+                            ),
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.lightBlue),
+                          ),
+                        ),
+                        SetWhiteBalanceFluorescent2Button(
+                          style: ButtonStyle(
+                            textStyle: MaterialStateProperty.all<TextStyle>(
+                              const TextStyle(fontSize: 16),
+                            ),
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.lightBlue),
+                          ),
+                        ),
+                        SetWhiteBalanceFluorescent3Button(
+                          style: ButtonStyle(
+                            textStyle: MaterialStateProperty.all<TextStyle>(
+                              const TextStyle(fontSize: 16),
+                            ),
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.lightBlue),
+                          ),
+                        ),
+                        SetWhiteBalanceFluorescent4Button(
+                          style: ButtonStyle(
+                            textStyle: MaterialStateProperty.all<TextStyle>(
+                              const TextStyle(fontSize: 16),
+                            ),
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.lightBlue),
+                          ),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        SetWhiteBalanceColorTempButton(
+                          style: ButtonStyle(
+                            textStyle: MaterialStateProperty.all<TextStyle>(
+                              const TextStyle(fontSize: 16),
+                            ),
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.lightBlue),
+                          ),
+                        ),
+                        SetWhiteBalanceUnderwaterButton(
+                          style: ButtonStyle(
+                            textStyle: MaterialStateProperty.all<TextStyle>(
+                              const TextStyle(fontSize: 16),
+                            ),
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.lightBlue),
+                          ),
+                        ),
+                      ],
+                    ),
                     const SizedBox(
                       height: 10,
                     ),

@@ -3,22 +3,23 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
-/// Based on Oppkey testing, DOES NOT WORK with Z1. Set White Balance
-/// _underwater.
-class SetWhiteBalanceUnderwaterButton extends StatelessWidget {
+/// Set White Balance to _colorTemperature.
+/// Color Temperature (CT) settings are specified by the _colorTemperature
+/// option for S and SC.
+class SetWhiteBalanceColorTempButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;
   final bool autofocus;
   final Clip clipBehavior;
   final String label;
 
-  const SetWhiteBalanceUnderwaterButton({
+  const SetWhiteBalanceColorTempButton({
     Key? key,
     this.style,
     this.focusNode,
     this.autofocus = false,
     this.clipBehavior = Clip.none,
-    this.label = '_underwater',
+    this.label = 'Color Temperature',
   }) : super(key: key);
 
   @override
@@ -30,7 +31,7 @@ class SetWhiteBalanceUnderwaterButton extends StatelessWidget {
         clipBehavior: clipBehavior,
         onPressed: () async {
           var response =
-              await setOption(name: 'whiteBalance', value: '_underwater');
+              await setOption(name: 'whiteBalance', value: '_colorTemperature');
           // set title for response. Edit the line below
           // for each option
           response = 'attempting to set option for whiteBalance\n'
