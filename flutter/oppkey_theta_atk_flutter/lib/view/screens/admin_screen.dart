@@ -28,6 +28,7 @@ class AdminScreen extends StatelessWidget {
             Expanded(
               flex: 8,
               child: ListView(
+                controller: ScrollController(),
                 children: [
                   const SizedBox(
                     height: 10,
