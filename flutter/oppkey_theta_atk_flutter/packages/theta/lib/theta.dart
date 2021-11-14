@@ -19,3 +19,4 @@ export 'src/get_last_video_url.dart';
 export 'src/get_z1_options.dart';
 export 'src/get_sc2_options.dart';
 export 'src/get_last_file_info.dart';
+export 'src/get_options.dart';

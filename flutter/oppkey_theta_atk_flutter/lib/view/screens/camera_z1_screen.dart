@@ -28,6 +28,7 @@ class CameraZ1Screen extends StatelessWidget {
             Expanded(
               flex: 8,
               child: ListView(
+                controller: ScrollController(),
                 children: [
                   const Text('Set _bluetoothPower to ON or OFF'),
                   Row(
