@@ -1,5 +1,5 @@
 name: theta
-description: RICOH THETA API Dart interface
+description: Oppkey Dart interface for RICOH THETA 360 cameras
 version: 0.4.0
 homepage: https://oppkey.github.io/oppkey_theta_atk/
 
