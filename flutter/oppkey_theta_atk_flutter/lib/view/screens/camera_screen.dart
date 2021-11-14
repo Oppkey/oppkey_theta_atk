@@ -249,6 +249,140 @@ class CameraScreen extends StatelessWidget {
                     const SizedBox(
                       height: 10,
                     ),
+                    const Text('You can set White Balance.'),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        SetWhiteBalanceAutoButton(
+                          style: ButtonStyle(
+                            textStyle: MaterialStateProperty.all<TextStyle>(
+                              const TextStyle(fontSize: 16),
+                            ),
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.lightBlue),
+                          ),
+                        ),
+                        SetWhiteBalanceDaylightButton(
+                          style: ButtonStyle(
+                            textStyle: MaterialStateProperty.all<TextStyle>(
+                              const TextStyle(fontSize: 16),
+                            ),
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.lightBlue),
+                          ),
+                        ),
+                        SetWhiteBalanceShadeButton(
+                          style: ButtonStyle(
+                            textStyle: MaterialStateProperty.all<TextStyle>(
+                              const TextStyle(fontSize: 16),
+                            ),
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.lightBlue),
+                          ),
+                        ),
+                        SetWhiteBalanceCloudyButton(
+                          style: ButtonStyle(
+                            textStyle: MaterialStateProperty.all<TextStyle>(
+                              const TextStyle(fontSize: 16),
+                            ),
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.lightBlue),
+                          ),
+                        ),
+                        SetWhiteBalanceIncandescent1Button(
+                          style: ButtonStyle(
+                            textStyle: MaterialStateProperty.all<TextStyle>(
+                              const TextStyle(fontSize: 16),
+                            ),
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.lightBlue),
+                          ),
+                        ),
+                        SetWhiteBalanceIncandescent2Button(
+                          style: ButtonStyle(
+                            textStyle: MaterialStateProperty.all<TextStyle>(
+                              const TextStyle(fontSize: 16),
+                            ),
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.lightBlue),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    const Text('You can set Time Shift Shooting.'),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        SetTimeShiftFirstFrontButton(
+                          style: ButtonStyle(
+                            textStyle: MaterialStateProperty.all<TextStyle>(
+                              const TextStyle(fontSize: 16),
+                            ),
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.lightBlue),
+                          ),
+                        ),
+                        SetTimeShiftFirstIntervalButton(
+                          style: ButtonStyle(
+                            textStyle: MaterialStateProperty.all<TextStyle>(
+                              const TextStyle(fontSize: 16),
+                            ),
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.lightBlue),
+                          ),
+                        ),
+                        SetFilterDrcompButton(
+                          style: ButtonStyle(
+                            textStyle: MaterialStateProperty.all<TextStyle>(
+                              const TextStyle(fontSize: 16),
+                            ),
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.lightBlue),
+                          ),
+                        ),
+                        SetFilterNoiseReductionButton(
+                          style: ButtonStyle(
+                            textStyle: MaterialStateProperty.all<TextStyle>(
+                              const TextStyle(fontSize: 16),
+                            ),
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.lightBlue),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
                     const Text(
                         'You can set _bitrate to Fine or Normal (shooting mode must be set to video), or to Auto (shooting mode must be set to image or live streaming.)'),
                     const SizedBox(
