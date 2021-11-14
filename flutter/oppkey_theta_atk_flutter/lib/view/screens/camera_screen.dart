@@ -291,6 +291,17 @@ class CameraScreen extends StatelessWidget {
                                 Colors.lightBlue),
                           ),
                         ),
+                        GetDateTimeZoneButton(
+                          style: ButtonStyle(
+                            textStyle: MaterialStateProperty.all<TextStyle>(
+                              const TextStyle(fontSize: 16),
+                            ),
+                            foregroundColor:
+                                MaterialStateProperty.all<Color>(Colors.white),
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                                Colors.lightBlue),
+                          ),
+                        ),
                       ],
                     ),
                     const SizedBox(
