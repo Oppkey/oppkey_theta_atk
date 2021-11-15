@@ -31,3 +31,18 @@ a.vheader-link:visited {
     font-size: 8px;
     text-align: left;
 }
+
+.logo {
+    text-align: left;
+    color: #4A4A4A;
+}
+
+a.logo-link:link {
+    text-decoration: none;
+    color: #4A4A4A;
+
+}
+
+a.logo-link:visited {
+    color: #4A4A4A;
+ }
