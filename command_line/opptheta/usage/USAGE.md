@@ -4,6 +4,12 @@ command line API tester for RICOH THETA cameras.
 
 ![camera](images/cameras.png)
 
+## Running opptheta
+
+* Windows `.\opptheta.exe`
+* Linux `./opptheta`
+* Mac OS - see troubleshooting section
+
 ## Camera Connection Setup
 
 Connect RICOH THETA to computer with Wi-Fi in access point (AP) mode.
@@ -24,6 +30,8 @@ If you cannot connect your computer to the camera, refer to the troubleshooting
 section.
 
 ## Available Commands
+
+Use `./opptheta --help` or `./opptheta command --help` to see options.
 
 ```
 > .\opptheta --help
@@ -241,3 +249,10 @@ If you are still not getting a response from `opptheta`, then try curl.
 $ curl http://192.168.1.1/osc/info
 {"api":["/osc/info","/osc/state","/osc/checkForUpdates","/osc/commands/execute","/osc/commands/status"],"apiLevel":[2],"_bluetoothMacAddress":"58:38:79:03:0C:47","endpoints":{"httpPort":80,"httpUpdatesPort":80},"firmwareVersion":"2.01.0","gps":false,"gyro":true,"manufacturer":"RICOH","model":"RICOH THETA Z1","serialNumber":"10010104","supportUrl":"https://theta360.com/en/support/","uptime":9673,"_wlanMacAddress":"58:38:79:03:17:06"}
 ```
+
+### Mac OS
+
+Set permissions to `chmod +x` and in System Preferences under Security click "Allow Anyway"
+
+
+![Mac OS settings](images/mac_os.png)
