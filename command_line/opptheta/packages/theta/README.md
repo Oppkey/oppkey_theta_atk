@@ -17,8 +17,6 @@ RICOH THETA API tester built with dio.
 
 ## Features
 
-![video screengrab](docs/images/live_preview.gif)
-
 * http post
 * http get
 * theta commands (osc/commands/execute)
