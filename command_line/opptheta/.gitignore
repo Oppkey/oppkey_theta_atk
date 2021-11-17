@@ -8,3 +8,5 @@ thumbs/
 frames/
 bin/thumbs
 
+# archive files
+*.zip
