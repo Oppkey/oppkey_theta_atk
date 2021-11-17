@@ -254,5 +254,4 @@ $ curl http://192.168.1.1/osc/info
 
 Set permissions to `chmod +x` and in System Preferences under Security click "Allow Anyway"
 
-
 ![Mac OS settings](images/mac_os.png)
