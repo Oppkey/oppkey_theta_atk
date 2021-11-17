@@ -1,7 +1,7 @@
 name: opptheta
 publish_to: none
 description: Command line tester for RICOH THETA 360 cameras by Oppkey
-version: 0.4.0
+version: 0.3.1
 homepage: https://oppkey.github.io/oppkey_theta_atk/
 
 environment:
