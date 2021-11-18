@@ -3,6 +3,8 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
+/// If this option is used, video is recorded in dual fisheye (two hemispheres).
+/// Only for Z1.
 class DisableVideoStitchingButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;

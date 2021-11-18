@@ -10,6 +10,8 @@ class EnablePresetNightviewButton extends StatelessWidget {
   final Clip clipBehavior;
   final String label;
 
+  /// Utilizes dynamic range compensation and noise reduction to produce
+  /// good night time images.
   const EnablePresetNightviewButton({
     Key? key,
     this.style,

@@ -3,6 +3,8 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
+/// Control the two lenses of the THETA camera independently. Good for situations
+/// when lighting varies significantly, such as inside a car.
 class EnablePresetLensbylensexposureButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;
