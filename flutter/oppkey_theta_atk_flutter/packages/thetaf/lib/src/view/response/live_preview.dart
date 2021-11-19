@@ -3,6 +3,7 @@ import 'dart:typed_data';
 import 'package:flutter/material.dart';
 
 /// {@category Response}
+/// {@category Z1}
 /// Shows live preview motion jpeg from the RICOH THETA camera
 /// Live preview is a stream and is managed by a [StreamController].
 /// You must pass the StreamController.
