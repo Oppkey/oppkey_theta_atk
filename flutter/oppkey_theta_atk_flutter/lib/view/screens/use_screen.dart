@@ -43,9 +43,22 @@ class UseScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: const [
                       StartVideoCaptureButton(),
-                      StopVideoCaptureButton(),
+                      StopVideoCaptureButton(
+                        label: 'stop capture',
+                      ),
                     ],
                   ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: const [
+                      StartCaptureButton(
+                        label: 'Interval Capture',
+                        mode: 'interval',
+                      ),
+                      StartCaptureButton(
+                          label: 'time shift', mode: 'timeShift'),
+                    ],
+                  )
                 ]),
               ),
             ],
