@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
-/// /// Displays all options available for the Z1.
+/// Displays all options available for the Z1.
 class Z1GetOptionsButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;

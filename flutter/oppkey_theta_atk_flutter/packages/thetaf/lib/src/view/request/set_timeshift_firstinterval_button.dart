@@ -5,7 +5,6 @@ import 'package:thetaf/src/model/response_notifier.dart';
 
 /// Set the interval for the first shot for Time shift shooting.
 /// Can also set the interval for the second shot independently.
-
 class SetTimeShiftFirstIntervalButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;
