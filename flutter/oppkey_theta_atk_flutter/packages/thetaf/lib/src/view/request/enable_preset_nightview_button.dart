@@ -3,6 +3,8 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
+/// Utilizes dynamic range compensation and noise reduction to produce
+/// good night time images.
 class EnablePresetNightviewButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;
@@ -10,8 +12,6 @@ class EnablePresetNightviewButton extends StatelessWidget {
   final Clip clipBehavior;
   final String label;
 
-  /// Utilizes dynamic range compensation and noise reduction to produce
-  /// good night time images.
   const EnablePresetNightviewButton({
     Key? key,
     this.style,

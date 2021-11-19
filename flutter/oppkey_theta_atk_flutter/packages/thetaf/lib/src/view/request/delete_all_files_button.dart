@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
-/// Deletes all media on the camera, images and videos.
+/// Deletes all media on the camera, both images and videos. Can not be undone.
 class DeleteAllFilesButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;
