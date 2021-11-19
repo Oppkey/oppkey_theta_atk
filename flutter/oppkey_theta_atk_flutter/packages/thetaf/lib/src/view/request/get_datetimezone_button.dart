@@ -5,8 +5,11 @@ import 'package:thetaf/src/model/response_notifier.dart';
 
 /// Gets current Date and Time zone.
 ///
-/// * Format is Date: YYYY:MM:DD  Time: hh:mm:ss  and Time Zone +(-)hh:mm
-/// * Date is Year:Month:day. Hours are displayed in 24 hour time.
+/// * Format is
+///   * Date: YYYY:MM:DD
+///   * Time: hh:mm:ss
+///   * Time Zone +(-)hh:mm
+/// * Date is displayed as Year:Month:Day. Hours are displayed in 24 hour time.
 /// * Example: 2021:11:13 20:30:22-08:00
 class GetDateTimeZoneButton extends StatelessWidget {
   final ButtonStyle? style;
