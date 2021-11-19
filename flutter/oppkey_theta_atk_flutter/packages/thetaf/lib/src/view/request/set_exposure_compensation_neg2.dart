@@ -3,6 +3,8 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
+/// EV is Exposure Compensation. It works in automatic mode. This
+/// button sets EV to -2.
 class SetExposureCompensationneg2Button extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;
