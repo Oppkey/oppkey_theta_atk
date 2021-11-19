@@ -4,7 +4,7 @@ import 'package:thetaf/src/model/response_notifier.dart';
 
 /// {@category Response}
 /// Text response window with selectable text.
-/// Although there is not syntax highlighting or line numbers
+/// Although there is no syntax highlighting or line numbers
 /// the backgroundColor of the response window can be set
 /// as well as the textColor and fontSize
 /// To get syntax highlighting and line numbering, use

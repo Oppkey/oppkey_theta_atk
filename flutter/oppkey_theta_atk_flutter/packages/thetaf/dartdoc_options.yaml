@@ -1,4 +1,6 @@
 dartdoc:
-  # categories:
-  #   "Response"
+  categories:
+    "Response":
+      markdown: doc_template/response.md
+      name: Response
   # categoryOrder: ["Response"]
