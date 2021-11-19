@@ -274,7 +274,7 @@ packages:
       path: "packages/thetaf"
       relative: true
     source: path
-    version: "0.3.1"
+    version: "0.3.1-1.0.pre"
   typed_data:
     dependency: transitive
     description:

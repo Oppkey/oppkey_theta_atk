@@ -1,6 +1,6 @@
 name: thetaf
 description: Oppkey Widgets for RICOH THETA camera mobile and desktop development
-version: 0.3.1
+version: 0.3.1-1.0.pre
 homepage: https://oppkey.github.io/oppkey_theta_atk/
 publish_to: none
 
