@@ -83,3 +83,7 @@ export 'request/set_whitebalance_fluorescent2_button.dart';
 export 'request/set_whitebalance_fluorescent3_button.dart';
 export 'request/set_whitebalance_fluorescent4_button.dart';
 export 'request/set_whitebalance_colortemperature_button.dart';
+export 'request/z1_get_options_button_simple.dart';
+export 'request/sc2_get_options_button_simple.dart';
+export 'request/state_button_simple.dart';
+export 'request/info_button_simple.dart';
