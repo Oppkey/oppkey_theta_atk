@@ -33,6 +33,8 @@ class Preview {
           frames: frames,
           frameDelay: frameDelay,
           controller: controller);
+    } else {
+      // close http connection
     }
   }
 
