@@ -8,7 +8,7 @@ command line API tester for RICOH THETA cameras.
 
 * Windows `.\opptheta.exe`
 * Linux `./opptheta`
-* Mac OS - see troubleshooting section of connection document
+* Mac OS `./opptheta_mac`
 
 ## Available Commands
 
@@ -155,3 +155,19 @@ Save image to local filesystem to inspect with RICOH THETA desktop app.
 ![save image](images/save_image.png)
 
 ![desktop app](images/desktop.png)
+
+## macOS Installation - Security Instructions
+
+macOS provides security for third-party developer apps. Depending on your settings, you made need to allow opptheta to run on your system.
+
+Download opptheta. Use Terminal to run opptheta from the command line.
+
+Use `./opptheta --help` or `./opptheta command --help` to see options.
+
+If you have a permissions issue, use
+
+`chmod +x opptheta_mac_0.3.0`
+
+If macOS blocks usage, go to System Preferences, Security & Privacy. You may need to click the lock icon to make changes. In the section under "Allow apps downloaded from" you should see "'opptheta_mac_0.3.0' was blocked from use because it is not from an identified developer." Click the Allow Anyway button.
+
+![security](images/macOS_security.png)
