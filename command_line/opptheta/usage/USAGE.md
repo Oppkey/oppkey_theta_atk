@@ -8,7 +8,7 @@ command line API tester for RICOH THETA cameras.
 
 * Windows `.\opptheta.exe`
 * Linux `./opptheta`
-* Mac OS - see troubleshooting section of connection document
+* Mac OS `./opptheta_mac`
 
 ## Available Commands
 
@@ -155,3 +155,4 @@ Save image to local filesystem to inspect with RICOH THETA desktop app.
 ![save image](images/save_image.png)
 
 ![desktop app](images/desktop.png)
+
