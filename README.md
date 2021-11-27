@@ -26,7 +26,7 @@ bracket or interval shooting, thumbnail requests, and live preview
 (motionJPEG) management.
 
 We get more questions from RICOH partners every week and update
-this API Test Kit regulary in order to help more people in the
+this API Test Kit regularly in order to help more people in the
 future.
 
 Feel free to use these tools yourself to experiment with the camera,
