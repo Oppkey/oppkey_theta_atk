@@ -13,14 +13,14 @@
             "type": "dart"
         },
         {
-            "name": "oppkey_theta_atk_flutter",
-            "cwd": "flutter\\oppkey_theta_atk_flutter",
+            "name": "opptheta_f",
+            "cwd": "flutter\\opptheta_f",
             "request": "launch",
             "type": "dart"
         },
         {
-            "name": "oppkey_theta_atk_flutter (profile mode)",
-            "cwd": "flutter\\oppkey_theta_atk_flutter",
+            "name": "opptheta_f (profile mode)",
+            "cwd": "flutter\\opptheta_f",
             "request": "launch",
             "type": "dart",
             "flutterMode": "profile"

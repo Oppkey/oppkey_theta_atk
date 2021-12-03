@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.oppkey_theta_atk_flutter">
+    package="com.example.opptheta_f">
    <application
-        android:label="oppkey_theta_atk_flutter"
+        android:label="opptheta_f"
         android:icon="@mipmap/ic_launcher"
         android:usesCleartextTraffic="true"
         >

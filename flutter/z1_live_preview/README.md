@@ -1,4 +1,4 @@
-# oppkey_theta_atk_flutter
+# opptheta_f
 
 Demonstration of using RICOH THETA API with Flutter
 
@@ -9,7 +9,7 @@ Demonstration of using RICOH THETA API with Flutter
 #### Step 1 - Build binary
 
 ```
-\oppkey_theta_atk\flutter\oppkey_theta_atk_flutter> flutter build windows
+\oppkey_theta_atk\flutter\opptheta_f> flutter build windows
 
 💪 Building with sound null safety 💪
 
@@ -27,14 +27,14 @@ Building Windows application...
 ```
 > ls
     Directory: C:\Users\craig\Documents\Development\ricoh\oppkey_theta_atk\flutt
-    er\oppkey_theta_atk_flutter\build\windows\runner\Release
+    er\opptheta_f\build\windows\runner\Release
 
 Mode                 LastWriteTime         Length Name
 ----                 -------------         ------ ----
 d-----        10/15/2021   3:08 PM                data
 -a----         9/30/2021   7:04 PM       13878784 flutter_windows.dll
 -a----         8/30/2021   9:53 PM         565648 msvcp140.dll
--a----        10/15/2021   3:08 PM          76288 oppkey_theta_atk_flutter.exe
+-a----        10/15/2021   3:08 PM          76288 opptheta_f.exe
 -a----         8/30/2021   9:54 PM          97168 vcruntime140.dll
 -a----         8/30/2021   9:53 PM          37240 vcruntime140_1.dll
 ```

@@ -11,11 +11,11 @@ slots:
   dbus-oppkey-theta-atk-flutter: # adjust accordingly to your app name
     interface: dbus
     bus: session
-    name: com.oppkey.oppkey_theta_atk_flutter # adjust accordingly to your app name and
+    name: com.oppkey.opptheta_f # adjust accordingly to your app name and
     
 apps:
   oppkey-theta-atk-flutter:
-    command: oppkey_theta_atk_flutter
+    command: opptheta_f
     extensions: [flutter-stable] # Where "master" defines which Flutter channel to use for the build
     plugs:
     - network

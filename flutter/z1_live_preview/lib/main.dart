@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:oppkey_theta_atk_flutter/model/file_notifier.dart';
-import 'package:oppkey_theta_atk_flutter/model/layout_notifier.dart';
-import 'package:oppkey_theta_atk_flutter/model/response_notifier.dart';
-import 'package:oppkey_theta_atk_flutter/model/video_notifier.dart';
-import 'package:oppkey_theta_atk_flutter/view/camera/camera_screen.dart';
-import 'package:oppkey_theta_atk_flutter/view/file/file_screen.dart';
+import 'package:opptheta_f/model/file_notifier.dart';
+import 'package:opptheta_f/model/layout_notifier.dart';
+import 'package:opptheta_f/model/response_notifier.dart';
+import 'package:opptheta_f/model/video_notifier.dart';
+import 'package:opptheta_f/view/camera/camera_screen.dart';
+import 'package:opptheta_f/view/file/file_screen.dart';
 import 'package:provider/provider.dart';
 
 import 'view/home/home_screen.dart';

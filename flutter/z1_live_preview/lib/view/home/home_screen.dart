@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:oppkey_theta_atk_flutter/model/layout_notifier.dart';
-import 'package:oppkey_theta_atk_flutter/model/video_notifier.dart';
+import 'package:opptheta_f/model/layout_notifier.dart';
+import 'package:opptheta_f/model/video_notifier.dart';
 import 'package:theta/theta.dart';
 
 import 'home_buttons.dart';

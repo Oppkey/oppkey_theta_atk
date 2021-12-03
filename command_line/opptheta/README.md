@@ -174,7 +174,7 @@ FAILED TEST Nov 9, 2021 - Do not use
 
 ```
 pwd
-\oppkey_theta_atk\flutter\oppkey_theta_atk_flutter>
+\oppkey_theta_atk\flutter\opptheta_f>
 
 ls
 analysis_options.yaml  bin  build  CHANGELOG.md  lib  packages  pubspec.lock  pubspec.yaml  README.md

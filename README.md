@@ -41,7 +41,7 @@ Windows, Mac as well as platforms such as Raspberry Pi and
 NVIDIA Jetson
 * thetaf - Flutter widgets for elements such as
 displaying live preview on RICOH THETA cameras
-* oppkey_theta_atk_flutter - demonstration of using the theta
+* opptheta_f - demonstration of using the theta
 and thetaf packages on mobile or desktop applications
 
 ## Mobile App Testing (not SDK)

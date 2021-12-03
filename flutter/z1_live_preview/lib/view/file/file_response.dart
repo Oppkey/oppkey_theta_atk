@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:oppkey_theta_atk_flutter/model/file_notifier.dart';
+import 'package:opptheta_f/model/file_notifier.dart';
 import 'package:provider/provider.dart';
 
 class FileResponse extends StatelessWidget {
