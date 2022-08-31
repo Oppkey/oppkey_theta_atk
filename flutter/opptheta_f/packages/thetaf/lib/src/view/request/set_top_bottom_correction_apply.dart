@@ -3,21 +3,22 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
-/// Set camera to RAW
-class SetFileFormatRawButton extends StatelessWidget {
+/// Set _topBottomCorrection option to control auto-horizon
+/// adjustment.  disapply will result in tilted images
+class SetTopBottomCorrectionApplyButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;
   final bool autofocus;
   final Clip clipBehavior;
   final String label;
 
-  const SetFileFormatRawButton({
+  const SetTopBottomCorrectionApplyButton({
     Key? key,
     this.style,
     this.focusNode,
     this.autofocus = false,
     this.clipBehavior = Clip.none,
-    this.label = "RAW",
+    this.label = "Enable",
   }) : super(key: key);
 
   @override
@@ -28,12 +29,11 @@ class SetFileFormatRawButton extends StatelessWidget {
         autofocus: autofocus,
         clipBehavior: clipBehavior,
         onPressed: () async {
-          var response = await setOption(
-              name: 'fileFormat',
-              value: {'type': 'raw+', 'width': 6720, 'height': 3360});
+          var response =
+              await setOption(name: '_topBottomCorrection', value: 'Apply');
           // set title for response. Edit the line below
           // for each option
-          response = 'attempting to set option for file format to RAW\n'
+          response = 'attempting to set option for topBottomCorrection\n'
                   '-------------------\n' +
               response;
 
@@ -41,7 +41,7 @@ class SetFileFormatRawButton extends StatelessWidget {
           await Future.delayed(const Duration(milliseconds: 250));
           // send command to check the option you just set
           var responseCheck = await await command('getOptions', parameters: {
-            'optionNames': ['fileFormat']
+            'optionNames': ['_topBottomCorrection']
           });
           // combine the two strings
           response += '\nCheck the information below to verify option was set\n'

@@ -3,21 +3,21 @@ import 'package:provider/provider.dart';
 import 'package:theta/theta.dart';
 import 'package:thetaf/src/model/response_notifier.dart';
 
-/// Set camera to RAW
-class SetFileFormatRawButton extends StatelessWidget {
+/// Set camera to JPEG
+class SetFileFormatJpegButton extends StatelessWidget {
   final ButtonStyle? style;
   final FocusNode? focusNode;
   final bool autofocus;
   final Clip clipBehavior;
   final String label;
 
-  const SetFileFormatRawButton({
+  const SetFileFormatJpegButton({
     Key? key,
     this.style,
     this.focusNode,
     this.autofocus = false,
     this.clipBehavior = Clip.none,
-    this.label = "RAW",
+    this.label = "JPEG",
   }) : super(key: key);
 
   @override
@@ -30,7 +30,7 @@ class SetFileFormatRawButton extends StatelessWidget {
         onPressed: () async {
           var response = await setOption(
               name: 'fileFormat',
-              value: {'type': 'raw+', 'width': 6720, 'height': 3360});
+              value: {'type': 'jpeg', 'width': 6720, 'height': 3360});
           // set title for response. Edit the line below
           // for each option
           response = 'attempting to set option for file format to RAW\n'

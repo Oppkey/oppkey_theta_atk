@@ -30,6 +30,21 @@ class CameraZ1Screen extends StatelessWidget {
               child: ListView(
                 controller: ScrollController(),
                 children: [
+                  const Text('set still image to RAW or JPG'),
+                  Row(
+                    children: const [
+                      SetFileFormatRawButton(),
+                      SetFileFormatJpegButton(),
+                    ],
+                  ),
+                  const Text(
+                      'set still image horizon correction (top/bottom correction)'),
+                  Row(
+                    children: const [
+                      SetTopBottomCorrectionApplyButton(),
+                      SetTopBottomCorrectionDisApplyButton(),
+                    ],
+                  ),
                   const Text('Set _bluetoothPower to ON or OFF'),
                   Row(
                     children: const [
